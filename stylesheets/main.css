@@ -1,0 +1,76 @@
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "Calibri";
+}
+
+/* line 1, ../sass/modules/_header.scss */
+#header {
+  width: 100%;
+  height: 40px;
+  background: #ff0000;
+  padding-top: 3px;
+}
+/* line 8, ../sass/modules/_header.scss */
+#header .info {
+  margin-left: 20px;
+}
+/* line 11, ../sass/modules/_header.scss */
+#header .info span {
+  color: #333;
+  font-size: 18px;
+}
+/* line 15, ../sass/modules/_header.scss */
+#header .info .phone {
+  display: inline-block;
+}
+/* line 19, ../sass/modules/_header.scss */
+#header .info h6 {
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 26, ../sass/modules/_header.scss */
+#header .info .fab {
+  padding: 7px 0 0 10px;
+}
+/* line 30, ../sass/modules/_header.scss */
+#header .info .fb {
+  color: #3b5998;
+}
+/* line 34, ../sass/modules/_header.scss */
+#header .info .tw {
+  color: #38A1F3;
+}
+/* line 38, ../sass/modules/_header.scss */
+#header .info .pinterest {
+  background: #fff;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  color: #c8232c;
+  padding: 2.2px 0 0 2.2px;
+  margin-left: 10px;
+}
+/* line 48, ../sass/modules/_header.scss */
+#header .info .linkedin {
+  color: #0077B5;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 57, ../sass/modules/_header.scss */
+  #header {
+    width: 100%;
+    height: 18%;
+  }
+  /* line 61, ../sass/modules/_header.scss */
+  #header .logo {
+    display: none;
+  }
+  /* line 65, ../sass/modules/_header.scss */
+  #header .info {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
