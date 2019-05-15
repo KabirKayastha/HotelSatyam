@@ -1,71 +1,116 @@
- #header{
-     width: 100%;
-     height: 40px;
-     background: $primaryColor;
-     padding-top: 3px;
+#header{
+    width: 100%;
+    height: 40px;
+    background: $primaryColor;
+    padding: 3px 0 0 0;
 
+    .headerElement{
+        display: inline-block;
+    }
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 85%;
+        float: right;
+        list-style: none;
 
-    .info{
-        margin-left: 20px;
+        #headerSocial{
+            text-align: right;
 
-        span{
-            color: #333;
-            font-size: 18px;
+            .fab{
+                font-size: 20px;
+                padding: 7px 0 0 20px;
+            }
+
+            .fb{
+                 color: #3b5998;
+            }
+                
+            .tw{
+                color: #38A1F3;
+            }
+                
+            .pinterest{
+                background: #fff;
+                border-radius: 50%;
+                height: 22px;
+                width: 22px;
+                color: #c8232c;
+                padding: 1px;
+                margin-left: 10px;
+            }
+                
+            .linkedin{
+                color: #0077B5;
+            }
         }
-        .phone{
+
+        #headerEmail{
+            padding-left: 20px;
+        }
+
+        li{
             display: inline-block;
-        }
+            width: 33%;
 
-        h6{
-            padding: 0 0 0 10px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-        }
+            h6{
+                padding: 0 0 0 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+            }
 
-        .fab{
-            padding: 7px 0 0 10px;
-        }
+            span{
+                color: #333;
+                font-size: 18px; 
+            }
 
-        .fb{
-            color: #3b5998;
+            .headerItem{
+                display: inline-block;
+            }
         }
+    }
 
-        .tw{
-            color: #38A1F3;
-        }
-
-        .pinterest{
-            background: #fff;
-            border-radius: 50%;
-            height: 22px;
-            width: 22px;
-            color: #c8232c;
-            padding: 2.2px 0 0 2.2px;
-            margin-left: 10px;
-        }
-
-        .linkedin{
-            color: #0077B5;
-        }
-
+    #logo{
+        width: 100px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
 
     #header{
         width: 100%;
-        height: 18%;       
+        height: 20vh;
+        //padding: 10px 0 0 0;       
 
-        .logo{
+        #logo{
             display: none;
         }
 
-        .info{
-            display: block;
-            margin: 0 auto;
+        .container{
+            padding: 0;
+            margin: 0;
+        }
+
+        ul{
+            float: none;
+            width: 100%;
             text-align: center;
+
+            li{
+                width: 100%;
+                text-align: center;
+                padding-top: 10px;
+
+                .headerItem {
+                    display: inline;
+                }
+            }
+
+            #headerSocial{
+                text-align: center;
+            }
         }
     }
 }
