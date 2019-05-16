@@ -31,6 +31,38 @@
             &:hover{
                 background: #eee;
             }
+
+            ul{
+                background: #ccc;
+                height: auto;
+                width: auto;
+                border: none;
+                box-shadow: none;
+                font-size: 14px;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+                //width: 20%;
+                //float: left;
+                
+                li{
+                    display: block;
+                    border-top: 1px solid #ddd;
+
+                    a{
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+                        background: transparent;
+                        font-weight: bolder;
+                    }
+                }
+
+                li:first-child{
+                    border: none;
+                }
+
+            }
         }
     }
 }
@@ -113,8 +145,87 @@
                 height: 50vh;
                 margin: 0;
                 padding-top: 0;
+                overflow-y: scroll;
+
+                .slideDown1{
+                    transform: translateY(42vh);
+
+                    transition: transform 300ms 0ms;
+                }
+
+                .slideDown2{
+                    transform: translateY(14vh);
+
+                    transition: transform 300ms 0ms;
+                }
+                
+                .slideDown3{
+                    transform: translateY(14vh);
+
+                    transition: transform 300ms 0ms;
+                }
+
+                .slideDown4{
+                    transform: translateY(42vh);
+
+                    transition: transform 300ms 0ms;
+                }
+                
+                &::-webkit-scrollbar{
+                    width: 7px;
+                }
+
+                &::-webkit-scrollbar-thumb{
+                    background: #aaa;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-track{
+                    background: #ddd;
+                }
+
                 li{
                     display: block;
+                    position: relative;
+                    transform: translateY(0px);
+
+                    transition: transform .5s 0s;
+
+                    ul{
+                        display: none;
+                        padding: 0;
+                        //opacity: 1;
+                        background: #ccc;
+                        //height: 42vh;
+
+                        &::-webkit-scrollbar{
+                            display: none;            
+                        }
+                        
+                        li:nth-child(n){
+                            background: #ccc;
+
+                            &:hover{
+                                background: #aaa;
+                            }
+                        }
+                    }
+
+                    #aboutus_subMenu{
+                        height: 42vh;
+                    }
+
+                    #rooms_subMenu{
+                        height: 14vh;
+                    }
+
+                    #conference_subMenu{
+                        height: 14vh;
+                    }
+
+                    #culinary_subMenu{
+                        height: 42vh;
+                    }
 
                 }
             }

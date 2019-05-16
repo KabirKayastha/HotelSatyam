@@ -13,8 +13,8 @@
 
     <body>
         <!-- header -->
-        <div class="header" id="header">
-            <div class="container">
+        <div id="header">
+            <div class="header">
 
                 <div id="logo" class="headerElement">
                     <img src="images/Logo.jpg" alt="Logo" class="img-responsive logo" width="80px"> 
@@ -64,21 +64,142 @@
             
             <div class="container">
                 <ul>
-                    <li id="aboutUs">
-                        <a href="#">about us <span><i class="fas fa-caret-down"></i></span></a>
+                
+                    <li id="aboutUs" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            about us 
+                            <span><i class="fas fa-caret-down"></i></span>
+                        </a>
+
+                        <ul class="dropdown-menu" id="aboutus_subMenu">
+                            <li>
+                                <a href="#">
+                                    introduction
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    facilities
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    our specialities
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    our team
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    gallery
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    proposed extension
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
-                    <li id="room">
-                        <a href="#">rooms <span><i class="fas fa-caret-down"></i></span></a>
+                    <li id="rooms" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            rooms
+                            <span><i class="fas fa-caret-down"></i></span>
+                        </a>
+
+                        <ul class="dropdown-menu" id="rooms_subMenu">
+                            <li>
+                                <a href="#">
+                                    normal rooms
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    deluxe room
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
-                    <li id="conferenceHall">
-                        <a href="#">conference hall <span><i class="fas fa-caret-down"></i></span></a>
+                    <li id="conferenceHall" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            conference hall
+                            <span><i class="fas fa-caret-down"></i></span>
+                        </a>
+
+                        <ul class="dropdown-menu" id="conference_subMenu">
+                            <li>
+                                <a href="#">
+                                    big conference hall
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    mini conference hall
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
-                    <li id="culinaryDelights">
+                    <li id="culinaryDelights" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                culinary delights 
+                                <span><i class="fas fa-caret-down"></i></span>
+                            </a>
+    
+                            <ul class="dropdown-menu" id="culinary_subMenu">
+                                <li>
+                                    <a href="#">
+                                        dining hall
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">
+                                        bar
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">
+                                        cafeteria
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">
+                                        roof top garden;
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">
+                                        open kitchen
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">
+                                        attractive lounge
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    <!-- <li id="culinaryDelights">
                         <a href="#">culinary delights <span><i class="fas fa-caret-down"></i></span></a>
-                    </li>
+                    </li> -->
 
                     <li id="tariff">
                         <a href="#">tariff</a>
@@ -101,6 +222,8 @@
 
         <script src="js/jQuery.js"></script>
         <script src="js/_navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </body>
 
 </html>

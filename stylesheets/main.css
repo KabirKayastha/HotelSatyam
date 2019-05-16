@@ -162,15 +162,44 @@ body {
 #navbar ul li:hover {
   background: #eee;
 }
+/* line 35, ../sass/modules/_navbar.scss */
+#navbar ul li ul {
+  background: #ccc;
+  height: auto;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+/* line 48, ../sass/modules/_navbar.scss */
+#navbar ul li ul li {
+  display: block;
+  border-top: 1px solid #ddd;
+}
+/* line 52, ../sass/modules/_navbar.scss */
+#navbar ul li ul li a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  font-weight: bolder;
+}
+/* line 61, ../sass/modules/_navbar.scss */
+#navbar ul li ul li:first-child {
+  border: none;
+}
 
 @media screen and (max-width: 1199px) {
-  /* line 40, ../sass/modules/_navbar.scss */
+  /* line 72, ../sass/modules/_navbar.scss */
   #navbar ul li {
     padding: 11px 5px;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 47, ../sass/modules/_navbar.scss */
+  /* line 79, ../sass/modules/_navbar.scss */
   #navbar {
     height: 50px;
     width: 100%;
@@ -178,11 +207,11 @@ body {
     padding: 0;
     margin: 0;
   }
-  /* line 54, ../sass/modules/_navbar.scss */
+  /* line 86, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar {
     display: block;
   }
-  /* line 57, ../sass/modules/_navbar.scss */
+  /* line 89, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol {
     list-style: none;
     width: 100%;
@@ -190,13 +219,13 @@ body {
     margin: 0;
     padding: 0 0 0 0px;
   }
-  /* line 64, ../sass/modules/_navbar.scss */
+  /* line 96, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol li {
     display: inline-block;
     text-align: center;
     margin: 0;
   }
-  /* line 70, ../sass/modules/_navbar.scss */
+  /* line 102, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler {
     float: right;
     border: none;
@@ -208,16 +237,16 @@ body {
     padding: 15px 0 0 0;
     cursor: pointer;
   }
-  /* line 82, ../sass/modules/_navbar.scss */
+  /* line 114, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler button {
     background: transparent;
     border: none;
   }
-  /* line 87, ../sass/modules/_navbar.scss */
+  /* line 119, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler:hover {
     background: #ccc;
   }
-  /* line 92, ../sass/modules/_navbar.scss */
+  /* line 124, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menu {
     font-size: 20px;
     font-weight: bold;
@@ -226,21 +255,92 @@ body {
     height: 50px;
     padding: 4px 0 0 40%;
   }
-  /* line 106, ../sass/modules/_navbar.scss */
+  /* line 138, ../sass/modules/_navbar.scss */
   #navbar .container {
     display: none;
     padding: 0;
   }
-  /* line 110, ../sass/modules/_navbar.scss */
+  /* line 142, ../sass/modules/_navbar.scss */
   #navbar .container ul {
     background: #ddd;
     width: 100%;
     height: 50vh;
     margin: 0;
     padding-top: 0;
+    overflow-y: scroll;
   }
-  /* line 116, ../sass/modules/_navbar.scss */
+  /* line 150, ../sass/modules/_navbar.scss */
+  #navbar .container ul .slideDown1 {
+    transform: translateY(42vh);
+    transition: transform 300ms 0ms;
+  }
+  /* line 156, ../sass/modules/_navbar.scss */
+  #navbar .container ul .slideDown2 {
+    transform: translateY(14vh);
+    transition: transform 300ms 0ms;
+  }
+  /* line 162, ../sass/modules/_navbar.scss */
+  #navbar .container ul .slideDown3 {
+    transform: translateY(14vh);
+    transition: transform 300ms 0ms;
+  }
+  /* line 168, ../sass/modules/_navbar.scss */
+  #navbar .container ul .slideDown4 {
+    transform: translateY(42vh);
+    transition: transform 300ms 0ms;
+  }
+  /* line 174, ../sass/modules/_navbar.scss */
+  #navbar .container ul::-webkit-scrollbar {
+    width: 7px;
+  }
+  /* line 178, ../sass/modules/_navbar.scss */
+  #navbar .container ul::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px;
+  }
+  /* line 183, ../sass/modules/_navbar.scss */
+  #navbar .container ul::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  /* line 187, ../sass/modules/_navbar.scss */
   #navbar .container ul li {
     display: block;
+    position: relative;
+    transform: translateY(0px);
+    transition: transform .5s 0s;
+  }
+  /* line 194, ../sass/modules/_navbar.scss */
+  #navbar .container ul li ul {
+    display: none;
+    padding: 0;
+    background: #ccc;
+  }
+  /* line 201, ../sass/modules/_navbar.scss */
+  #navbar .container ul li ul::-webkit-scrollbar {
+    display: none;
+  }
+  /* line 205, ../sass/modules/_navbar.scss */
+  #navbar .container ul li ul li:nth-child(n) {
+    background: #ccc;
+  }
+  /* line 208, ../sass/modules/_navbar.scss */
+  #navbar .container ul li ul li:nth-child(n):hover {
+    background: #aaa;
+  }
+  /* line 214, ../sass/modules/_navbar.scss */
+  #navbar .container ul li #aboutus_subMenu {
+    height: 42vh;
+  }
+  /* line 218, ../sass/modules/_navbar.scss */
+  #navbar .container ul li #rooms_subMenu {
+    height: 14vh;
+  }
+  /* line 222, ../sass/modules/_navbar.scss */
+  #navbar .container ul li #conference_subMenu {
+    height: 14vh;
+  }
+  /* line 226, ../sass/modules/_navbar.scss */
+  #navbar .container ul li #culinary_subMenu {
+    height: 42vh;
   }
 }
