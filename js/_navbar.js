@@ -41,13 +41,14 @@ $(document).ready(function(){
 
 //removes container class
 var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww < 1000) {
-        $('#header .header').removeClass('container');
-
-    } else if (ww > 1000) {
-        $('#header .header').addClass('container');
-    };
+        var ww = document.body.clientWidth;
+        if (ww < 1000) {
+            $('#header .header').removeClass('container');
+        } 
+        
+        else if (ww > 1000) {
+            $('#header .header').addClass('container');
+        };
     };
 
 $(window).resize(function(){

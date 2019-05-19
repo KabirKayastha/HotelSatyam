@@ -3,9 +3,10 @@ body {
   font-family: "Calibri";
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
-/* line 7, ../sass/base/_base.scss */
+/* line 8, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
   outline: none;
@@ -18,12 +19,13 @@ body {
   background: #ff0000;
   padding: 3px 0 0 0;
   margin: 0;
+  z-index: 999;
 }
-/* line 8, ../sass/modules/_header.scss */
+/* line 9, ../sass/modules/_header.scss */
 #header .headerElement {
   display: inline-block;
 }
-/* line 12, ../sass/modules/_header.scss */
+/* line 13, ../sass/modules/_header.scss */
 #header ul {
   margin: 0;
   padding: 0;
@@ -31,24 +33,24 @@ body {
   float: right;
   list-style: none;
 }
-/* line 19, ../sass/modules/_header.scss */
+/* line 20, ../sass/modules/_header.scss */
 #header ul #headerSocial {
   text-align: right;
 }
-/* line 22, ../sass/modules/_header.scss */
+/* line 23, ../sass/modules/_header.scss */
 #header ul #headerSocial .fab {
   font-size: 20px;
   padding: 7px 0 0 20px;
 }
-/* line 27, ../sass/modules/_header.scss */
+/* line 28, ../sass/modules/_header.scss */
 #header ul #headerSocial .fb {
   color: #3b5998;
 }
-/* line 31, ../sass/modules/_header.scss */
+/* line 32, ../sass/modules/_header.scss */
 #header ul #headerSocial .tw {
   color: #38A1F3;
 }
-/* line 35, ../sass/modules/_header.scss */
+/* line 36, ../sass/modules/_header.scss */
 #header ul #headerSocial .pinterest {
   background: #fff;
   border-radius: 50%;
@@ -58,72 +60,74 @@ body {
   padding: 1px;
   margin-left: 10px;
 }
-/* line 45, ../sass/modules/_header.scss */
+/* line 46, ../sass/modules/_header.scss */
 #header ul #headerSocial .linkedin {
   color: #0077B5;
 }
-/* line 50, ../sass/modules/_header.scss */
+/* line 51, ../sass/modules/_header.scss */
 #header ul #headerEmail {
   padding-left: 20px;
 }
-/* line 54, ../sass/modules/_header.scss */
+/* line 55, ../sass/modules/_header.scss */
 #header ul li {
   display: inline-block;
   width: 33%;
 }
-/* line 58, ../sass/modules/_header.scss */
+/* line 59, ../sass/modules/_header.scss */
 #header ul li h6 {
   padding: 0 0 0 10px;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
-/* line 65, ../sass/modules/_header.scss */
+/* line 66, ../sass/modules/_header.scss */
 #header ul li span {
   color: #333;
   font-size: 18px;
 }
-/* line 70, ../sass/modules/_header.scss */
+/* line 71, ../sass/modules/_header.scss */
 #header ul li .headerItem {
   display: inline-block;
 }
-/* line 76, ../sass/modules/_header.scss */
+/* line 77, ../sass/modules/_header.scss */
 #header #logo {
   width: 100px;
+  z-index: 999;
+  margin-top: -2px;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 83, ../sass/modules/_header.scss */
+  /* line 86, ../sass/modules/_header.scss */
   #header {
     width: 100%;
     height: 20vh;
   }
-  /* line 88, ../sass/modules/_header.scss */
+  /* line 91, ../sass/modules/_header.scss */
   #header #logo {
     display: none;
   }
-  /* line 92, ../sass/modules/_header.scss */
+  /* line 95, ../sass/modules/_header.scss */
   #header .container {
     padding: 0;
     margin: 0;
   }
-  /* line 97, ../sass/modules/_header.scss */
+  /* line 100, ../sass/modules/_header.scss */
   #header ul {
     float: none;
     width: 100%;
     text-align: center;
   }
-  /* line 102, ../sass/modules/_header.scss */
+  /* line 105, ../sass/modules/_header.scss */
   #header ul li {
     width: 100%;
     text-align: center;
     padding-top: 10px;
   }
-  /* line 107, ../sass/modules/_header.scss */
+  /* line 110, ../sass/modules/_header.scss */
   #header ul li .headerItem {
     display: inline;
   }
-  /* line 112, ../sass/modules/_header.scss */
+  /* line 115, ../sass/modules/_header.scss */
   #header ul #headerSocial {
     text-align: center;
   }
@@ -136,7 +140,7 @@ body {
 #navbar ul {
   list-style: none;
   text-transform: uppercase;
-  background: transparent;
+  background: #fff;
   float: right;
   width: 90%;
   height: 40px;
@@ -343,4 +347,65 @@ body {
   #navbar .container ul li #culinary_subMenu {
     height: 42vh;
   }
+}
+/* line 1, ../sass/modules/_imageslider.scss */
+#imageslider {
+  margin-top: -9px;
+  height: 500px;
+  width: 300%;
+  padding: 0;
+  position: relative;
+  z-index: -999;
+}
+/* line 11, ../sass/modules/_imageslider.scss */
+#imageslider .slider {
+  display: inline;
+}
+/* line 15, ../sass/modules/_imageslider.scss */
+#imageslider .slider img {
+  width: 33.33%;
+  height: 500px;
+  display: inline-block;
+  padding-right: 0;
+  margin: -9px 0 0 -3px;
+  z-index: -999999;
+}
+/* line 24, ../sass/modules/_imageslider.scss */
+#imageslider .slider #slider1 {
+  margin-left: 0;
+}
+
+/* line 30, ../sass/modules/_imageslider.scss */
+#bookingSection {
+  height: 100px;
+  width: 100%;
+  background: rgba(170, 170, 170, 0.7);
+  margin: -70px 0 50px 0;
+  padding: 15px 10px;
+}
+/* line 39, ../sass/modules/_imageslider.scss */
+#bookingSection form #booking_GuestNos {
+  width: 100%;
+}
+/* line 42, ../sass/modules/_imageslider.scss */
+#bookingSection form #booking_GuestNos::-webkit- {
+  display: none;
+}
+/* line 47, ../sass/modules/_imageslider.scss */
+#bookingSection form label {
+  font-size: 18px;
+}
+/* line 51, ../sass/modules/_imageslider.scss */
+#bookingSection form input {
+  height: 40px;
+}
+/* line 55, ../sass/modules/_imageslider.scss */
+#bookingSection form select {
+  height: 40px;
+  width: 100%;
+}
+/* line 59, ../sass/modules/_imageslider.scss */
+#bookingSection form select option {
+  background: red;
+  height: 40px;
 }

@@ -1,0 +1,66 @@
+#imageslider{
+    margin-top: -9px;
+    height: 500px;
+    //background: blue;
+    width: 300%;
+    padding: 0;
+    position: relative;
+    z-index: -999;
+    //overflow-x: hidden;
+
+    .slider{
+        display: inline;
+        
+
+        img{
+            width: 33.33%;
+            height: 500px;
+            display: inline-block;
+            padding-right: 0;
+            margin: -9px 0 0 -3px;
+            z-index: -999999;
+        }
+
+        #slider1{
+            margin-left: 0;
+        }
+    }
+}
+
+#bookingSection{
+    height: 100px;
+    width: 100%;
+    background: rgba($color: #aaa, $alpha: .7);
+    margin: -70px 0 50px 0;
+    padding: 15px 10px;
+
+    form{
+
+        #booking_GuestNos{
+            width: 100%;
+
+            &::-webkit-{
+                display: none;
+            }
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        input{
+            height: 40px;
+        }
+
+        select{
+            height: 40px;
+            width: 100%;
+
+            option{
+                background: red;
+                height: 40px;
+            }
+        }
+
+    }
+}

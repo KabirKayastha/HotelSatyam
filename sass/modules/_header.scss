@@ -4,6 +4,7 @@
     background: $primaryColor;
     padding: 3px 0 0 0;
     margin: 0;
+    z-index: 999;
 
     .headerElement{
         display: inline-block;
@@ -75,6 +76,8 @@
 
     #logo{
         width: 100px;
+        z-index: 999;
+        margin-top: -2px;
     }
 }
 
