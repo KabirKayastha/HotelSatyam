@@ -10,3 +10,19 @@ body{
     box-sizing: border-box;
     outline: none;
 }
+
+.basic_button{
+    background: $primaryColor;
+    color: #eee;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+
+    &:hover{
+        background: #ff2828;
+    }
+}

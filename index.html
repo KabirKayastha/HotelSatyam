@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-16">
         
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -258,7 +260,7 @@
 
                         <div class="col-md-2">
                             <label for="">Check In:</label> <br>
-                            <input type="date" name="Booking CheckIn" id="booking_CheckIn">
+                            <input type="date" name="Booking CheckIn" id="booking_CheckIn" required>
                         </div>
 
                         <div class="col-md-2">
@@ -313,8 +315,10 @@
         <!-- /booking -->
 
         <!-- display-section -->
-        <div class="container">
-            <div id="displaySection">
+        <div class="displaySection">
+            <div class="container">
+
+                <!-- Favourite rooms -->
                 <div class="title">
                     <hr> 
                     <div class="titleText"> Guests Favourite Rooms </div>
@@ -361,7 +365,9 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- /Favourite rooms -->
+                
+                <!-- conference hall -->
                 <div class="title" style="margin-top: 70px;">
                     <hr> 
                     <div class="titleText"> Conference Halls </div>
@@ -369,6 +375,7 @@
 
                 <div class="displayConference">
                     <div class="row">
+
                         <div class="col-md-6">
                             <div class="card">
                                 <img src="images/slider3.jpg" alt="" class="img-responsive cardImage">  
@@ -376,23 +383,243 @@
 
                             <div class="card-desc">
                                 <h4>Big Conference Hall</h4>
+                                <h5>Seat Capacity: 150pax</h5>
+                                <button class="basic_button">View detail</button>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="card">
-                                <img src="images/Queen-Room.jpg" alt="" class="img-responsive cardImage">  
+                                <img src="images/slider1.jpg" alt="" class="img-responsive cardImage">  
+                            </div>
+                            <div class="card-desc">
+                                <h4>Mini Conference Hall</h4>
+                                <h5>Seat Capacity: 40pax</h5>
+                                <button class="basic_button">View detail</button>
                             </div>
                         </div>
 
                         
                     </div>
                 </div>
+                <!-- /conference hall -->
 
-
+                <!-- culinary delight -->
+                <div class="title" style="margin-top: 70px;">
+                    <hr> 
+                    <div class="titleText"> Culinary Delights </div>
+                </div>
 
             </div>
+
+                <div class="displayCulinary">
+
+                    <div class="row">
+
+                        <div class="col-md-2" style="padding: 0;"> 
+                            <ul class="culinary-navigator nav-pills">
+                                <li class="active"><a href="#display_DiningHall" data-toggle="tab" id="a-D"> Dining Hall </a> <i class="fas fa-caret-right" id="right-D"></i></li> 
+                                <li><a href="#display_Bar" data-toggle="tab" id="a-B"> Bar </a> <i class="fas fa-caret-right" id="right-B"></i></li> 
+                                <li><a href="#display_Cafeteria" data-toggle="tab" id="a-C"> Cafeteria </a> <i class="fas fa-caret-right" id="right-C"></i></li> 
+                                <li><a href="#display_Rooftop" data-toggle="tab" id="a-R"> Rooftop Garden </a> <i class="fas fa-caret-right" id="right-R"></i></li> 
+                                <li><a href="#display_Open" data-toggle="tab" id="a-O"> Open Kitchen </a> <i class="fas fa-caret-right" id="right-O"></i></li> 
+                                <li><a href="#display_Lounge" data-toggle="tab" id="a-L"> Attractive Lounge </a> <i class="fas fa-caret-right" id="right-A"></i></li> 
+                            </ul>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="culinary-content tab-content">
+
+                                <div id="display_DiningHall" class="tab-pane fade in active">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/dininghall1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall2.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall4.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>dining hall</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+                                <div id="display_Bar" class="tab-pane fade">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/bar1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>bar</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+                                <div id="display_Cafeteria" class="tab-pane fade">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/bar1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>Cafeteria</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+                                <div id="display_Rooftop" class="tab-pane fade">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/bar1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>rooftop garden</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+                                <div id="display_Open" class="tab-pane fade">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/open1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/open2.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/open3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/open4.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/open5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>open kitchen</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+                                <div id="display_Lounge" class="tab-pane fade">
+                                    <ul class="image-container">
+                                        <li>
+                                            <img src="images/bar1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider1.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/slider3.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
+                                        </li>
+
+                                        <li>
+                                            <img src="images/dininghall5.jpg" alt="" class="img-responsive">
+                                        </li>
+                                    </ul>
+
+                                    <div class="content">
+                                        <h4>Attractive Lounge</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <center><button class="basic_button">view detail</button></center>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- /culinary delight -->
         </div>
+
         <!-- /display-section -->
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, veritatis laboriosam! Illum totam possimus dicta laboriosam! Temporibus vitae, nesciunt facilis nam quibusdam itaque minima earum consectetur consequatur esse quas cum ducimus omnis doloremque et excepturi fugiat accusantium aut molestiae doloribus aperiam architecto. Magnam at sed fugiat qui error debitis nihil corrupti perferendis dolor ipsam magni repudiandae, illo, repellat cupiditate, aspernatur est facere deserunt quasi voluptates! Natus officiis id tempore obcaecati beatae, ullam laudantium! Inventore porro laudantium quos, eligendi, aperiam optio nesciunt quae doloremque dolorum facilis maxime exercitationem adipisci? Excepturi quibusdam eaque quia iusto rerum minus in sint ut harum aliquam? Voluptate omnis, sint libero eveniet iusto repellendus quo in, explicabo, ducimus distinctio ullam impedit laudantium mollitia. Dicta, earum officiis magnam commodi in dolores nesciunt odio ad quibusdam rerum optio tempora officia, exercitationem temporibus tempore, quod atque consequatur ratione numquam! Laudantium, unde dolorum. Voluptatibus, deserunt beatae nostrum laboriosam nisi sunt nemo impedit delectus mollitia in exercitationem accusantium et. Aspernatur, repudiandae, reprehenderit officia eaque molestias deleniti sapiente laboriosam natus eius expedita cum hic earum nemo repellat voluptate ducimus modi est ipsum consectetur! Laboriosam aliquid, illum totam earum ullam, fugit at odio, esse quisquam recusandae autem ea? Cupiditate voluptates doloremque mollitia veniam aliquam.</p>
@@ -401,6 +628,7 @@
 
         <script src="js/jQuery.js"></script>
         <script src="js/_navbar.js"></script>
+        <script src="js/_displaysection.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </body>

@@ -12,6 +12,23 @@ body {
   outline: none;
 }
 
+/* line 14, ../sass/base/_base.scss */
+.basic_button {
+  background: #ff0000;
+  color: #eee;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 10px;
+}
+/* line 25, ../sass/base/_base.scss */
+.basic_button:hover {
+  background: #ff2828;
+}
+
 /* line 1, ../sass/modules/_header.scss */
 #header {
   width: 100%;
@@ -409,19 +426,53 @@ body {
   background: red;
   height: 40px;
 }
+/* line 67, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+/* line 71, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  display: block;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  border-width: thin;
+}
+/* line 106, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+/* line 111, ../sass/modules/_imageslider.scss */
+#bookingSection form span {
+  position: absolute;
+  right: 45px;
+  height: 35px;
+  width: 35px;
+  background: red;
+  font-size: 25px;
+  opacity: .8;
+}
+/* line 120, ../sass/modules/_imageslider.scss */
+#bookingSection form span i {
+  padding: 7px;
+  background: red;
+  z-index: -1;
+}
 
-/* line 4, ../sass/modules/_displaysection.scss */
-#displaySection .title {
+/* line 3, ../sass/modules/_displaysection.scss */
+.displaySection .title {
   padding: 0 70px;
   margin: 40px 0 20px 0;
 }
-/* line 8, ../sass/modules/_displaysection.scss */
-#displaySection .title hr {
+/* line 7, ../sass/modules/_displaysection.scss */
+.displaySection .title hr {
   height: 0;
   border-top: 2px solid #222;
 }
-/* line 13, ../sass/modules/_displaysection.scss */
-#displaySection .title .titleText {
+/* line 12, ../sass/modules/_displaysection.scss */
+.displaySection .title .titleText {
   font-size: 23px;
   font-weight: bolder;
   width: 25%;
@@ -430,19 +481,19 @@ body {
   text-align: center;
   padding: 0 10px;
 }
-/* line 28, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card {
+/* line 27, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card {
   width: 100%;
   height: 200px;
   background: #aaa;
 }
-/* line 33, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card img.cardImage {
+/* line 32, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card img.cardImage {
   height: 200px;
   width: 55%;
 }
-/* line 38, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc {
+/* line 37, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc {
   position: absolute;
   right: 15px;
   top: 0;
@@ -450,28 +501,28 @@ body {
   height: 200px;
   padding: 10px;
 }
-/* line 47, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc h4 {
+/* line 46, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc h4 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 5px 0;
   color: blue;
 }
-/* line 55, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc h5 {
+/* line 54, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc h5 {
   margin: 0;
   padding: 0;
   color: orangered;
 }
-/* line 61, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc p {
+/* line 60, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc p {
   font-weight: bold;
   text-align: justify;
   padding: 5px 0 0 0;
 }
-/* line 67, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc button {
+/* line 66, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc button {
   background: #eee;
   color: #ff0000;
   border: none;
@@ -479,34 +530,34 @@ body {
   font-size: 18px;
   margin: 0 auto;
 }
-/* line 75, ../sass/modules/_displaysection.scss */
-#displaySection .displayRooms .card .card-desc button:hover {
+/* line 74, ../sass/modules/_displaysection.scss */
+.displaySection .displayRooms .card .card-desc button:hover {
   background: #ddd;
 }
-/* line 83, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference {
+/* line 82, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference {
   padding: 0 70px;
 }
-/* line 86, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card {
+/* line 85, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference .card {
   width: 100%;
   height: 250px;
   background: #aaa;
 }
-/* line 91, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card img.cardImage {
+/* line 90, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference .card img.cardImage {
   height: 100%;
   width: 100%;
 }
-/* line 98, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc {
+/* line 97, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference .card-desc {
   width: 100%;
-  height: 200px;
+  height: auto;
   padding: 10px;
-  background: green;
+  text-align: center;
 }
-/* line 107, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc h4 {
+/* line 103, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference .card-desc h4 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -514,28 +565,106 @@ body {
   color: blue;
   text-align: center;
 }
-/* line 116, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc h5 {
-  margin: 0;
+/* line 112, ../sass/modules/_displaysection.scss */
+.displaySection .displayConference .card-desc h5 {
+  margin: 5px 0  10px 0;
   padding: 0;
-  color: orangered;
+  color: #222;
+  font-size: 16px;
 }
 /* line 122, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc p {
-  font-weight: bold;
-  text-align: justify;
-  padding: 5px 0 0 0;
+.displaySection .displayCulinary {
+  padding: 0 50px;
 }
-/* line 128, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc button {
-  background: #eee;
-  color: #ff0000;
+/* line 125, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator {
+  list-style: none;
+  height: 50vh;
+  width: 95%;
+  background: backgroundColor;
+  padding: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+/* line 134, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li {
+  width: 100%;
+  height: 16.67%;
+  font-size: 23px;
   border: none;
-  border-radius: 3px;
-  font-size: 18px;
-  margin: 0 auto;
+  border-top: 2px solid #353cff;
+  padding: 8px 0;
 }
-/* line 136, ../sass/modules/_displaysection.scss */
-#displaySection .displayConference .card-desc button:hover {
-  background: #ddd;
+/* line 142, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li a {
+  text-decoration: none;
+  color: #222;
+  background: transparent;
+}
+/* line 148, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li i {
+  display: none;
+  font-size: 50px;
+  position: relative;
+  float: right;
+  right: -15px;
+  top: -7px;
+  color: #ff0000;
+}
+/* line 158, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li #right-D {
+  display: block;
+}
+/* line 163, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li.active {
+  background: #ff0000;
+}
+/* line 166, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li.active a {
+  color: #eee;
+}
+/* line 173, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li:first-child {
+  border: none;
+}
+/* line 177, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary ul.culinary-navigator li:last-child {
+  border-bottom: 2px solid #353cff;
+}
+/* line 182, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary .culinary-content {
+  width: 100%;
+  height: 50vh;
+}
+/* line 189, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary .culinary-content .tab-pane ul.image-container {
+  list-style: none;
+  width: 100%;
+  height: 15vh;
+  padding: 0;
+  margin: 0;
+}
+/* line 197, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary .culinary-content .tab-pane ul.image-container li {
+  display: inline-block;
+  width: 19%;
+  height: 100%;
+  background: #aaa;
+  margin-left: .6%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* line 210, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary .culinary-content .tab-pane .content h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: blue;
+  font-weight: bold;
+}
+/* line 217, ../sass/modules/_displaysection.scss */
+.displaySection .displayCulinary .culinary-content .tab-pane .content p {
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
