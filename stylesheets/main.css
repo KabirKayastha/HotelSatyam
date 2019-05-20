@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 8, ../sass/base/_base.scss */
+/* line 9, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
   outline: none;
@@ -380,7 +380,7 @@ body {
   height: 100px;
   width: 100%;
   background: rgba(170, 170, 170, 0.7);
-  margin: -70px 0 50px 0;
+  margin: -70px 0 0px 0;
   padding: 15px 10px;
 }
 /* line 39, ../sass/modules/_imageslider.scss */
@@ -408,4 +408,134 @@ body {
 #bookingSection form select option {
   background: red;
   height: 40px;
+}
+
+/* line 4, ../sass/modules/_displaysection.scss */
+#displaySection .title {
+  padding: 0 70px;
+  margin: 40px 0 20px 0;
+}
+/* line 8, ../sass/modules/_displaysection.scss */
+#displaySection .title hr {
+  height: 0;
+  border-top: 2px solid #222;
+}
+/* line 13, ../sass/modules/_displaysection.scss */
+#displaySection .title .titleText {
+  font-size: 23px;
+  font-weight: bolder;
+  width: 25%;
+  background: #fff;
+  margin: -40px auto 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+/* line 28, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card {
+  width: 100%;
+  height: 200px;
+  background: #aaa;
+}
+/* line 33, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card img.cardImage {
+  height: 200px;
+  width: 55%;
+}
+/* line 38, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 43%;
+  height: 200px;
+  padding: 10px;
+}
+/* line 47, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  color: blue;
+}
+/* line 55, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc h5 {
+  margin: 0;
+  padding: 0;
+  color: orangered;
+}
+/* line 61, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc p {
+  font-weight: bold;
+  text-align: justify;
+  padding: 5px 0 0 0;
+}
+/* line 67, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc button {
+  background: #eee;
+  color: #ff0000;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+/* line 75, ../sass/modules/_displaysection.scss */
+#displaySection .displayRooms .card .card-desc button:hover {
+  background: #ddd;
+}
+/* line 83, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference {
+  padding: 0 70px;
+}
+/* line 86, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card {
+  width: 100%;
+  height: 250px;
+  background: #aaa;
+}
+/* line 91, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card img.cardImage {
+  height: 100%;
+  width: 100%;
+}
+/* line 98, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: green;
+}
+/* line 107, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  color: blue;
+  text-align: center;
+}
+/* line 116, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc h5 {
+  margin: 0;
+  padding: 0;
+  color: orangered;
+}
+/* line 122, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc p {
+  font-weight: bold;
+  text-align: justify;
+  padding: 5px 0 0 0;
+}
+/* line 128, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc button {
+  background: #eee;
+  color: #ff0000;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+/* line 136, ../sass/modules/_displaysection.scss */
+#displaySection .displayConference .card-desc button:hover {
+  background: #ddd;
 }
