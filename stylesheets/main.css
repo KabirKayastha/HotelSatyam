@@ -12,34 +12,34 @@ body {
   outline: none;
 }
 
-/* line 26, ../sass/base/_base.scss */
+/* line 14, ../sass/base/_base.scss */
 .basic_button {
   background: #ff0000;
   color: #eee;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   font-size: 20px;
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 10px 2px 10px;
 }
-/* line 37, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 .basic_button:hover {
   background: #ff2828;
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 .title {
   padding: 0 70px;
   margin: 40px 0 20px 0;
 }
-/* line 46, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 .title hr {
   height: 0;
   border-top: 2px solid #222;
 }
-/* line 51, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 .title .titleText {
   font-size: 23px;
   font-weight: bolder;
@@ -749,14 +749,56 @@ body {
 .review .links, .review .review_container {
   width: 100%;
   height: 60vh;
-  background: gray;
 }
-/* line 14, ../sass/modules/_review.scss */
+/* line 9, ../sass/modules/_review.scss */
+.review .links {
+  padding: 30px;
+}
+/* line 12, ../sass/modules/_review.scss */
+.review .links #links_imageContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px 0 0;
+}
+/* line 17, ../sass/modules/_review.scss */
+.review .links #links_imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+/* line 23, ../sass/modules/_review.scss */
+.review .links h3 {
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #ff0000;
+}
+/* line 31, ../sass/modules/_review.scss */
+.review .links #hotel_links {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+/* line 39, ../sass/modules/_review.scss */
+.review .links #hotel_links .link_Container {
+  width: 100%;
+  height: 73px;
+  margin: 5px;
+}
+/* line 44, ../sass/modules/_review.scss */
+.review .links #hotel_links .link_Container img {
+  height: 100%;
+  margin: auto;
+}
+/* line 54, ../sass/modules/_review.scss */
 .review .review_container {
   padding: 30px 10px;
   background: transparent;
 }
-/* line 18, ../sass/modules/_review.scss */
+/* line 58, ../sass/modules/_review.scss */
 .review .review_container h3 {
   margin: 0;
   text-align: center;
@@ -764,20 +806,141 @@ body {
   letter-spacing: 1px;
   color: #ff0000;
 }
-/* line 28, ../sass/modules/_review.scss */
+/* line 68, ../sass/modules/_review.scss */
 .review .review_container .media .checked {
   color: orange;
 }
-/* line 32, ../sass/modules/_review.scss */
+/* line 72, ../sass/modules/_review.scss */
 .review .review_container .media #review_userProfile {
   padding: 0 20px 0 0;
 }
-/* line 37, ../sass/modules/_review.scss */
+/* line 77, ../sass/modules/_review.scss */
 .review .review_container .media h4, .review .review_container .media h5 {
   text-align: center;
   margin: 0;
 }
-/* line 44, ../sass/modules/_review.scss */
+/* line 84, ../sass/modules/_review.scss */
 .review .review_container blockquote {
   border-left-color: red;
+}
+/* line 87, ../sass/modules/_review.scss */
+.review .review_container blockquote img {
+  border-radius: 10px;
+}
+
+/* line 1, ../sass/modules/_contact.scss */
+.contact_us {
+  padding: 20px 50px;
+}
+/* line 4, ../sass/modules/_contact.scss */
+.contact_us .map_Container, .contact_us .form_Container {
+  width: 100%;
+  height: 75vh;
+}
+/* line 10, ../sass/modules/_contact.scss */
+.contact_us .map_Container {
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+}
+/* line 23, ../sass/modules/_contact.scss */
+.contact_us .form_Container form h4 {
+  padding-left: 20px;
+  text-align: left;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+/* line 30, ../sass/modules/_contact.scss */
+.contact_us .form_Container form textarea {
+  resize: none;
+}
+/* line 34, ../sass/modules/_contact.scss */
+.contact_us .form_Container form .row {
+  padding: 5px 0;
+}
+/* line 38, ../sass/modules/_contact.scss */
+.contact_us .form_Container form input, .contact_us .form_Container form textarea {
+  background: rgba(66, 134, 244, 0.7);
+  font-family: 'Consolas';
+}
+/* line 43, ../sass/modules/_contact.scss */
+.contact_us .form_Container form button {
+  text-transform: inherit;
+  margin-top: 10px;
+}
+
+/* line 1, ../sass/modules/_footer.scss */
+.footer {
+  width: 100%;
+  height: auto;
+  background: #222;
+  padding: 10px;
+  color: #ddd;
+}
+/* line 8, ../sass/modules/_footer.scss */
+.footer .about_us, .footer .latest_news, .footer .keep_connected, .footer .contact_info {
+  width: 100%;
+  height: auto;
+}
+/* line 14, ../sass/modules/_footer.scss */
+.footer h3 {
+  margin: 0 0 10px 0;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #ff0000;
+}
+/* line 21, ../sass/modules/_footer.scss */
+.footer p {
+  font-size: 17px;
+  font-weight: bold;
+}
+/* line 28, ../sass/modules/_footer.scss */
+.footer a {
+  color: #ddd;
+}
+/* line 34, ../sass/modules/_footer.scss */
+.footer .latest_news .icon_container, .footer .latest_news .news {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 42, ../sass/modules/_footer.scss */
+.footer .latest_news .icon_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 50, ../sass/modules/_footer.scss */
+.footer .keep_connected i {
+  font-size: 25px;
+}
+/* line 54, ../sass/modules/_footer.scss */
+.footer .keep_connected .row {
+  margin: 0 0 15px 0;
+}
+/* line 58, ../sass/modules/_footer.scss */
+.footer .keep_connected .fb {
+  color: #3b5998;
+}
+/* line 63, ../sass/modules/_footer.scss */
+.footer .keep_connected .tw {
+  color: #38A1F3;
+}
+/* line 67, ../sass/modules/_footer.scss */
+.footer .keep_connected .pinterest {
+  color: #c8232c;
+}
+/* line 71, ../sass/modules/_footer.scss */
+.footer .keep_connected .linkedin {
+  color: #0077B5;
+}
+/* line 76, ../sass/modules/_footer.scss */
+.footer hr {
+  height: 0;
+  border-top: 1px solid #ff0000;
+}
+/* line 81, ../sass/modules/_footer.scss */
+.footer h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
