@@ -1,0 +1,49 @@
+.review{
+    padding: 0 50px;
+
+    .links, .review_container{
+        width: 100%;
+        height: 60vh;
+        background: gray;
+    }
+
+    .links{
+
+    }
+
+    .review_container{
+        padding: 30px 10px;
+        background: transparent;
+
+        h3{
+            margin: 0;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: $primaryColor;
+        }
+
+        .media{
+
+            .checked{
+                color: orange;
+            }
+
+            #review_userProfile{
+                padding: 0 20px 0 0;   
+            }
+            
+    
+            h4, h5{
+                text-align: center;
+                margin: 0;
+    
+            }
+        }
+
+        blockquote{
+            border-left-color: red;
+        }
+
+    }
+}

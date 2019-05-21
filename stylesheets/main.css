@@ -12,7 +12,7 @@ body {
   outline: none;
 }
 
-/* line 14, ../sass/base/_base.scss */
+/* line 26, ../sass/base/_base.scss */
 .basic_button {
   background: #ff0000;
   color: #eee;
@@ -24,22 +24,22 @@ body {
   font-weight: bold;
   padding: 0 10px;
 }
-/* line 25, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 .basic_button:hover {
   background: #ff2828;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 .title {
   padding: 0 70px;
   margin: 40px 0 20px 0;
 }
-/* line 34, ../sass/base/_base.scss */
+/* line 46, ../sass/base/_base.scss */
 .title hr {
   height: 0;
   border-top: 2px solid #222;
 }
-/* line 39, ../sass/base/_base.scss */
+/* line 51, ../sass/base/_base.scss */
 .title .titleText {
   font-size: 23px;
   font-weight: bolder;
@@ -739,4 +739,45 @@ body {
 /* line 37, ../sass/modules/_displaySection_gallery.scss */
 .gallery .carousel-control span {
   color: #ff0000;
+}
+
+/* line 1, ../sass/modules/_review.scss */
+.review {
+  padding: 0 50px;
+}
+/* line 4, ../sass/modules/_review.scss */
+.review .links, .review .review_container {
+  width: 100%;
+  height: 60vh;
+  background: gray;
+}
+/* line 14, ../sass/modules/_review.scss */
+.review .review_container {
+  padding: 30px 10px;
+  background: transparent;
+}
+/* line 18, ../sass/modules/_review.scss */
+.review .review_container h3 {
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #ff0000;
+}
+/* line 28, ../sass/modules/_review.scss */
+.review .review_container .media .checked {
+  color: orange;
+}
+/* line 32, ../sass/modules/_review.scss */
+.review .review_container .media #review_userProfile {
+  padding: 0 20px 0 0;
+}
+/* line 37, ../sass/modules/_review.scss */
+.review .review_container .media h4, .review .review_container .media h5 {
+  text-align: center;
+  margin: 0;
+}
+/* line 44, ../sass/modules/_review.scss */
+.review .review_container blockquote {
+  border-left-color: red;
 }
