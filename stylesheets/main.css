@@ -29,6 +29,27 @@ body {
   background: #ff2828;
 }
 
+/* line 30, ../sass/base/_base.scss */
+.title {
+  padding: 0 70px;
+  margin: 40px 0 20px 0;
+}
+/* line 34, ../sass/base/_base.scss */
+.title hr {
+  height: 0;
+  border-top: 2px solid #222;
+}
+/* line 39, ../sass/base/_base.scss */
+.title .titleText {
+  font-size: 23px;
+  font-weight: bolder;
+  width: 25%;
+  background: #fff;
+  margin: -40px auto 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
 /* line 1, ../sass/modules/_header.scss */
 #header {
   width: 100%;
@@ -461,122 +482,11 @@ body {
   z-index: -1;
 }
 
-/* line 3, ../sass/modules/_displaysection.scss */
-.displaySection .title {
-  padding: 0 70px;
-  margin: 40px 0 20px 0;
-}
-/* line 7, ../sass/modules/_displaysection.scss */
-.displaySection .title hr {
-  height: 0;
-  border-top: 2px solid #222;
-}
-/* line 12, ../sass/modules/_displaysection.scss */
-.displaySection .title .titleText {
-  font-size: 23px;
-  font-weight: bolder;
-  width: 25%;
-  background: #fff;
-  margin: -40px auto 0 auto;
-  text-align: center;
-  padding: 0 10px;
-}
-/* line 27, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card {
-  width: 100%;
-  height: 200px;
-  background: #aaa;
-}
-/* line 32, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card img.cardImage {
-  height: 200px;
-  width: 55%;
-}
-/* line 37, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc {
-  position: absolute;
-  right: 15px;
-  top: 0;
-  width: 43%;
-  height: 200px;
-  padding: 10px;
-}
-/* line 46, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 5px 0;
-  color: blue;
-}
-/* line 54, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc h5 {
-  margin: 0;
-  padding: 0;
-  color: orangered;
-}
-/* line 60, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc p {
-  font-weight: bold;
-  text-align: justify;
-  padding: 5px 0 0 0;
-}
-/* line 66, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc button {
-  background: #eee;
-  color: #ff0000;
-  border: none;
-  border-radius: 3px;
-  font-size: 18px;
-  margin: 0 auto;
-}
-/* line 74, ../sass/modules/_displaysection.scss */
-.displaySection .displayRooms .card .card-desc button:hover {
-  background: #ddd;
-}
-/* line 82, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference {
-  padding: 0 70px;
-}
-/* line 85, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference .card {
-  width: 100%;
-  height: 250px;
-  background: #aaa;
-}
-/* line 90, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference .card img.cardImage {
-  height: 100%;
-  width: 100%;
-}
-/* line 97, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference .card-desc {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  text-align: center;
-}
-/* line 103, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference .card-desc h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0;
-  color: blue;
-  text-align: center;
-}
-/* line 112, ../sass/modules/_displaysection.scss */
-.displaySection .displayConference .card-desc h5 {
-  margin: 5px 0  10px 0;
-  padding: 0;
-  color: #222;
-  font-size: 16px;
-}
-/* line 122, ../sass/modules/_displaysection.scss */
+/* line 3, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary {
   padding: 0 50px;
 }
-/* line 125, ../sass/modules/_displaysection.scss */
+/* line 6, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator {
   list-style: none;
   height: 50vh;
@@ -586,23 +496,24 @@ body {
   padding-bottom: 0;
   text-align: center;
 }
-/* line 134, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li {
+/* line 15, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a {
+  text-decoration: none;
+  color: #222;
+  background: transparent;
+}
+/* line 21, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li {
   width: 100%;
   height: 16.67%;
   font-size: 23px;
   border: none;
   border-top: 2px solid #353cff;
   padding: 8px 0;
+  background: #fff;
 }
-/* line 142, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li a {
-  text-decoration: none;
-  color: #222;
-  background: transparent;
-}
-/* line 148, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li i {
+/* line 30, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li i {
   display: none;
   font-size: 50px;
   position: relative;
@@ -611,32 +522,64 @@ body {
   top: -7px;
   color: #ff0000;
 }
-/* line 158, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li #right-D {
+/* line 40, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li #right-D {
   display: block;
 }
-/* line 163, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li.active {
+/* line 45, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li.active {
   background: #ff0000;
-}
-/* line 166, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li.active a {
+  font-weight: bold;
   color: #eee;
 }
-/* line 173, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li:first-child {
+/* line 50, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li.active:after {
+  content: '';
+  height: 0px;
+  width: 0px;
+  border: solid transparent;
+  border-left-color: #ff0000;
+  border-width: 20px;
+  position: absolute;
+}
+/* line 64, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-D.active::after {
+  transform: translate(47px, -3px);
+}
+/* line 71, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-B.active::after {
+  transform: translate(82px, -3px);
+}
+/* line 78, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-C.active::after {
+  transform: translate(56px, -3px);
+}
+/* line 85, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-R.active::after {
+  transform: translate(23px, -3px);
+}
+/* line 92, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-O.active::after {
+  transform: translate(34px, -3px);
+}
+/* line 99, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a #li-A.active::after {
+  transform: translate(15px, -3px);
+}
+/* line 106, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li:first-child {
   border: none;
 }
-/* line 177, ../sass/modules/_displaysection.scss */
-.displaySection .displayCulinary ul.culinary-navigator li:last-child {
+/* line 110, ../sass/modules/_displaySection_culinary.scss */
+.displaySection .displayCulinary ul.culinary-navigator a li:last-child {
   border-bottom: 2px solid #353cff;
 }
-/* line 182, ../sass/modules/_displaysection.scss */
+/* line 117, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content {
   width: 100%;
   height: 50vh;
 }
-/* line 189, ../sass/modules/_displaysection.scss */
+/* line 124, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane ul.image-container {
   list-style: none;
   width: 100%;
@@ -644,7 +587,7 @@ body {
   padding: 0;
   margin: 0;
 }
-/* line 197, ../sass/modules/_displaysection.scss */
+/* line 132, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane ul.image-container li {
   display: inline-block;
   width: 19%;
@@ -654,17 +597,146 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-/* line 210, ../sass/modules/_displaysection.scss */
+/* line 145, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane .content h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: blue;
   font-weight: bold;
 }
-/* line 217, ../sass/modules/_displaysection.scss */
+/* line 152, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane .content p {
   text-align: justify;
   font-weight: bolder;
   font-size: 15px;
   padding-bottom: 10px;
+}
+
+/* line 3, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference {
+  padding: 0 70px;
+}
+/* line 6, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference .card {
+  width: 100%;
+  height: 250px;
+  background: #aaa;
+}
+/* line 11, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference .card img.cardImage {
+  height: 100%;
+  width: 100%;
+}
+/* line 18, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference .card-desc {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+/* line 24, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference .card-desc h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  color: blue;
+  text-align: center;
+}
+/* line 33, ../sass/modules/_displaySection_conference.scss */
+.displaySection .displayConference .card-desc h5 {
+  margin: 5px 0  10px 0;
+  padding: 0;
+  color: #222;
+  font-size: 16px;
+}
+
+/* line 6, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card {
+  width: 100%;
+  height: 200px;
+  background: #aaa;
+}
+/* line 11, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card img.cardImage {
+  height: 200px;
+  width: 55%;
+}
+/* line 16, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 43%;
+  height: 200px;
+  padding: 10px;
+}
+/* line 25, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  color: blue;
+}
+/* line 33, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc h5 {
+  margin: 0;
+  padding: 0;
+  color: orangered;
+}
+/* line 39, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc p {
+  font-weight: bold;
+  text-align: justify;
+  padding: 5px 0 0 0;
+}
+/* line 45, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc button {
+  background: #eee;
+  color: #ff0000;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+/* line 53, ../sass/modules/_displaySection_rooms.scss */
+.displaySection .displayRooms .card .card-desc button:hover {
+  background: #ddd;
+}
+
+/* line 5, ../sass/modules/_displaySection_gallery.scss */
+.gallery .gallery_slide ul {
+  list-style: none;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 0;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+/* line 16, ../sass/modules/_displaySection_gallery.scss */
+.gallery .gallery_slide ul li {
+  width: 15%;
+  background: gray;
+  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* line 24, ../sass/modules/_displaySection_gallery.scss */
+.gallery .gallery_slide ul li img {
+  height: 100%;
+  width: 100%;
+}
+/* line 32, ../sass/modules/_displaySection_gallery.scss */
+.gallery .carousel-control {
+  background: transparent;
+  width: 70px;
+  opacity: 1;
+}
+/* line 37, ../sass/modules/_displaySection_gallery.scss */
+.gallery .carousel-control span {
+  color: #ff0000;
 }

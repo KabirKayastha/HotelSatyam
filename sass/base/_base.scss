@@ -26,3 +26,24 @@ body{
         background: #ff2828;
     }
 }
+
+.title{
+    padding: 0 70px;
+    margin: 40px 0 20px 0;
+
+    hr{
+        height: 0;
+        border-top: 2px solid $fontColor;
+    }
+
+    .titleText{
+        font-size: 23px;
+        font-weight: bolder;
+        width: 25% ; 
+        background: #fff;
+        margin: -40px auto 0 auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+}

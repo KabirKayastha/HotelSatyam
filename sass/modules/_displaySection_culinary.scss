@@ -1,0 +1,164 @@
+.displaySection{
+
+    .displayCulinary{
+        padding: 0 50px;
+
+        ul.culinary-navigator{
+            list-style: none;
+            height: 50vh;
+            width: 95%;
+            background: backgroundColor;
+            padding: 0;
+            padding-bottom: 0;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                color: $fontColor;
+                background: transparent;
+                //font-weight: bold;
+
+                li{
+                    width: 100%;
+                    height: 16.67%;
+                    font-size: 23px;
+                    border: none;
+                    border-top: 2px solid #353cff;
+                    padding: 8px 0 ;
+                    background: #fff;
+    
+                    i{
+                        display: none;
+                        font-size: 50px;
+                        position: relative;
+                        float: right;
+                        right: -15px;
+                        top: -7px;
+                        color: $primaryColor;
+                    }
+    
+                    #right-D{
+                        display: block;
+                    }
+                }
+    
+                li.active{
+                    background: $primaryColor;
+                    font-weight: bold;
+                    color: #eee;
+    
+                    &:after{
+                        content: '';
+                        height: 0px;
+                        width: 0px;
+                        border: solid transparent;
+                        border-left-color: $primaryColor;
+                        border-width: 20px;
+                        position: absolute;
+                        
+                    }
+                }
+
+                #li-D.active{
+
+                    &::after{
+                        transform: translate(47px, -3px);
+                    }
+                }
+
+                #li-B.active{
+
+                    &::after{
+                        transform: translate(82px, -3px);
+                    }
+                }
+
+                #li-C.active{
+
+                    &::after{
+                        transform: translate(56px, -3px);
+                    }
+                }
+
+                #li-R.active{
+
+                    &::after{
+                        transform: translate(23px, -3px);
+                    }
+                }
+
+                #li-O.active{
+
+                    &::after{
+                        transform: translate(34px, -3px);
+                    }
+                }
+
+                #li-A.active{
+
+                    &::after{
+                        transform: translate(15px, -3px);
+                    }
+                }
+
+
+    
+                li:first-child{
+                    border: none;
+                }
+    
+                li:last-child{
+                    border-bottom: 2px solid #353cff;
+                }
+            }
+
+        }
+
+        .culinary-content{
+            width: 100%;
+            height: 50vh;
+            //background: gray;
+
+            .tab-pane{
+
+                ul.image-container{
+                    list-style: none;
+                    width: 100%;
+                    height: 15vh;
+                    //background: brown;
+                    padding: 0;
+                    margin: 0;
+    
+                    li{
+                        display: inline-block;
+                        width: 19%;
+                        height: 100%;
+                        background: #aaa;
+                        margin-left: .6%;
+                        border-radius: 5px; 
+                        overflow: hidden;
+                    }
+                }
+
+                .content{
+
+                    h4{
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: blue;
+                        font-weight: bold;
+                    }
+
+                    p{
+                        text-align: justify;
+                        font-weight: bolder;
+                        font-size: 15px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
