@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* line 9, ../sass/base/_base.scss */
@@ -32,7 +33,7 @@ body {
 /* line 30, ../sass/base/_base.scss */
 .title {
   padding: 0 70px;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 60px 0;
 }
 /* line 34, ../sass/base/_base.scss */
 .title hr {
@@ -57,13 +58,14 @@ body {
   background: #ff0000;
   padding: 3px 0 0 0;
   margin: 0;
-  z-index: 999;
+  z-index: 99;
+  position: relative;
 }
-/* line 9, ../sass/modules/_header.scss */
+/* line 10, ../sass/modules/_header.scss */
 #header .headerElement {
   display: inline-block;
 }
-/* line 13, ../sass/modules/_header.scss */
+/* line 14, ../sass/modules/_header.scss */
 #header ul {
   margin: 0;
   padding: 0;
@@ -71,24 +73,24 @@ body {
   float: right;
   list-style: none;
 }
-/* line 20, ../sass/modules/_header.scss */
+/* line 21, ../sass/modules/_header.scss */
 #header ul #headerSocial {
   text-align: right;
 }
-/* line 23, ../sass/modules/_header.scss */
+/* line 24, ../sass/modules/_header.scss */
 #header ul #headerSocial .fab {
   font-size: 20px;
   padding: 7px 0 0 20px;
 }
-/* line 28, ../sass/modules/_header.scss */
+/* line 29, ../sass/modules/_header.scss */
 #header ul #headerSocial .fb {
   color: #3b5998;
 }
-/* line 32, ../sass/modules/_header.scss */
+/* line 33, ../sass/modules/_header.scss */
 #header ul #headerSocial .tw {
   color: #38A1F3;
 }
-/* line 36, ../sass/modules/_header.scss */
+/* line 37, ../sass/modules/_header.scss */
 #header ul #headerSocial .pinterest {
   background: #fff;
   border-radius: 50%;
@@ -98,36 +100,36 @@ body {
   padding: 1px;
   margin-left: 10px;
 }
-/* line 46, ../sass/modules/_header.scss */
+/* line 47, ../sass/modules/_header.scss */
 #header ul #headerSocial .linkedin {
   color: #0077B5;
 }
-/* line 51, ../sass/modules/_header.scss */
+/* line 52, ../sass/modules/_header.scss */
 #header ul #headerEmail {
   padding-left: 20px;
 }
-/* line 55, ../sass/modules/_header.scss */
+/* line 56, ../sass/modules/_header.scss */
 #header ul li {
   display: inline-block;
   width: 33%;
 }
-/* line 59, ../sass/modules/_header.scss */
+/* line 60, ../sass/modules/_header.scss */
 #header ul li h6 {
   padding: 0 0 0 10px;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
-/* line 66, ../sass/modules/_header.scss */
+/* line 67, ../sass/modules/_header.scss */
 #header ul li span {
   color: #333;
   font-size: 18px;
 }
-/* line 71, ../sass/modules/_header.scss */
+/* line 72, ../sass/modules/_header.scss */
 #header ul li .headerItem {
   display: inline-block;
 }
-/* line 77, ../sass/modules/_header.scss */
+/* line 78, ../sass/modules/_header.scss */
 #header #logo {
   width: 100px;
   z-index: 999;
@@ -135,76 +137,84 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 86, ../sass/modules/_header.scss */
+  /* line 87, ../sass/modules/_header.scss */
   #header {
     width: 100%;
     height: 20vh;
   }
-  /* line 91, ../sass/modules/_header.scss */
+  /* line 92, ../sass/modules/_header.scss */
   #header #logo {
     display: none;
   }
-  /* line 95, ../sass/modules/_header.scss */
+  /* line 96, ../sass/modules/_header.scss */
   #header .container {
     padding: 0;
     margin: 0;
   }
-  /* line 100, ../sass/modules/_header.scss */
+  /* line 101, ../sass/modules/_header.scss */
   #header ul {
     float: none;
     width: 100%;
     text-align: center;
   }
-  /* line 105, ../sass/modules/_header.scss */
+  /* line 106, ../sass/modules/_header.scss */
   #header ul li {
     width: 100%;
     text-align: center;
     padding-top: 10px;
   }
-  /* line 110, ../sass/modules/_header.scss */
+  /* line 111, ../sass/modules/_header.scss */
   #header ul li .headerItem {
     display: inline;
   }
-  /* line 115, ../sass/modules/_header.scss */
+  /* line 116, ../sass/modules/_header.scss */
   #header ul #headerSocial {
     text-align: center;
   }
 }
-/* line 3, ../sass/modules/_navbar.scss */
+/* line 1, ../sass/modules/_navbar.scss */
+#navbar {
+  position: relative;
+  margin-bottom: -10px;
+  padding: 0;
+  height: auto;
+  z-index: 99;
+}
+/* line 8, ../sass/modules/_navbar.scss */
 #navbar .resp-navbar {
   display: none;
 }
-/* line 7, ../sass/modules/_navbar.scss */
+/* line 12, ../sass/modules/_navbar.scss */
 #navbar ul {
   list-style: none;
   text-transform: uppercase;
-  background: #fff;
+  background: transparent;
   float: right;
   width: 90%;
   height: 40px;
-  padding: 10px 0 0 0;
+  padding: 9px 0 0 0;
   font-size: 16px;
   margin-top: -2px;
   font-weight: bolder;
   letter-spacing: 2px;
 }
-/* line 20, ../sass/modules/_navbar.scss */
+/* line 25, ../sass/modules/_navbar.scss */
 #navbar ul li {
   display: inline;
-  padding: 11px 18px;
+  padding: 10.5px 18px;
   text-align: center;
   cursor: pointer;
 }
-/* line 26, ../sass/modules/_navbar.scss */
+/* line 31, ../sass/modules/_navbar.scss */
 #navbar ul li a {
   text-decoration: none;
   color: #222;
 }
-/* line 31, ../sass/modules/_navbar.scss */
+/* line 36, ../sass/modules/_navbar.scss */
 #navbar ul li:hover {
   background: #eee;
 }
-/* line 35, ../sass/modules/_navbar.scss */
+/* line 40, ../sass/modules/_navbar.scss */
 #navbar ul li ul {
   background: #ccc;
   height: auto;
@@ -216,12 +226,12 @@ body {
   padding: 0;
   margin: 0;
 }
-/* line 48, ../sass/modules/_navbar.scss */
+/* line 53, ../sass/modules/_navbar.scss */
 #navbar ul li ul li {
   display: block;
   border-top: 1px solid #ddd;
 }
-/* line 52, ../sass/modules/_navbar.scss */
+/* line 57, ../sass/modules/_navbar.scss */
 #navbar ul li ul li a {
   display: block;
   padding: 0;
@@ -229,19 +239,19 @@ body {
   background: transparent;
   font-weight: bolder;
 }
-/* line 61, ../sass/modules/_navbar.scss */
+/* line 66, ../sass/modules/_navbar.scss */
 #navbar ul li ul li:first-child {
   border: none;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 72, ../sass/modules/_navbar.scss */
+  /* line 77, ../sass/modules/_navbar.scss */
   #navbar ul li {
     padding: 11px 5px;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 79, ../sass/modules/_navbar.scss */
+  /* line 84, ../sass/modules/_navbar.scss */
   #navbar {
     height: 50px;
     width: 100%;
@@ -249,11 +259,11 @@ body {
     padding: 0;
     margin: 0;
   }
-  /* line 86, ../sass/modules/_navbar.scss */
+  /* line 91, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar {
     display: block;
   }
-  /* line 89, ../sass/modules/_navbar.scss */
+  /* line 94, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol {
     list-style: none;
     width: 100%;
@@ -261,13 +271,13 @@ body {
     margin: 0;
     padding: 0 0 0 0px;
   }
-  /* line 96, ../sass/modules/_navbar.scss */
+  /* line 101, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol li {
     display: inline-block;
     text-align: center;
     margin: 0;
   }
-  /* line 102, ../sass/modules/_navbar.scss */
+  /* line 107, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler {
     float: right;
     border: none;
@@ -279,16 +289,16 @@ body {
     padding: 15px 0 0 0;
     cursor: pointer;
   }
-  /* line 114, ../sass/modules/_navbar.scss */
+  /* line 119, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler button {
     background: transparent;
     border: none;
   }
-  /* line 119, ../sass/modules/_navbar.scss */
+  /* line 124, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menuToggler:hover {
     background: #ccc;
   }
-  /* line 124, ../sass/modules/_navbar.scss */
+  /* line 129, ../sass/modules/_navbar.scss */
   #navbar .resp-navbar ol #menu {
     font-size: 20px;
     font-weight: bold;
@@ -297,12 +307,12 @@ body {
     height: 50px;
     padding: 4px 0 0 40%;
   }
-  /* line 138, ../sass/modules/_navbar.scss */
+  /* line 143, ../sass/modules/_navbar.scss */
   #navbar .container {
     display: none;
     padding: 0;
   }
-  /* line 142, ../sass/modules/_navbar.scss */
+  /* line 147, ../sass/modules/_navbar.scss */
   #navbar .container ul {
     background: #ddd;
     width: 100%;
@@ -311,147 +321,167 @@ body {
     padding-top: 0;
     overflow-y: scroll;
   }
-  /* line 150, ../sass/modules/_navbar.scss */
+  /* line 155, ../sass/modules/_navbar.scss */
   #navbar .container ul .slideDown1 {
     transform: translateY(42vh);
     transition: transform 300ms 0ms;
   }
-  /* line 156, ../sass/modules/_navbar.scss */
+  /* line 161, ../sass/modules/_navbar.scss */
   #navbar .container ul .slideDown2 {
     transform: translateY(14vh);
     transition: transform 300ms 0ms;
   }
-  /* line 162, ../sass/modules/_navbar.scss */
+  /* line 167, ../sass/modules/_navbar.scss */
   #navbar .container ul .slideDown3 {
     transform: translateY(14vh);
     transition: transform 300ms 0ms;
   }
-  /* line 168, ../sass/modules/_navbar.scss */
+  /* line 173, ../sass/modules/_navbar.scss */
   #navbar .container ul .slideDown4 {
     transform: translateY(42vh);
     transition: transform 300ms 0ms;
   }
-  /* line 174, ../sass/modules/_navbar.scss */
+  /* line 179, ../sass/modules/_navbar.scss */
   #navbar .container ul::-webkit-scrollbar {
     width: 7px;
   }
-  /* line 178, ../sass/modules/_navbar.scss */
+  /* line 183, ../sass/modules/_navbar.scss */
   #navbar .container ul::-webkit-scrollbar-thumb {
     background: #aaa;
     border-radius: 5px;
   }
-  /* line 183, ../sass/modules/_navbar.scss */
+  /* line 188, ../sass/modules/_navbar.scss */
   #navbar .container ul::-webkit-scrollbar-track {
     background: #ddd;
   }
-  /* line 187, ../sass/modules/_navbar.scss */
+  /* line 192, ../sass/modules/_navbar.scss */
   #navbar .container ul li {
     display: block;
     position: relative;
     transform: translateY(0px);
     transition: transform .5s 0s;
   }
-  /* line 194, ../sass/modules/_navbar.scss */
+  /* line 199, ../sass/modules/_navbar.scss */
   #navbar .container ul li ul {
     display: none;
     padding: 0;
     background: #ccc;
   }
-  /* line 201, ../sass/modules/_navbar.scss */
+  /* line 206, ../sass/modules/_navbar.scss */
   #navbar .container ul li ul::-webkit-scrollbar {
     display: none;
   }
-  /* line 205, ../sass/modules/_navbar.scss */
+  /* line 210, ../sass/modules/_navbar.scss */
   #navbar .container ul li ul li:nth-child(n) {
     background: #ccc;
   }
-  /* line 208, ../sass/modules/_navbar.scss */
+  /* line 213, ../sass/modules/_navbar.scss */
   #navbar .container ul li ul li:nth-child(n):hover {
     background: #aaa;
   }
-  /* line 214, ../sass/modules/_navbar.scss */
+  /* line 219, ../sass/modules/_navbar.scss */
   #navbar .container ul li #aboutus_subMenu {
     height: 42vh;
   }
-  /* line 218, ../sass/modules/_navbar.scss */
+  /* line 223, ../sass/modules/_navbar.scss */
   #navbar .container ul li #rooms_subMenu {
     height: 14vh;
   }
-  /* line 222, ../sass/modules/_navbar.scss */
+  /* line 227, ../sass/modules/_navbar.scss */
   #navbar .container ul li #conference_subMenu {
     height: 14vh;
   }
-  /* line 226, ../sass/modules/_navbar.scss */
+  /* line 231, ../sass/modules/_navbar.scss */
   #navbar .container ul li #culinary_subMenu {
     height: 42vh;
   }
 }
 /* line 1, ../sass/modules/_imageslider.scss */
 #imageslider {
-  margin-top: -9px;
+  margin-top: -10px;
   height: 500px;
-  width: 300%;
+  width: 100%;
   padding: 0;
   position: relative;
-  z-index: -999;
+  top: -10px;
 }
-/* line 11, ../sass/modules/_imageslider.scss */
-#imageslider .slider {
-  display: inline;
+/* line 10, ../sass/modules/_imageslider.scss */
+#imageslider ol {
+  margin-bottom: 60px;
+  z-index: 1;
 }
-/* line 15, ../sass/modules/_imageslider.scss */
-#imageslider .slider img {
-  width: 33.33%;
-  height: 500px;
-  display: inline-block;
-  padding-right: 0;
-  margin: -9px 0 0 -3px;
-  z-index: -999999;
+/* line 14, ../sass/modules/_imageslider.scss */
+#imageslider ol li {
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  border-radius: 50%;
 }
-/* line 24, ../sass/modules/_imageslider.scss */
-#imageslider .slider #slider1 {
-  margin-left: 0;
+/* line 22, ../sass/modules/_imageslider.scss */
+#imageslider img {
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
 }
 
 /* line 30, ../sass/modules/_imageslider.scss */
 #bookingSection {
-  height: 100px;
+  height: 120px;
   width: 100%;
-  background: rgba(170, 170, 170, 0.7);
-  margin: -70px 0 0px 0;
-  padding: 15px 10px;
+  background: rgba(170, 170, 170, 0.8);
+  margin: -60px 0 0px 0;
+  padding: 10px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0px 5px 1px #777;
+  position: relative;
+  z-index: 99;
 }
-/* line 39, ../sass/modules/_imageslider.scss */
+/* line 41, ../sass/modules/_imageslider.scss */
+#bookingSection form {
+  width: 100%;
+}
+/* line 44, ../sass/modules/_imageslider.scss */
 #bookingSection form #booking_GuestNos {
   width: 100%;
 }
-/* line 42, ../sass/modules/_imageslider.scss */
+/* line 47, ../sass/modules/_imageslider.scss */
 #bookingSection form #booking_GuestNos::-webkit- {
   display: none;
 }
-/* line 47, ../sass/modules/_imageslider.scss */
+/* line 52, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=submit] {
+  font-family: 'calibri';
+}
+/* line 57, ../sass/modules/_imageslider.scss */
 #bookingSection form label {
   font-size: 18px;
+  padding: 10px 0;
 }
-/* line 51, ../sass/modules/_imageslider.scss */
+/* line 62, ../sass/modules/_imageslider.scss */
 #bookingSection form input {
   height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  font-weight: bolder;
+  font-family: "consolas";
 }
-/* line 55, ../sass/modules/_imageslider.scss */
+/* line 71, ../sass/modules/_imageslider.scss */
 #bookingSection form select {
   height: 40px;
   width: 100%;
+  border: none;
+  border-radius: 10px;
 }
-/* line 59, ../sass/modules/_imageslider.scss */
-#bookingSection form select option {
-  background: red;
-  height: 40px;
+/* line 80, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=date] {
+  text-transform: uppercase;
 }
-/* line 67, ../sass/modules/_imageslider.scss */
+/* line 83, ../sass/modules/_imageslider.scss */
 #bookingSection form input[type=date]::-webkit-inner-spin-button {
   display: none;
 }
-/* line 71, ../sass/modules/_imageslider.scss */
+/* line 87, ../sass/modules/_imageslider.scss */
 #bookingSection form input[type=date]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
@@ -460,12 +490,13 @@ body {
   width: 15px;
   height: 15px;
   border-width: thin;
+  cursor: pointer;
 }
-/* line 106, ../sass/modules/_imageslider.scss */
-#bookingSection form input[type=number]::-webkit-inner-spin-button {
-  display: none;
+/* line 100, ../sass/modules/_imageslider.scss */
+#bookingSection form input[type=number] {
+  text-align: right;
 }
-/* line 111, ../sass/modules/_imageslider.scss */
+/* line 109, ../sass/modules/_imageslider.scss */
 #bookingSection form span {
   position: absolute;
   right: 45px;
@@ -475,7 +506,7 @@ body {
   font-size: 25px;
   opacity: .8;
 }
-/* line 120, ../sass/modules/_imageslider.scss */
+/* line 118, ../sass/modules/_imageslider.scss */
 #bookingSection form span i {
   padding: 7px;
   background: red;
@@ -830,7 +861,7 @@ body {
 
 /* line 1, ../sass/modules/_contact.scss */
 .contact_us {
-  padding: 20px 50px;
+  padding: 20px 50px 50px 50px;
 }
 /* line 4, ../sass/modules/_contact.scss */
 .contact_us .map_Container, .contact_us .form_Container {
@@ -943,4 +974,79 @@ body {
   text-align: center;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+/* The container must be positioned relative: */
+/* line 2, ../sass/modules/_selection.scss */
+.custom-select {
+  position: relative;
+  font-family: "Consolas";
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* line 9, ../sass/modules/_selection.scss */
+.custom-select select {
+  display: none;
+  /*hide original SELECT element: */
+}
+
+/* line 13, ../sass/modules/_selection.scss */
+.select-selected {
+  background-color: #fff;
+  color: #bbb;
+  border-radius: 6px;
+}
+
+/* Style the arrow inside the select element: */
+/* line 20, ../sass/modules/_selection.scss */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #888 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+/* line 32, ../sass/modules/_selection.scss */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #888 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+/* line 38, ../sass/modules/_selection.scss */
+.select-items div, .select-selected {
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+/* line 47, ../sass/modules/_selection.scss */
+.select-items {
+  position: absolute;
+  background-color: #ccc;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 5px;
+}
+
+/* Hide the items when the select box is closed: */
+/* line 58, ../sass/modules/_selection.scss */
+.select-hide {
+  display: none;
+}
+
+/* line 62, ../sass/modules/_selection.scss */
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }

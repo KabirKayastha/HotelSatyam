@@ -1,4 +1,9 @@
 #navbar{
+    position: relative;
+    margin-bottom: -10px;
+    padding: 0;
+    height: auto;
+    z-index: 99;
 
     .resp-navbar{
         display: none;
@@ -7,11 +12,11 @@
     ul{
         list-style: none;
         text-transform: uppercase;
-        background: #fff;
+        background: transparent;
         float: right;
         width: 90%;
         height: 40px;
-        padding: 10px 0 0 0;
+        padding: 9px 0 0 0;
         font-size: 16px;
         margin-top: -2px;
         font-weight: bolder;
@@ -19,7 +24,7 @@
 
         li{
             display: inline;
-            padding: 11px 18px;
+            padding: 10.5px 18px;
             text-align: center;
             cursor: pointer;
 

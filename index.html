@@ -5,7 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-16">
-        
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,7 +66,7 @@
             </div>
             <!-- /responsive -->
             
-            <div class="container">
+            <div class="container" style="height: 40px;">
                 <ul>
                 
                     <li id="aboutUs" class="dropdown">
@@ -224,7 +225,31 @@
         <!-- imageslider -->
         <div id="imageslider">
 
-            <div class="slider">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" tyle="z-index: -1;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                        <img src="images/slider1.jpg" alt="" style="width:100%; margin-bottom: 10px;">
+                        </div>
+                
+                        <div class="item">
+                        <img src="images/Queen-Room.jpg" alt="" style="width:100%;">
+                        </div>
+                    
+                        <div class="item">
+                        <img src="images/slider3.jpg" alt="" style="width:100%;">
+                        </div>
+                    </div>
+                </div>
+
+            <!-- <div class="slider">
                 <img src="images/slider1.jpg" alt="" class="img-responsive" id="slider1">
             </div>
 
@@ -234,7 +259,7 @@
             
             <div class="slider">
                 <img src="images/slider1.jpg" alt="" class="img-responsive" id="slider3">
-            </div>
+            </div> -->
 
         </div>
         <!-- /imageslider -->
@@ -244,71 +269,62 @@
             <div id="bookingSection">
 
                 <form action="#" method="post">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="">Email</label>
+                            </div>
 
+                            <div class="col-md-2">
+                                <label for="">Room Type:</label>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="">Check In</label>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="">Check Out</label>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="">Guests</label>
+                            </div>
+                        </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <label>Email:</label> <br>
-                            <input type="text" name="Booking Email" id="booking_Email" placeholder="eg: someone@example.com">
+                            <input type="email" name="Booking Email" id="booking_Email" placeholder="eg: someone@example.com" required class="form-control">
                         </div>
 
                         <div class="col-md-2">
-                            <label for="">Room Type:</label> <br>
-                            <select name="Booking Room Type" id="booking_RoomType">
-                                <option value="Deluxe">Deluxe</option>
-                                <option value="Normal">Normal</option>
-                            </select>
+                            <div class="custom-select">
+                                <select name="Booking Room Type" id="booking_RoomType" class="form-control" required>
+                                    <option value="0">Room Type:</option>
+                                    <option value="1">Normal</option>
+                                    <option value="2">Deluxe</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="col-md-2">
-                            <label for="">Check In:</label> <br>
-                            <input type="date" name="Booking CheckIn" id="booking_CheckIn" required>
+                            <input type="date" name="Booking CheckIn" id="booking_CheckIn" required class="form-control">
                         </div>
 
                         <div class="col-md-2">
-                            <label for="">Check Out:</label> <br>
-                            <input type="date" name="Booking CheckOut" id="booking_CheckOut">
+                            <input type="date" name="Booking CheckOut" id="booking_CheckOut" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <label for="">Guest:</label> <br>
-                            <input type="number" name="Booking GuestNos" id="booking_GuestNos">
+                            <input type="number" name="Booking GuestNos" id="booking_GuestNos" class="form-control" min="1" required>
                         </div>
 
-                        <div class="col-md-2">
-                            <input type="submit" name="Booking Submit Button" id="booking_SubmitBtn" value="Book Now">
+                        <div class="col-md-2" style="height: 100%;">
+                            <input type="submit" name="Booking Submit Button" class="form-control basic_button" id="booking_SubmitBtn" value="Book Now">
                         </div>
 
                         
                     </div>
-                    <!-- <div class="bookingElement">
-                        <label class="bookingEmail bookingRow">
-                            Email:
-                        </label>
-                        <br>
-                        <input type="text" placeholder="eg: someone@example.com" class="bookingEmail" id="bookingEmail">
-                        <br>
-                    </div>
-
-                    <div class="bookingElement">
-                        <label class="bookingRoom bookingRow">
-                            Room Type:
-                        </label>
-                        <br>
-                        <select name="Room Type" id="bookingRoom" class="bookingRoom">
-                            <option value="Deluxe">Deluxe</option>
-                            <option value="Normal">Normal</option>
-                        </select>
-                    </div>
-
-                    <div class="bookingElement">
-                        <label class="bookingCheckin bookingRow">
-                            Check In:
-                        </label>
-                        <br>
-                        <input type="date" name="Checkin" id="bookingCheckin">
-                    </div> -->
-
-
+                </div>
                 </form>
 
            </div>
@@ -910,7 +926,10 @@
                     <div class="about_us">
                         <h3>About Us</h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et earum labore provident. Accusamus culpa repellat porro officiis a reiciendis nostrum molestias, asperiores, laudantium sed quisquam rem placeat dolore hic voluptas dolor. Rem nihil ea earum impedit quisquam. Vel, eaque?</p>
+                        <p>Hotel Satyam is a luxury hotel, located at Banepa city between Kathmandu and Dhulikhel.
+                            The first hotel of its kind in Banepa valley available with beautiful decorated deluxe room,
+                            designed with modern Architectural Design.
+                        </p>
                     </div>
                 </div>
 
@@ -1061,6 +1080,7 @@
         <script src="js/_navbar.js"></script>
         <script src="js/_displaysection.js"></script>
         <script src="js/_starRating.js"></script>
+        <script src="js/_selection.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </body>
