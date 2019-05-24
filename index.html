@@ -222,10 +222,11 @@
         </div>
         <!-- /navbar -->
 
+        <div class="" id="out-of-navbar">
         <!-- imageslider -->
         <div id="imageslider">
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel" tyle="z-index: -1;">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -236,30 +237,18 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                        <img src="images/slider1.jpg" alt="" style="width:100%; margin-bottom: 10px;">
+                        <img src="images/slider1.jpg" alt="" style="width:100%; margin-bottom: 10px;" class="img-responsive">
                         </div>
                 
                         <div class="item">
-                        <img src="images/Queen-Room.jpg" alt="" style="width:100%;">
+                        <img src="images/Queen-Room.jpg" alt="" style="width:100%;" class="img-responsive">
                         </div>
                     
                         <div class="item">
-                        <img src="images/slider3.jpg" alt="" style="width:100%;">
+                        <img src="images/slider3.jpg" alt="" style="width:100%;" class="img-responsive">
                         </div>
                     </div>
                 </div>
-
-            <!-- <div class="slider">
-                <img src="images/slider1.jpg" alt="" class="img-responsive" id="slider1">
-            </div>
-
-            <div class="slider">
-                <img src="images/slider1.jpg" alt="" class="img-responsive" id="slider2">
-            </div>
-            
-            <div class="slider">
-                <img src="images/slider1.jpg" alt="" class="img-responsive" id="slider3">
-            </div> -->
 
         </div>
         <!-- /imageslider -->
@@ -271,32 +260,36 @@
                 <form action="#" method="post">
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-3">
-                                <label for="">Email</label>
-                            </div>
+                            <div id="booking_labels">
+                                <div class="col-md-3">
+                                    <label for="">Email</label>
+                                </div>
 
-                            <div class="col-md-2">
-                                <label for="">Room Type:</label>
-                            </div>
+                                <div class="col-md-2">
+                                    <label for="">Room Type:</label>
+                                </div>
 
-                            <div class="col-md-2">
-                                <label for="">Check In</label>
-                            </div>
+                                <div class="col-md-2">
+                                    <label for="">Check In</label>
+                                </div>
 
-                            <div class="col-md-2">
-                                <label for="">Check Out</label>
-                            </div>
+                                <div class="col-md-2">
+                                    <label for="">Check Out</label>
+                                </div>
 
-                            <div class="col-md-2">
-                                <label for="">Guests</label>
+                                <div class="col-md-2">
+                                    <label for="">Guests</label>
+                                </div>
                             </div>
                         </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-12">
+                            <h4 class="labels">Email:</h4>
                             <input type="email" name="Booking Email" id="booking_Email" placeholder="eg: someone@example.com" required class="form-control">
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xs-12">
+                            <h4 class="labels">Room Type:</h4>
                             <div class="custom-select">
                                 <select name="Booking Room Type" id="booking_RoomType" class="form-control" required>
                                     <option value="0">Room Type:</option>
@@ -306,19 +299,22 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xs-12">
+                            <h4 class="labels">Check In:</h4>
                             <input type="date" name="Booking CheckIn" id="booking_CheckIn" required class="form-control">
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xs-12">
+                            <h4 class="labels">Check Out:</h4>
                             <input type="date" name="Booking CheckOut" id="booking_CheckOut" required class="form-control">
                         </div>
 
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-xs-12">
+                            <h4 class="labels">Guests:</h4>
                             <input type="number" name="Booking GuestNos" id="booking_GuestNos" class="form-control" min="1" required>
                         </div>
 
-                        <div class="col-md-2" style="height: 100%;">
+                        <div class="col-md-2 col-xs-12">
                             <input type="submit" name="Booking Submit Button" class="form-control basic_button" id="booking_SubmitBtn" value="Book Now">
                         </div>
 
@@ -343,8 +339,9 @@
 
                 <div class="displayRooms">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             <div class="card">
+
                                 <img src="images/slider1.jpg" alt="" class="img-responsive cardImage">
 
                                 <div class="card-desc">
@@ -353,7 +350,7 @@
                                     <h5>Price: Rs 2000</h5>
                                     <h5>Nos: 2</h5>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae dolores eum incidunt provident veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae.</p>
                                     
                                     <center>
                                         <button>View Detail</button>
@@ -362,7 +359,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             <div class="card">
                                 <img src="images/slider3.jpg" alt="" class="img-responsive cardImage">
 
@@ -372,7 +369,7 @@
                                     <h5>Price: Rs 2000</h5>
                                     <h5>Nos: 2</h5>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae dolores eum incidunt provident veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae.</p>
                                     
                                     <center>
                                         <button>View Detail</button>
@@ -385,7 +382,7 @@
                 <!-- /Favourite rooms -->
                 
                 <!-- conference hall -->
-                <div class="title" style="margin-top: 70px;">
+                <div class="title" style="margin-top: 0px;">
                     <hr> 
                     <div class="titleText"> Conference Halls </div>
                 </div>
@@ -422,7 +419,7 @@
                 <!-- /conference hall -->
 
                 <!-- culinary delight -->
-                <div class="title" style="margin-top: 70px;">
+                <div class="title" style="margin-top: 0px;">
                     <hr> 
                     <div class="titleText"> Culinary Delights </div>
                 </div>
@@ -433,7 +430,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-2" style="padding: 0;"> 
+                        <div class="col-md-2 col-xs-12 col-sm-12" style="padding: 0;"> 
                             <ul class="culinary-navigator nav-pills">
                                 <a href="#display_DiningHall" data-toggle="tab" id="a-D"><li class="active" id="li-D"> Dining Hall </li></a> 
                                 <a href="#display_Bar" data-toggle="tab" id="a-B"><li id="li-B"> Bar </li></a> 
@@ -442,60 +439,90 @@
                                 <a href="#display_Open" data-toggle="tab" id="a-O"><li id="li-O"> Open Kitchen </li></a> 
                                 <a href="#display_Lounge" data-toggle="tab" id="a-A"><li id="li-A"> Attractive Lounge </li></a> 
                             </ul>
+
+                            <ul class="resp_culinary-navigator nav-tabs">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <a href="#display_DiningHall" data-toggle="tab" id="resp_a-D"><li class="active" id="resp_li-D"> Dining Hall </li></a> 
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                            <a href="#display_Bar" data-toggle="tab" id="resp_a-B"><li id="resp_li-B"> Bar </li></a>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                            <a href="#display_Cafeteria" data-toggle="tab" id="resp_a-C"><li id="resp_li-C"> Cafeteria </li></a> 
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <a href="#display_Rooftop" data-toggle="tab" id="resp_a-R"><li id="resp_li-R"> Rooftop Garden </li></a> 
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <a href="#display_Open" data-toggle="tab" id="resp_a-O"><li id="resp_li-O"> Open Kitchen </li></a> 
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <a href="#display_Lounge" data-toggle="tab" id="resp_a-A"><li id="resp_li-A"> Attractive Lounge </li></a> 
+                                    </div>
+                                </div>
+                            </ul>
                         </div>
 
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-xs-12">
                             <div class="culinary-content tab-content">
 
                                 <div id="display_DiningHall" class="tab-pane fade in active">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/dininghall1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/dininghall2.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/dininghall3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall4.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
 
                                     <div class="content">
                                         <h4>dining hall</h4>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro aliquid? Suscipit mollitia sequi, accusantium quibusdam fugiat repudiandae illo sapiente rerum quaerat, tempore dolorum harum dicta molestias animi, alias perspiciatis nostrum excepturi modi consequuntur? Corrupti mollitia a aliquid suscipit praesentium ullam, architecto perspiciatis voluptates consequuntur voluptatem optio nostrum ratione ad ipsam vel earum quod quibusdam excepturi autem, quia minima! Molestias quam reprehenderit ut commodi ipsum quibusdam consectetur reiciendis incidunt est et sequi deserunt consequuntur quo labore, minima quasi omnis voluptates animi doloremque, culpa, illo quis aut perferendis quidem. Temporibus modi saepe sunt, fuga error ipsam deserunt deleniti delectus minima odio.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, deserunt veniam! Sunt consequuntur iste totam, est nesciunt beatae eos quasi, rerum incidunt atque tempora voluptates nisi repudiandae consequatur vel exercitationem dolorum alias, minus nobis. Pariatur est quaerat autem sit ea sequi fuga, accusantium voluptate, aliquid aspernatur eligendi molestiae, culpa harum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia magni aperiam perspiciatis? Repellat assumenda, sit neque incidunt aliquid tempora sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi dolorem id! Modi sit impedit cupiditate voluptatum ex illo molestiae dolorum! Dolores molestiae facilis doloribus eaque dolore ducimus tenetur blanditiis.</p>
                                         <center><button class="basic_button">view detail</button></center>
                                     </div>
                                 </div>
 
                                 <div id="display_Bar" class="tab-pane fade">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/bar1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
@@ -509,23 +536,23 @@
 
                                 <div id="display_Cafeteria" class="tab-pane fade">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/bar1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
@@ -539,23 +566,23 @@
 
                                 <div id="display_Rooftop" class="tab-pane fade">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/bar1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
@@ -569,23 +596,23 @@
 
                                 <div id="display_Open" class="tab-pane fade">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/open1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/open2.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/open3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/open4.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/open5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
@@ -599,23 +626,23 @@
 
                                 <div id="display_Lounge" class="tab-pane fade">
                                     <ul class="image-container">
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/bar1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider1.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_active">
                                             <img src="images/slider3.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/Queen-Room.jpg" alt="" class="img-responsive">
                                         </li>
 
-                                        <li>
+                                        <li class="resp_inactive">
                                             <img src="images/dininghall5.jpg" alt="" class="img-responsive">
                                         </li>
                                     </ul>
@@ -637,7 +664,7 @@
 
                 <!-- gallery -->
                 <div class="container">
-                    <div class="title" style="margin-top: 70px;">
+                    <div class="title" id="gallery_title">
                         <hr> 
                         <div class="titleText"> Gallery </div>
                     </div>
@@ -750,6 +777,44 @@
                                 <span class="sr-only">Next</span>
                             </a>
                     </div>
+                    <center>
+                        <button class="basic_button">View All</button>
+                    </center>
+                </div>
+
+                <div class="resp_gallery container-fluid">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive  img-rounded">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive  img-rounded">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="images/dininghall1.jpg" alt="" class="img-responsive  img-rounded">
+                        </div>
+                    </div>
+                    <center>
+                        <button class="basic_button">View All</button>
+                    </center>
                 </div>
 
                 <!-- /gallery -->
@@ -859,51 +924,51 @@
                                 <div class="form-group">
 
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-4">
                                             <h4>Full Name:</h4>
                                         </div>
 
-                                        <div class="col-md-9">
+                                        <div class="col-md-9 col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-4">
                                             <h4>Address:</h4>
                                         </div>
 
-                                        <div class="col-md-9">
+                                        <div class="col-md-9 col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-4">
                                             <h4>Contact No.:</h4>
                                         </div>
 
-                                        <div class="col-md-9">
+                                        <div class="col-md-9 col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-4">
                                             <h4>Email:</h4>
                                         </div>
 
-                                        <div class="col-md-9">
+                                        <div class="col-md-9 col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-4">
                                             <h4>Message:</h4>
                                         </div>
 
-                                        <div class="col-md-9">
+                                        <div class="col-md-9 col-sm-8">
                                             <textarea name="Message" id="contact_message" rows="10" class="form-control"></textarea>
                                             <button class="basic_button" type="submit">Send Message</button>
                                         </div>
@@ -1071,7 +1136,7 @@
             
         </div>
         <!-- /footer -->
-
+        </div>
         
 
         

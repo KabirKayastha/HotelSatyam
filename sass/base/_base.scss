@@ -46,3 +46,14 @@ body{
         padding: 0 10px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .title{
+
+        .titleText{
+            width: 100%;
+            margin: 0;
+
+        }
+    }
+}

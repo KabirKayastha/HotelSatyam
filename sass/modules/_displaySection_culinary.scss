@@ -5,7 +5,7 @@
 
         ul.culinary-navigator{
             list-style: none;
-            height: 50vh;
+            height: auto;
             width: 95%;
             background: backgroundColor;
             padding: 0;
@@ -19,9 +19,9 @@
                 //font-weight: bold;
 
                 li{
-                    width: 100%;
-                    height: 16.67%;
-                    font-size: 23px;
+                    //width: 100%;
+                    //height: 16.67%;
+                    //font-size: 20px;
                     border: none;
                     border-top: 2px solid #353cff;
                     padding: 8px 0 ;
@@ -116,15 +116,17 @@
 
         .culinary-content{
             width: 100%;
-            height: 50vh;
+            height: auto;
             //background: gray;
+            margin-bottom: 0px;
 
             .tab-pane{
+                //background: blue;
 
                 ul.image-container{
                     list-style: none;
                     width: 100%;
-                    height: 15vh;
+                    //height: 10vw;
                     //background: brown;
                     padding: 0;
                     margin: 0;
@@ -138,10 +140,15 @@
                         border-radius: 5px; 
                         overflow: hidden;
                     }
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
 
                 .content{
-
+                    
                     h4{
                         text-transform: uppercase;
                         letter-spacing: 2px;
@@ -162,3 +169,114 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px){
+    .displayCulinary{
+
+        ul.resp_culinary-navigator{
+            display: none;
+        }
+
+        ul.culinary-navigator{
+            //height: 15vh;
+
+            a{
+                li{
+                    font-size: 23px;
+                    width: 100%;
+                }
+            }
+        }
+
+        ul.image-container{
+            height: 10vw;
+        }
+
+        
+    }
+
+    #gallery_title{
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .displayCulinary{
+        padding: 0;
+
+        ul.resp_culinary-navigator{
+            display: block;
+            list-style: none;
+            height: auto;
+            width: 100%;
+            //background: green;
+            padding: 0 10px;
+            border-left: 2px solid #353cff;
+            border-right: 2px solid #353cff;
+
+            a{
+                color: $fontColor;
+                text-decoration: none;
+                background: transparent;
+
+                li{
+                    padding: 20px 0; 
+                    background: transparent;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                li.active{
+                    background: red;
+                    color: #eee;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        ul.culinary-navigator{
+            display: none;
+        }
+
+        .culinary-content{
+            //background: blue;
+
+
+            .tab-pane{
+                //margin-bottom: 200px;
+
+                ul.image-container{
+                    width: 100%;  
+                    height: 20vw;             
+
+                    li.resp_active{
+                        width: 31%;
+                        height: 100%;
+                        //background: red;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+        
+                    li.resp_inactive{
+                        display: none;
+                    }
+                }
+
+                .content{
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+    #gallery_title{
+        //margin-top: 250px;
+    }
+}
+

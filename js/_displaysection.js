@@ -52,5 +52,60 @@ $(document).ready(function(){
         $('#li-C').removeClass('active');
         $('#li-D').removeClass('active');
     });
+
+    //responsive-part
+    $('#resp_a-D').click(function(){
+        $('#resp_li-D').addClass('active');
+        $('#resp_li-R').removeClass('active');
+        $('#resp_li-B').removeClass('active');
+        $('#resp_li-O').removeClass('active');
+        $('#resp_li-C').removeClass('active');
+        $('#resp_li-A').removeClass('active');
+    });
+
+    $('#resp_a-B').click(function(){
+        $('#resp_li-B').addClass('active');
+        $('#resp_li-R').removeClass('active');
+        $('#resp_li-D').removeClass('active');
+        $('#resp_li-O').removeClass('active');
+        $('#resp_li-C').removeClass('active');
+        $('#resp_li-A').removeClass('active');
+    });
+
+    $('#resp_a-R').click(function(){
+        $('#resp_li-R').addClass('active');
+        $('#resp_li-D').removeClass('active');
+        $('#resp_li-B').removeClass('active');
+        $('#resp_li-O').removeClass('active');
+        $('#resp_li-C').removeClass('active');
+        $('#resp_li-A').removeClass('active');
+    });
+
+    $('#resp_a-O').click(function(){
+        $('#resp_li-O').addClass('active');
+        $('#resp_li-R').removeClass('active');
+        $('#resp_li-B').removeClass('active');
+        $('#resp_li-D').removeClass('active');
+        $('#resp_li-C').removeClass('active');
+        $('#resp_li-A').removeClass('active');
+    });
+
+    $('#resp_a-C').click(function(){
+        $('#resp_li-C').addClass('active');
+        $('#resp_li-R').removeClass('active');
+        $('#resp_li-B').removeClass('active');
+        $('#resp_li-O').removeClass('active');
+        $('#resp_li-D').removeClass('active');
+        $('#resp_li-A').removeClass('active');
+    });
+
+    $('#resp_a-A').click(function(){
+        $('#resp_li-A').addClass('active');
+        $('#resp_li-R').removeClass('active');
+        $('#resp_li-B').removeClass('active');
+        $('#resp_li-O').removeClass('active');
+        $('#resp_li-C').removeClass('active');
+        $('#resp_li-D').removeClass('active');
+    });
 });
 

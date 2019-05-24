@@ -16,6 +16,7 @@
             li{
                 //display: inline-block;
                 width: 15%;
+                //height: 10vw;
                 background: gray;
                 margin-left: 10px;
                 border-radius: 10px;
@@ -38,5 +39,49 @@
             color: $primaryColor;
         }
         
+    }
+
+    button{
+        margin-top: 20px;
+    }
+}
+
+.resp_gallery{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+
+    .gallery{
+
+        .gallery_slide{
+
+            ul{
+                //background: blue;
+                height: auto;
+
+                li{
+                    height: 15vw;
+                }
+            }
+        }
+    }
+
+    .resp_gallery{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .gallery{
+        display: none;
+    }
+
+    .resp_gallery{
+        display: block;
+
+        .row{
+            margin-bottom: 20px;
+        }
     }
 }

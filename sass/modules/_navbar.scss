@@ -80,6 +80,12 @@
 }
 
 @media screen and (max-width: 1000px){
+
+    .out-of-navbar{
+        transform: translateY(50vh);
+        
+        transition: transform 300ms 0ms;
+    }
     
     #navbar{
         height: 50px;
@@ -90,6 +96,7 @@
 
         .resp-navbar{
             display: block;
+            z-index: 999;
             
             ol{
                 list-style: none;
