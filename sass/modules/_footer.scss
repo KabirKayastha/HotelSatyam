@@ -21,7 +21,7 @@
     p{
         font-size: 17px;
         font-weight: bold;
-        //padding: 10px 0;
+        padding: 0px 0;
         
     }
     
@@ -82,6 +82,35 @@
         text-align: center;
         letter-spacing: 1px;
         font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .footer{
+
+        
+        .keep_connected{
+            
+            p{
+                font-size: 15px;
+                padding: 0;
+            }
+
+            .row{
+                
+                .col-sm-10{
+                    padding: 0px;
+                }
+    
+                .col-sm-2{
+                    padding: 0;
+                }
+            }
+        }
+
+        
     }
 
 }

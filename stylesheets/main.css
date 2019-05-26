@@ -5,15 +5,16 @@ body {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
-/* line 9, ../sass/base/_base.scss */
+/* line 10, ../sass/base/_base.scss */
 * {
   box-sizing: border-box;
   outline: none;
 }
 
-/* line 14, ../sass/base/_base.scss */
+/* line 15, ../sass/base/_base.scss */
 .basic_button {
   background: #ff0000;
   color: #eee;
@@ -24,23 +25,24 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 10px 2px 10px;
+  box-shadow: 0 0 10px 2px #ccc;
 }
-/* line 25, ../sass/base/_base.scss */
+/* line 28, ../sass/base/_base.scss */
 .basic_button:hover {
   background: #ff2828;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 33, ../sass/base/_base.scss */
 .title {
   padding: 0 70px;
   margin: 40px 0 60px 0;
 }
-/* line 34, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 .title hr {
   height: 0;
   border-top: 2px solid #222;
 }
-/* line 39, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 .title .titleText {
   font-size: 23px;
   font-weight: bolder;
@@ -51,8 +53,19 @@ body {
   padding: 0 10px;
 }
 
+/* line 53, ../sass/base/_base.scss */
+.box-shadow {
+  box-shadow: 0 0 10px 2px #ccc;
+}
+
+/* line 58, ../sass/base/_base.scss */
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1000px) {
-  /* line 53, ../sass/base/_base.scss */
+  /* line 66, ../sass/base/_base.scss */
   .title .titleText {
     width: 100%;
     margin: 0;
@@ -147,7 +160,8 @@ body {
   /* line 87, ../sass/modules/_header.scss */
   #header {
     width: 100%;
-    height: 20vh;
+    height: auto;
+    padding: 0px 0 10px 0;
   }
   /* line 92, ../sass/modules/_header.scss */
   #header #logo {
@@ -257,157 +271,78 @@ body {
     padding: 11px 5px;
   }
 }
+@media screen and (min-width: 1000px) {
+  /* line 83, ../sass/modules/_navbar.scss */
+  #resp_navbar {
+    display: none;
+  }
+}
 @media screen and (max-width: 1000px) {
-  /* line 84, ../sass/modules/_navbar.scss */
-  .out-of-navbar {
-    transform: translateY(50vh);
-    transition: transform 300ms 0ms;
+  /* line 89, ../sass/modules/_navbar.scss */
+  #navbar {
+    display: none;
   }
 
-  /* line 90, ../sass/modules/_navbar.scss */
-  #navbar {
-    height: 50px;
-    width: 100%;
-    background: #ddd;
-    padding: 0;
-    margin: 0;
-  }
-  /* line 97, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar {
+  /* line 95, ../sass/modules/_navbar.scss */
+  #resp_navbar {
     display: block;
-    z-index: 999;
   }
-  /* line 101, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol {
-    list-style: none;
-    width: 100%;
-    height: 50px;
+  /* line 98, ../sass/modules/_navbar.scss */
+  #resp_navbar button {
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin: 15px 0;
+  }
+  /* line 105, ../sass/modules/_navbar.scss */
+  #resp_navbar h3 {
+    padding: 10px;
     margin: 0;
-    padding: 0 0 0 0px;
   }
-  /* line 108, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol li {
-    display: inline-block;
+  /* line 109, ../sass/modules/_navbar.scss */
+  #resp_navbar h3 img {
+    padding: 0;
+  }
+  /* line 116, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul {
     text-align: center;
-    margin: 0;
-  }
-  /* line 114, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol #menuToggler {
-    float: right;
-    border: none;
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
-    margin: 0;
-    background: transparent;
-    padding: 15px 0 0 0;
-    cursor: pointer;
-  }
-  /* line 126, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol #menuToggler button {
-    background: transparent;
-    border: none;
-  }
-  /* line 131, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol #menuToggler:hover {
-    background: #ccc;
-  }
-  /* line 136, ../sass/modules/_navbar.scss */
-  #navbar .resp-navbar ol #menu {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-weight: bolder;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    height: 50px;
-    padding: 4px 0 0 40%;
+  }
+  /* line 121, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li {
+    display: block;
+    width: 100%;
+  }
+  /* line 125, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li a {
+    color: #222;
+  }
+  /* line 129, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li ul {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  /* line 135, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li ul li {
+    padding: 10px 0;
+    background: #eee;
+  }
+  /* line 139, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li ul li a {
+    color: #555;
+    text-decoration: none;
+  }
+  /* line 144, ../sass/modules/_navbar.scss */
+  #resp_navbar #myNavbar ul li ul li:hover {
+    background: #bbb;
   }
   /* line 150, ../sass/modules/_navbar.scss */
-  #navbar .container {
-    display: none;
-    padding: 0;
-  }
-  /* line 154, ../sass/modules/_navbar.scss */
-  #navbar .container ul {
+  #resp_navbar #myNavbar ul li:hover {
     background: #ddd;
-    width: 100%;
-    height: 50vh;
-    margin: 0;
-    padding-top: 0;
-    overflow-y: scroll;
-  }
-  /* line 162, ../sass/modules/_navbar.scss */
-  #navbar .container ul .slideDown1 {
-    transform: translateY(42vh);
-    transition: transform 300ms 0ms;
-  }
-  /* line 168, ../sass/modules/_navbar.scss */
-  #navbar .container ul .slideDown2 {
-    transform: translateY(14vh);
-    transition: transform 300ms 0ms;
-  }
-  /* line 174, ../sass/modules/_navbar.scss */
-  #navbar .container ul .slideDown3 {
-    transform: translateY(14vh);
-    transition: transform 300ms 0ms;
-  }
-  /* line 180, ../sass/modules/_navbar.scss */
-  #navbar .container ul .slideDown4 {
-    transform: translateY(42vh);
-    transition: transform 300ms 0ms;
-  }
-  /* line 186, ../sass/modules/_navbar.scss */
-  #navbar .container ul::-webkit-scrollbar {
-    width: 7px;
-  }
-  /* line 190, ../sass/modules/_navbar.scss */
-  #navbar .container ul::-webkit-scrollbar-thumb {
-    background: #aaa;
-    border-radius: 5px;
-  }
-  /* line 195, ../sass/modules/_navbar.scss */
-  #navbar .container ul::-webkit-scrollbar-track {
-    background: #ddd;
-  }
-  /* line 199, ../sass/modules/_navbar.scss */
-  #navbar .container ul li {
-    display: block;
-    position: relative;
-    transform: translateY(0px);
-    transition: transform .5s 0s;
-  }
-  /* line 206, ../sass/modules/_navbar.scss */
-  #navbar .container ul li ul {
-    display: none;
-    padding: 0;
-    background: #ccc;
-  }
-  /* line 213, ../sass/modules/_navbar.scss */
-  #navbar .container ul li ul::-webkit-scrollbar {
-    display: none;
-  }
-  /* line 217, ../sass/modules/_navbar.scss */
-  #navbar .container ul li ul li:nth-child(n) {
-    background: #ccc;
-  }
-  /* line 220, ../sass/modules/_navbar.scss */
-  #navbar .container ul li ul li:nth-child(n):hover {
-    background: #aaa;
-  }
-  /* line 226, ../sass/modules/_navbar.scss */
-  #navbar .container ul li #aboutus_subMenu {
-    height: 42vh;
-  }
-  /* line 230, ../sass/modules/_navbar.scss */
-  #navbar .container ul li #rooms_subMenu {
-    height: 14vh;
-  }
-  /* line 234, ../sass/modules/_navbar.scss */
-  #navbar .container ul li #conference_subMenu {
-    height: 14vh;
-  }
-  /* line 238, ../sass/modules/_navbar.scss */
-  #navbar .container ul li #culinary_subMenu {
-    height: 42vh;
   }
 }
 /* line 1, ../sass/modules/_imageslider.scss */
@@ -564,11 +499,7 @@ body {
     text-align: left;
   }
 }
-/* line 3, ../sass/modules/_displaySection_culinary.scss */
-.displaySection .displayCulinary {
-  padding: 0 50px;
-}
-/* line 6, ../sass/modules/_displaySection_culinary.scss */
+/* line 5, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator {
   list-style: none;
   height: auto;
@@ -578,20 +509,20 @@ body {
   padding-bottom: 0;
   text-align: center;
 }
-/* line 15, ../sass/modules/_displaySection_culinary.scss */
+/* line 14, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a {
   text-decoration: none;
   color: #222;
   background: transparent;
 }
-/* line 21, ../sass/modules/_displaySection_culinary.scss */
+/* line 20, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li {
   border: none;
   border-top: 2px solid #353cff;
   padding: 8px 0;
   background: #fff;
 }
-/* line 30, ../sass/modules/_displaySection_culinary.scss */
+/* line 29, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li i {
   display: none;
   font-size: 50px;
@@ -601,17 +532,17 @@ body {
   top: -7px;
   color: #ff0000;
 }
-/* line 40, ../sass/modules/_displaySection_culinary.scss */
+/* line 39, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li #right-D {
   display: block;
 }
-/* line 45, ../sass/modules/_displaySection_culinary.scss */
+/* line 44, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li.active {
   background: #ff0000;
   font-weight: bold;
   color: #eee;
 }
-/* line 50, ../sass/modules/_displaySection_culinary.scss */
+/* line 49, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li.active:after {
   content: '';
   height: 0px;
@@ -621,52 +552,52 @@ body {
   border-width: 20px;
   position: absolute;
 }
-/* line 64, ../sass/modules/_displaySection_culinary.scss */
+/* line 63, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-D.active::after {
   transform: translate(47px, -3px);
 }
-/* line 71, ../sass/modules/_displaySection_culinary.scss */
+/* line 70, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-B.active::after {
   transform: translate(82px, -3px);
 }
-/* line 78, ../sass/modules/_displaySection_culinary.scss */
+/* line 77, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-C.active::after {
   transform: translate(56px, -3px);
 }
-/* line 85, ../sass/modules/_displaySection_culinary.scss */
+/* line 84, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-R.active::after {
   transform: translate(23px, -3px);
 }
-/* line 92, ../sass/modules/_displaySection_culinary.scss */
+/* line 91, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-O.active::after {
   transform: translate(34px, -3px);
 }
-/* line 99, ../sass/modules/_displaySection_culinary.scss */
+/* line 98, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a #li-A.active::after {
   transform: translate(15px, -3px);
 }
-/* line 106, ../sass/modules/_displaySection_culinary.scss */
+/* line 105, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li:first-child {
   border: none;
 }
-/* line 110, ../sass/modules/_displaySection_culinary.scss */
+/* line 109, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary ul.culinary-navigator a li:last-child {
   border-bottom: 2px solid #353cff;
 }
-/* line 117, ../sass/modules/_displaySection_culinary.scss */
+/* line 116, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content {
   width: 100%;
   height: auto;
   margin-bottom: 0px;
 }
-/* line 126, ../sass/modules/_displaySection_culinary.scss */
+/* line 125, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane ul.image-container {
   list-style: none;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-/* line 134, ../sass/modules/_displaySection_culinary.scss */
+/* line 133, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane ul.image-container li {
   display: inline-block;
   width: 19%;
@@ -676,19 +607,19 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-/* line 144, ../sass/modules/_displaySection_culinary.scss */
+/* line 143, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane ul.image-container img {
   height: 100%;
   width: 100%;
 }
-/* line 152, ../sass/modules/_displaySection_culinary.scss */
+/* line 151, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane .content h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: blue;
   font-weight: bold;
 }
-/* line 159, ../sass/modules/_displaySection_culinary.scss */
+/* line 158, ../sass/modules/_displaySection_culinary.scss */
 .displaySection .displayCulinary .culinary-content .tab-pane .content p {
   text-align: justify;
   font-weight: bolder;
@@ -697,6 +628,10 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+  /* line 173, ../sass/modules/_displaySection_culinary.scss */
+  .displayCulinary {
+    padding: 0 50px;
+  }
   /* line 176, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.resp_culinary-navigator {
     display: none;
@@ -719,9 +654,13 @@ body {
 @media screen and (max-width: 1000px) {
   /* line 206, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary {
-    padding: 0;
+    padding: 0 25px;
   }
   /* line 209, ../sass/modules/_displaySection_culinary.scss */
+  .displayCulinary .col-xs-12 {
+    padding: 0 5px;
+  }
+  /* line 213, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.resp_culinary-navigator {
     display: block;
     list-style: none;
@@ -731,69 +670,63 @@ body {
     border-left: 2px solid #353cff;
     border-right: 2px solid #353cff;
   }
-  /* line 219, ../sass/modules/_displaySection_culinary.scss */
+  /* line 223, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.resp_culinary-navigator a {
     color: #222;
     text-decoration: none;
     background: transparent;
   }
-  /* line 224, ../sass/modules/_displaySection_culinary.scss */
+  /* line 228, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.resp_culinary-navigator a li {
     padding: 20px 0;
     background: transparent;
     text-align: center;
     font-weight: bold;
   }
-  /* line 231, ../sass/modules/_displaySection_culinary.scss */
+  /* line 235, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.resp_culinary-navigator a li.active {
     background: red;
     color: #eee;
     border-radius: 5px;
   }
-  /* line 239, ../sass/modules/_displaySection_culinary.scss */
+  /* line 243, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary ul.culinary-navigator {
     display: none;
   }
-  /* line 250, ../sass/modules/_displaySection_culinary.scss */
+  /* line 254, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary .culinary-content .tab-pane ul.image-container {
     width: 100%;
     height: 20vw;
   }
-  /* line 254, ../sass/modules/_displaySection_culinary.scss */
+  /* line 258, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary .culinary-content .tab-pane ul.image-container li.resp_active {
     width: 31%;
     height: 100%;
   }
-  /* line 259, ../sass/modules/_displaySection_culinary.scss */
+  /* line 263, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary .culinary-content .tab-pane ul.image-container li.resp_active img {
     height: 100%;
     width: 100%;
   }
-  /* line 265, ../sass/modules/_displaySection_culinary.scss */
+  /* line 269, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary .culinary-content .tab-pane ul.image-container li.resp_inactive {
     display: none;
   }
-  /* line 270, ../sass/modules/_displaySection_culinary.scss */
+  /* line 274, ../sass/modules/_displaySection_culinary.scss */
   .displayCulinary .culinary-content .tab-pane .content {
     height: auto;
   }
 }
-/* line 3, ../sass/modules/_displaySection_conference.scss */
-.displaySection .displayConference {
-  padding: 0 70px;
-}
-/* line 6, ../sass/modules/_displaySection_conference.scss */
+/* line 5, ../sass/modules/_displaySection_conference.scss */
 .displaySection .displayConference .card {
   width: 100%;
-  height: 250px;
-  background: #aaa;
 }
-/* line 11, ../sass/modules/_displaySection_conference.scss */
+/* line 8, ../sass/modules/_displaySection_conference.scss */
 .displaySection .displayConference .card img.cardImage {
   height: 100%;
   width: 100%;
 }
-/* line 18, ../sass/modules/_displaySection_conference.scss */
+/* line 15, ../sass/modules/_displaySection_conference.scss */
 .displaySection .displayConference .card-desc {
   width: 100%;
   height: auto;
@@ -801,7 +734,7 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 25, ../sass/modules/_displaySection_conference.scss */
+/* line 22, ../sass/modules/_displaySection_conference.scss */
 .displaySection .displayConference .card-desc h4 {
   font-weight: bold;
   text-transform: uppercase;
@@ -810,7 +743,7 @@ body {
   color: blue;
   text-align: center;
 }
-/* line 34, ../sass/modules/_displaySection_conference.scss */
+/* line 31, ../sass/modules/_displaySection_conference.scss */
 .displaySection .displayConference .card-desc h5 {
   margin: 5px 0  10px 0;
   padding: 0;
@@ -818,8 +751,27 @@ body {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1000px) {
+  /* line 43, ../sass/modules/_displaySection_conference.scss */
+  .displayConference {
+    padding: 0 70px;
+  }
+  /* line 46, ../sass/modules/_displaySection_conference.scss */
+  .displayConference .card {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 1000px) {
-  /* line 47, ../sass/modules/_displaySection_conference.scss */
+  /* line 54, ../sass/modules/_displaySection_conference.scss */
+  .displayConference {
+    padding: 0 20px;
+  }
+  /* line 57, ../sass/modules/_displaySection_conference.scss */
+  .displayConference .card {
+    height: 40vw;
+  }
+
+  /* line 62, ../sass/modules/_displaySection_conference.scss */
   .card-desc {
     padding: 5px;
   }
@@ -845,7 +797,7 @@ body {
   height: auto;
   padding: 10px;
 }
-/* line 26, ../sass/modules/_displaySection_rooms.scss */
+/* line 25, ../sass/modules/_displaySection_rooms.scss */
 .displaySection .displayRooms .card .card-desc h4 {
   font-weight: bold;
   text-transform: uppercase;
@@ -853,18 +805,18 @@ body {
   margin: 5px 0;
   color: blue;
 }
-/* line 34, ../sass/modules/_displaySection_rooms.scss */
+/* line 33, ../sass/modules/_displaySection_rooms.scss */
 .displaySection .displayRooms .card .card-desc h5 {
   margin: 0;
   padding: 0;
   color: orangered;
 }
-/* line 40, ../sass/modules/_displaySection_rooms.scss */
+/* line 39, ../sass/modules/_displaySection_rooms.scss */
 .displaySection .displayRooms .card .card-desc p {
   font-weight: bold;
   padding: 5px 0 0 0;
 }
-/* line 45, ../sass/modules/_displaySection_rooms.scss */
+/* line 44, ../sass/modules/_displaySection_rooms.scss */
 .displaySection .displayRooms .card .card-desc button {
   background: #eee;
   color: #ff0000;
@@ -873,11 +825,81 @@ body {
   font-size: 18px;
   margin: 0 auto;
 }
-/* line 53, ../sass/modules/_displaySection_rooms.scss */
+/* line 52, ../sass/modules/_displaySection_rooms.scss */
 .displaySection .displayRooms .card .card-desc button:hover {
   background: #ddd;
 }
 
+@media screen and (min-width: 1000px) {
+  /* line 62, ../sass/modules/_displaySection_rooms.scss */
+  .displayRooms {
+    display: block;
+  }
+
+  /* line 66, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 73, ../sass/modules/_displaySection_rooms.scss */
+  .displayRooms {
+    display: none;
+  }
+
+  /* line 77, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms {
+    display: block;
+  }
+  /* line 80, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms img {
+    border-radius: 7px 7px 0 0;
+    box-shadow: 0 -3px 10px 2px #ccc;
+  }
+  /* line 85, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .row {
+    margin-bottom: 30px;
+  }
+  /* line 89, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc {
+    background: #bbb;
+    padding: 10px;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 3px 10px 2px #ccc;
+  }
+  /* line 95, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    color: blue;
+  }
+  /* line 103, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc h5 {
+    margin: 0;
+    padding: 0;
+    color: orangered;
+  }
+  /* line 109, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc p {
+    font-weight: bold;
+    padding: 5px 0 0 0;
+  }
+  /* line 114, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc button {
+    background: #eee;
+    color: #ff0000;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  /* line 122, ../sass/modules/_displaySection_rooms.scss */
+  .resp_displayRooms .card-desc button:hover {
+    background: #ddd;
+  }
+}
 /* line 5, ../sass/modules/_displaySection_gallery.scss */
 .gallery .gallery_slide ul {
   list-style: none;
@@ -952,32 +974,37 @@ body {
   .resp_gallery .row {
     margin-bottom: 20px;
   }
+  /* line 87, ../sass/modules/_displaySection_gallery.scss */
+  .resp_gallery img {
+    box-shadow: 0 0 10px 2px #ccc;
+  }
 }
 /* line 1, ../sass/modules/_review.scss */
 .review {
   padding: 0 50px;
+  text-align: justify;
 }
-/* line 4, ../sass/modules/_review.scss */
+/* line 5, ../sass/modules/_review.scss */
 .review .links, .review .review_container {
   width: 100%;
-  height: 60vh;
+  height: auto;
 }
-/* line 9, ../sass/modules/_review.scss */
+/* line 10, ../sass/modules/_review.scss */
 .review .links {
   padding: 30px;
 }
-/* line 12, ../sass/modules/_review.scss */
+/* line 13, ../sass/modules/_review.scss */
 .review .links #links_imageContainer {
   width: 100%;
   height: 100%;
   padding: 0 30px 0 0;
 }
-/* line 17, ../sass/modules/_review.scss */
+/* line 18, ../sass/modules/_review.scss */
 .review .links #links_imageContainer img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-/* line 23, ../sass/modules/_review.scss */
+/* line 24, ../sass/modules/_review.scss */
 .review .links h3 {
   margin: 0;
   text-align: center;
@@ -985,7 +1012,7 @@ body {
   letter-spacing: 1px;
   color: #ff0000;
 }
-/* line 31, ../sass/modules/_review.scss */
+/* line 33, ../sass/modules/_review.scss */
 .review .links #hotel_links {
   display: flex;
   padding-top: 10px;
@@ -994,52 +1021,110 @@ body {
   align-items: center;
   align-content: center;
 }
-/* line 39, ../sass/modules/_review.scss */
+/* line 41, ../sass/modules/_review.scss */
 .review .links #hotel_links .link_Container {
   width: 100%;
   height: 73px;
   margin: 5px;
 }
-/* line 44, ../sass/modules/_review.scss */
+/* line 46, ../sass/modules/_review.scss */
 .review .links #hotel_links .link_Container img {
   height: 100%;
   margin: auto;
 }
-/* line 54, ../sass/modules/_review.scss */
-.review .review_container {
-  padding: 30px 10px;
-  background: transparent;
-}
 /* line 58, ../sass/modules/_review.scss */
-.review .review_container h3 {
+.review #review-container .review_container {
+  padding: 30px 10px;
+}
+/* line 62, ../sass/modules/_review.scss */
+.review #review-container .review_container h3 {
   margin: 0;
   text-align: center;
   font-weight: bolder;
   letter-spacing: 1px;
   color: #ff0000;
 }
-/* line 68, ../sass/modules/_review.scss */
-.review .review_container .media .checked {
+/* line 74, ../sass/modules/_review.scss */
+.review #review-container .review_container .media .checked {
   color: orange;
 }
-/* line 72, ../sass/modules/_review.scss */
-.review .review_container .media #review_userProfile {
+/* line 78, ../sass/modules/_review.scss */
+.review #review-container .review_container .media #review_userProfile {
   padding: 0 20px 0 0;
 }
-/* line 77, ../sass/modules/_review.scss */
-.review .review_container .media h4, .review .review_container .media h5 {
+/* line 83, ../sass/modules/_review.scss */
+.review #review-container .review_container .media h4, .review #review-container .review_container .media h5 {
   text-align: center;
   margin: 0;
 }
-/* line 84, ../sass/modules/_review.scss */
-.review .review_container blockquote {
+/* line 90, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote {
   border-left-color: red;
+  height: 16vw;
+  overflow-y: scroll;
 }
-/* line 87, ../sass/modules/_review.scss */
-.review .review_container blockquote img {
+/* line 95, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote .content {
+  margin-bottom: 40px;
+  display: block;
+}
+/* line 99, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote .content img {
   border-radius: 10px;
 }
+/* line 106, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote::-webkit-scrollbar-track {
+  width: 7px;
+  background-color: transparent;
+}
 
+@media screen and (min-width: 1000px) {
+  /* line 123, ../sass/modules/_review.scss */
+  .resp_review_container, .resp_links {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 131, ../sass/modules/_review.scss */
+  .review_container {
+    display: none;
+  }
+
+  /* line 135, ../sass/modules/_review.scss */
+  .resp_review_container {
+    display: block;
+  }
+  /* line 138, ../sass/modules/_review.scss */
+  .resp_review_container h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #ff0000;
+  }
+  /* line 147, ../sass/modules/_review.scss */
+  .resp_review_container .media-resp {
+    padding: 20px 0;
+    border-bottom: 2px solid #bbb;
+  }
+  /* line 151, ../sass/modules/_review.scss */
+  .resp_review_container .media-resp .checked {
+    color: orange;
+  }
+  /* line 155, ../sass/modules/_review.scss */
+  .resp_review_container .media-resp #review_userProfile {
+    padding: 0 20px 0 0;
+  }
+  /* line 160, ../sass/modules/_review.scss */
+  .resp_review_container .media-resp h4, .resp_review_container .media-resp h5 {
+    text-align: center;
+    margin: 0;
+  }
+  /* line 166, ../sass/modules/_review.scss */
+  .resp_review_container .media-resp img {
+    border-radius: 50%;
+  }
+}
 /* line 1, ../sass/modules/_contact.scss */
 .contact_us {
   padding: 20px 50px 50px 50px;
@@ -1047,40 +1132,98 @@ body {
 /* line 4, ../sass/modules/_contact.scss */
 .contact_us .map_Container, .contact_us .form_Container {
   width: 100%;
-  height: 75vh;
 }
 /* line 10, ../sass/modules/_contact.scss */
 .contact_us .map_Container {
+  height: 35vw;
   justify-content: center;
   border-radius: 10px;
   overflow: hidden;
   background: transparent;
 }
-/* line 23, ../sass/modules/_contact.scss */
+/* line 20, ../sass/modules/_contact.scss */
+.contact_us .form_Container {
+  height: auto;
+}
+/* line 25, ../sass/modules/_contact.scss */
 .contact_us .form_Container form h4 {
   padding-left: 20px;
   text-align: left;
   font-weight: bolder;
 }
-/* line 30, ../sass/modules/_contact.scss */
+/* line 32, ../sass/modules/_contact.scss */
 .contact_us .form_Container form textarea {
   resize: none;
 }
-/* line 34, ../sass/modules/_contact.scss */
+/* line 36, ../sass/modules/_contact.scss */
 .contact_us .form_Container form .row {
   padding: 5px 0;
 }
-/* line 38, ../sass/modules/_contact.scss */
+/* line 40, ../sass/modules/_contact.scss */
 .contact_us .form_Container form input, .contact_us .form_Container form textarea {
   background: rgba(66, 134, 244, 0.7);
   font-family: 'Consolas';
 }
-/* line 43, ../sass/modules/_contact.scss */
+/* line 45, ../sass/modules/_contact.scss */
 .contact_us .form_Container form button {
   text-transform: inherit;
   margin-top: 10px;
 }
+/* line 52, ../sass/modules/_contact.scss */
+.contact_us .form_Container form input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
 
+@media screen and (min-width: 1000px) {
+  /* line 63, ../sass/modules/_contact.scss */
+  .resp_form_container {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 69, ../sass/modules/_contact.scss */
+  .contact_us {
+    padding: 0;
+  }
+  /* line 72, ../sass/modules/_contact.scss */
+  .contact_us .map_Container {
+    border-radius: 0;
+  }
+
+  /* line 77, ../sass/modules/_contact.scss */
+  .form_container {
+    display: none;
+  }
+
+  /* line 81, ../sass/modules/_contact.scss */
+  .resp_form_container {
+    margin: 20px 0 0 0;
+  }
+  /* line 86, ../sass/modules/_contact.scss */
+  .resp_form_container form h4 {
+    text-align: left;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+  /* line 92, ../sass/modules/_contact.scss */
+  .resp_form_container form textarea {
+    resize: none;
+  }
+  /* line 96, ../sass/modules/_contact.scss */
+  .resp_form_container form input, .resp_form_container form textarea {
+    background: rgba(66, 134, 244, 0.7);
+    font-family: 'Consolas';
+  }
+  /* line 101, ../sass/modules/_contact.scss */
+  .resp_form_container form button {
+    text-transform: inherit;
+    margin-top: 10px;
+  }
+  /* line 108, ../sass/modules/_contact.scss */
+  .resp_form_container form input[type=number]::-webkit-inner-spin-button {
+    display: none;
+  }
+}
 /* line 1, ../sass/modules/_footer.scss */
 .footer {
   width: 100%;
@@ -1105,6 +1248,7 @@ body {
 .footer p {
   font-size: 17px;
   font-weight: bold;
+  padding: 0px 0;
 }
 /* line 28, ../sass/modules/_footer.scss */
 .footer a {
@@ -1156,6 +1300,21 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 96, ../sass/modules/_footer.scss */
+  .footer .keep_connected p {
+    font-size: 15px;
+    padding: 0;
+  }
+  /* line 103, ../sass/modules/_footer.scss */
+  .footer .keep_connected .row .col-sm-10 {
+    padding: 0px;
+  }
+  /* line 107, ../sass/modules/_footer.scss */
+  .footer .keep_connected .row .col-sm-2 {
+    padding: 0;
+  }
+}
 /* The container must be positioned relative: */
 /* line 2, ../sass/modules/_selection.scss */
 .custom-select {

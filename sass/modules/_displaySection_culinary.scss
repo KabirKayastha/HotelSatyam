@@ -1,7 +1,6 @@
 .displaySection{
 
     .displayCulinary{
-        padding: 0 50px;
 
         ul.culinary-navigator{
             list-style: none;
@@ -172,6 +171,7 @@
 
 @media screen and (min-width: 1000px){
     .displayCulinary{
+        padding: 0 50px;
 
         ul.resp_culinary-navigator{
             display: none;
@@ -204,7 +204,11 @@
 @media screen and (max-width: 1000px){
 
     .displayCulinary{
-        padding: 0;
+        padding: 0 25px;
+
+        .col-xs-12{
+            padding: 0 5px;
+        }
 
         ul.resp_culinary-navigator{
             display: block;

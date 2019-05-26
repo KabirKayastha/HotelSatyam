@@ -1,13 +1,10 @@
 .displaySection{
 
     .displayConference{
-        padding: 0 70px;
 
         .card{
             width: 100%;
-            height: 250px;
-            background: #aaa;
-
+            
             img.cardImage{
                 height: 100%;
                 width: 100%;
@@ -42,7 +39,25 @@
     }
 }
 
+@media screen and (min-width: 1000px){
+    .displayConference{
+        padding: 0 70px;
+
+        .card{
+            height: 200px;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px){
+
+    .displayConference{
+        padding: 0 20px;
+
+        .card{
+            height: 40vw;
+        }
+    }
 
     .card-desc{
         padding: 5px;

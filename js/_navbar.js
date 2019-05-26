@@ -1,11 +1,20 @@
 $(document).ready(function(){
     
     
+    
     $('#menuToggler').click(function(){
         $('#navbar .container').slideToggle('slow/400/fast');
         $('#out-of-navbar').toggleClass('out-of-navbar');
     });
     
+    $(window).click(function(){
+        $('#culinary_subMenu').slideUp('slow/400/fast');
+        //$('#tariff, #package, #contact').toggleClass('slideDown4').delay(400);
+        $('#aboutus_subMenu').slideUp('slow/400/fast');
+        $('#rooms_subMenu').slideUp('slow/400/fast');
+        $('#conference_subMenu').slideUp('slow/400/fast');
+    });
+
     $('#aboutUs').click(function(){
         $('#aboutus_subMenu').slideToggle('slow/400/fast');
         $('#rooms, #conferenceHall, #culinaryDelights, #tariff, #package, #contact').toggleClass('slideDown1').delay(400);
@@ -37,6 +46,7 @@ $(document).ready(function(){
         $('#rooms_subMenu').slideUp('slow/400/fast');
         $('#conference_subMenu').slideUp('slow/400/fast');
     });
+
     
 });
 
