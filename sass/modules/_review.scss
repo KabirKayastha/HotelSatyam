@@ -103,9 +103,12 @@
                 
             }
             
-            .blockquote::-webkit-scrollbar-track{
-                width: 7px;
-                background-color: transparent;
+            .buttonContainer{
+                float: right;
+
+                button{
+                    margin-left: 15px;
+                }
             }
     
         }
@@ -130,6 +133,10 @@
 
     .review_container{
         display: none;
+    }
+
+    .review{
+        padding: 0 20px;
     }
 
     .resp_review_container{

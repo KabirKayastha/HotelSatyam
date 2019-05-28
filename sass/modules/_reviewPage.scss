@@ -1,0 +1,64 @@
+.content{
+    padding: 20px 0;
+    border-bottom: 3px solid #aaa;
+
+    img{
+        border-radius: 7px;
+    }
+
+    .media-body{
+        padding: 0 10px;
+
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        
+    }
+    
+    h4, h5{
+        font-weight: bolder;
+        letter-spacing: .5px;
+    }
+}
+.checked{
+    color: orange;
+}
+
+.resp_media-content{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .media-content{
+        display: none;
+    }
+
+    .resp_media-content{
+        display: block;
+
+        .resp_content{
+            border-bottom: 2px solid #aaa;
+            padding: 20px 0 5px 0;
+            .profile{
+    
+                h4,h5{
+                    margin-top: 0;
+                    font-weight: bolder;
+                    letter-spacing: .5px; 
+                }
+            }
+    
+            .rates{
+                padding: 5px 0;
+                font-size: 12px;
+            }
+    
+            p{
+                text-align: justify;
+            }
+        }
+
+    }
+}

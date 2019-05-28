@@ -5,6 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-16">
+    <link rel="shortcut icon" href="D:/work/HotelSatyam/images/page_icon.png" />
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -21,7 +22,7 @@
             <div class="header">
 
                 <div id="logo" class="headerElement">
-                    <img src="images/Logo.jpg" alt="Logo" class="img-responsive logo" width="90px"> 
+                   <a href="D:/work/HotelSatyam/index.html"> <img src="images/Logo.jpg" alt="Logo" class="img-responsive logo" width="90px"> </a>
                 </div>
 
                 <ul class="headerElement">
@@ -71,7 +72,7 @@
                                 <li> <a href="#"> facilities</a></li>
                                 <li> <a href="#"> our services</a></li>
                                 <li> <a href="#"> our team</a></li>
-                                <li> <a href="#"> gallery</a></li>
+                                <li> <a href="D:/work/HotelSatyam/pages/gallery.html" target="_BLANK"> gallery</a></li>
                                 <li> <a href="#"> proposed extension</a></li>
                             </ul>
                         </div>
@@ -108,7 +109,7 @@
                         </div>
                     </li>
                     <li><a href="#">Tariff</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="pages\contactUs.html">Contact</a></li>
                     <li><a href="#">Packages</a></li>
                 </ul>
             </div>
@@ -154,7 +155,7 @@
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="D:/work/HotelSatyam/pages/gallery.html" target="_BLANK">
                                     gallery
                                 </a>
                             </li>
@@ -267,7 +268,7 @@
                     </li>
 
                     <li id="contact">
-                        <a href="#">contact</a>
+                        <a href="pages\contactUs.html" target="_BLANK">contact</a>
                     </li>
                     
                 </ul>
@@ -310,7 +311,7 @@
         <div class="container">
             <div id="bookingSection">
 
-                <form action="#" method="post">
+                <form action="#" method="post" id="booking_form">
                     <div class="form-group">
                         <div class="row">
                             <div id="booking_labels">
@@ -874,7 +875,7 @@
                             </a>
                     </div>
                     <center>
-                        <button class="basic_button">View All</button>
+                        <a href="D:/work/HotelSatyam/pages/gallery.html" target="_BLANK"> <button class="basic_button">View All</button> </a>
                     </center>
                 </div>
 
@@ -909,7 +910,7 @@
                         </div>
                     </div>
                     <center>
-                        <button class="basic_button">View All</button>
+                        <a href="D:/work/HotelSatyam/pages/gallery.html" target="_BLANK"> <button class="basic_button">View All</button> </a>
                     </center>
                 </div>
 
@@ -1002,78 +1003,110 @@
                                             </div>
                                         </div>
                                     </blockquote>
-
-                                    <button class="basic_button" style="text-transform:inherit; float: right;">Write a Review</button>
+                                    <div class="buttonContainer">
+                                        <a href="pages\review.html" target="_BLANK"> <button class="basic_button" style="text-transform:inherit;">More Reviews</button></a>
+                                        <a href="#"> <button class="basic_button" style="text-transform:inherit;"> Write a Review</button></a>
+                                    </div>  
                                 </div>
                             </div>
 
-                            <div class="resp_review_container">
+                             <div class="resp_review_container">
                                 <h3>Our Reviews</h3>
 
-                                <div class="media media-resp">
-
-                                    <div class="media-left media-top" id="review_userProfile">
-                                        <img src="images/profileimage.png" class="media-object" style="width:50px;">
-                                        <h5 id="review_userName" style="font-weight: bolder; margin-top: 5px;">John Doe</h4>
-                                        <h6 id="review_userAddress">Bhaktapur</h5>
+                                <div class="resp_media-content">
+                                    <div class="resp_content">
+                                        <div class="profile">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <h4>John Doe</h4>
+                                                    <h5>Suryabinayak, Bhaktapur</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="rates">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                    
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia neque minus vero deleniti corporis at ex et veritatis optio tempore quam, assumenda vel magnam commodi a porro totam nesciunt consectetur enim repudiandae, labore similique. Aperiam possimus reiciendis dolorum aliquid est dolore adipisci dignissimos voluptate! Similique voluptatem accusamus ut aliquid.</p>
+                                    </div>
+                    
+                                    <div class="resp_content">
+                                        <div class="profile">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <h4>John Doe</h4>
+                                                    <h5>Suryabinayak, Bhaktapur</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="rates">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                    
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia neque minus vero deleniti corporis at ex et veritatis optio tempore quam, assumenda vel magnam commodi a porro totam nesciunt consectetur enim repudiandae, labore similique. Aperiam possimus reiciendis dolorum aliquid est dolore adipisci dignissimos voluptate! Similique voluptatem accusamus ut aliquid.</p>
+                                    </div>
+                    
+                                    <div class="resp_content">
+                                        <div class="profile">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <h4>John Doe</h4>
+                                                    <h5>Suryabinayak, Bhaktapur</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="rates">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                    
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia neque minus vero deleniti corporis at ex et veritatis optio tempore quam, assumenda vel magnam commodi a porro totam nesciunt consectetur enim repudiandae, labore similique. Aperiam possimus reiciendis dolorum aliquid est dolore adipisci dignissimos voluptate! Similique voluptatem accusamus ut aliquid.</p>
                                     </div>
 
-                                    <div class="media-body">
-                                        <!-- rating stars -->
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <a href="D:\work\HotelSatyam\pages\review.html"> <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;">More Reviews</button></a>
+                                        </div>
+    
+                                        <div class="col-xs-6">
+                                            <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;">Write a Review</button>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="media media-resp">
-
-                                    <div class="media-left media-top" id="review_userProfile">
-                                        <img src="images/profileimage.png" class="media-object" style="width:50px;">
-                                        <h5 id="review_userName" style="font-weight: bolder; margin-top: 5px;">John Doe</h4>
-                                        <h6 id="review_userAddress">Bhaktapur</h5>
-                                    </div>
-
-                                    <div class="media-body">
-                                        <!-- rating stars -->
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;">More Reviews</button>
-                                    </div>
-
-                                    <div class="col-xs-6">
-                                        <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;">Write a Review</button>
-                                    </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <!-- /review -->
+                <!-- /review -->
         </div>
         <!-- /display-section -->
 
         <!-- contact -->
-        <div class="container">
+        <div class="container" id="contact_us">
             <div class="title" style="margin-top: 70px;">
                 <hr> 
                 <div class="titleText"> Contact Us </div>

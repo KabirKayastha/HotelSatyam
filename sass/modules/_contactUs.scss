@@ -1,0 +1,56 @@
+blockquote{
+    border-left-color: $primaryColor;
+    padding-bottom: 40px; 
+
+    ul{
+        list-style: none;
+
+        li{
+            
+
+            h3{
+                text-transform: uppercase;
+                font-weight: bolder;
+                letter-spacing: 4px;
+                color: rgb(40, 50, 189);
+            }
+
+            h6{
+                padding: 0 10px;
+            }
+
+            .contactItem{
+                display: inline-block;
+                font-size: 18px;
+                font-weight: bolder;
+                letter-spacing: 1px;
+
+                i{
+                    color: $fontColor;
+                    padding: 0 7px;
+                }
+            }
+        }
+    }
+
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+#contactUs_form{
+    margin-top: 20px;
+
+    input, textarea, button{
+
+        margin: 7.5px 0;
+    }
+
+    textarea{
+        resize: none;
+    }
+}

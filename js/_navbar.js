@@ -9,7 +9,6 @@ $(document).ready(function(){
     
     $(window).click(function(){
         $('#culinary_subMenu').slideUp('slow/400/fast');
-        //$('#tariff, #package, #contact').toggleClass('slideDown4').delay(400);
         $('#aboutus_subMenu').slideUp('slow/400/fast');
         $('#rooms_subMenu').slideUp('slow/400/fast');
         $('#conference_subMenu').slideUp('slow/400/fast');
@@ -17,7 +16,6 @@ $(document).ready(function(){
 
     $('#aboutUs').click(function(){
         $('#aboutus_subMenu').slideToggle('slow/400/fast');
-        $('#rooms, #conferenceHall, #culinaryDelights, #tariff, #package, #contact').toggleClass('slideDown1').delay(400);
         $('#rooms_subMenu').slideUp('slow/400/fast');
         $('#conference_subMenu').slideUp('slow/400/fast');
         $('#culinary_subMenu').slideUp('slow/400/fast');
@@ -25,7 +23,6 @@ $(document).ready(function(){
 
     $('#rooms').click(function(){
         $('#rooms_subMenu').slideToggle('slow/400/fast');
-        $('#conferenceHall, #culinaryDelights, #tariff, #package, #contact').toggleClass('slideDown2').delay(400);
         $('#aboutus_subMenu').slideUp('slow/400/fast');
         $('#conference_subMenu').slideUp('slow/400/fast');
         $('#culinary_subMenu').slideUp('slow/400/fast');
@@ -33,7 +30,6 @@ $(document).ready(function(){
 
     $('#conferenceHall').click(function(){
         $('#conference_subMenu').slideToggle('slow/400/fast');
-        $('#culinaryDelights, #tariff, #package, #contact').toggleClass('slideDown3').delay(400);
         $('#aboutus_subMenu').slideUp('slow/400/fast');
         $('#rooms_subMenu').slideUp('slow/400/fast');
         $('#culinary_subMenu').slideUp('slow/400/fast');
@@ -41,7 +37,6 @@ $(document).ready(function(){
 
     $('#culinaryDelights').click(function(){
         $('#culinary_subMenu').slideToggle('slow/400/fast');
-        $('#tariff, #package, #contact').toggleClass('slideDown4').delay(400);
         $('#aboutus_subMenu').slideUp('slow/400/fast');
         $('#rooms_subMenu').slideUp('slow/400/fast');
         $('#conference_subMenu').slideUp('slow/400/fast');
