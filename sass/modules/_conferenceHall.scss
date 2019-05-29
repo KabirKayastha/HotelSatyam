@@ -1,0 +1,118 @@
+.conferenceBody{
+    padding: 30px 0 40px 0;
+    margin-bottom: 10px;
+
+    blockquote{
+        padding: 10px 20px;
+        text-align: justify;
+
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: bolder;
+            color: rgb(40, 50, 189);
+        }
+
+        h3{
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        p{
+            //text-align: justify;
+            padding-bottom: 0px;
+        }
+
+        .buttonContainer{
+
+            button.collapse-btn{
+                margin-top: 20px;
+            }
+        }
+
+        .features{
+            padding: 20px 0;
+
+            h3{
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(27, 209, 42);
+                letter-spacing: 2px;
+                padding: 0 0 30px 0;
+                text-align: center;
+            }
+
+            .card-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .row{
+                    margin: 0 auto;
+                }
+
+                .card{
+                    width: 250px;
+                    height: auto;
+                    background: #ddd;
+                    padding: 25px;
+                    box-shadow: 0 0 10px 1px #aaa;
+                    margin: 10px 20px 30px 20px;
+                    
+
+                    .sym-container{
+                        text-align: center;
+                        background: #a3a3a3;
+                        height: 80px;
+                        width: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        margin: auto;
+                        border-radius: 50%;
+
+                        i{
+                            font-size: 45px;
+                            color: #333;
+                        }
+                    }
+
+                    h4{
+                        text-align: center;
+                        font-weight: bolder;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            // ul{
+            //     margin-top: 10px;
+            //     background: blue;
+            //     padding: 20px;
+                
+
+            //     li{
+            //         letter-spacing: .5px;
+
+            //         h4{
+            //             font-weight: bold;
+            //             margin-bottom: 20px;
+            //         }
+            //     }
+            // }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .conferenceBody{
+
+        blockquote{
+            padding: auto 0;
+        }
+    }
+}

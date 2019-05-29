@@ -1,0 +1,67 @@
+.culinaryContent{
+    padding: 10px 0 40px 0;
+
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+        color: rgb(40, 50, 189);
+    }
+
+    .culinary-subMenus{
+
+        img{
+            margin-top: 30px;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 -3px 10px 2px #ccc;
+        }
+
+        .row{
+            margin-bottom: 30px;
+        }
+
+        .card-desc{
+            background: #bbb;
+            padding: 10px;
+            border-radius: 0 0 7px 7px;
+            box-shadow: 0 3px 10px 2px #ccc;
+
+            h4{
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 5px 0;
+                color: blue;
+            }
+
+            h5{
+                margin: 0;
+                padding: 3px 0;
+                font-weight: bolder;
+                letter-spacing: .5px;
+                color: orangered;
+            }
+
+            p{
+                font-weight: bold;
+                padding: 5px 0 0 0;
+            }
+
+            button{
+                background: #eee;
+                color: $primaryColor;
+                border: none;
+                border-radius: 3px;
+                font-size: 18px;
+                margin: 0 auto;
+
+                &:hover{
+                    background: #ddd;
+                }
+            }
+        }
+    }
+}
