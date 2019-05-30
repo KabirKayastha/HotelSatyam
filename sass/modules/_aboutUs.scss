@@ -1,0 +1,124 @@
+#introduction{
+    margin: 50px 0;
+    padding: 20px;
+    background: #fff;
+
+    .img-container{
+
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    .text-container{
+        padding: 10px 30px;
+
+        h2{
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: rgb(40, 50, 189);
+        }
+
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+}
+
+.message-section{
+    background: gray;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    //z-index: -1;
+    background-attachment: fixed;
+
+    .message-container{
+        max-width: 60%;
+        background: rgba($color: #999, $alpha: .7);
+        padding: 30px 50px 30px 30px;
+        border-radius: 15px;
+
+
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+
+            img{
+                border-radius: 10px;
+            }
+        }
+
+        h3, h4{
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+        }
+
+        h4{
+            text-transform: capitalize;
+            color: rgb(50, 50, 50);
+        }
+
+
+        .message{
+            padding: 20px 0;
+
+            p{
+                font-size: 18px;
+                letter-spacing: .5px;
+                text-align: justify;
+                line-height: 1.5em;
+                font-weight: bold;
+                color: #000;
+
+                &::before{
+                    content: '\f10d';
+                    font-family: "FontAwesome";
+                    font-size: 40px;
+                    padding: 0 10px;
+                }
+
+                &::after{
+                    content: '\f10e';
+                    font-family: "FontAwesome";
+                    font-size: 40px;
+                    padding: 0 10px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
+
+#M-D{
+    background-image: url('D:/work/HotelSatyam/images/Queen-Room.jpg');
+}
+
+@media screen and (max-width: 1000px){
+    #introduction{
+
+        .text-container{
+            padding: 10px 0;
+        }
+    }
+    .message-section{
+
+        .message-container{
+            max-width: 100%;
+        }
+    }
+}

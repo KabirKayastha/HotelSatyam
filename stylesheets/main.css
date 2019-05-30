@@ -1914,3 +1914,121 @@ h1#contactUs_title {
 .tariffContainer ol li {
   padding: 5px;
 }
+
+/* line 1, ../sass/modules/_aboutUs.scss */
+#introduction {
+  margin: 50px 0;
+  padding: 20px;
+  background: #fff;
+}
+/* line 8, ../sass/modules/_aboutUs.scss */
+#introduction .img-container img {
+  border-radius: 10px;
+}
+/* line 13, ../sass/modules/_aboutUs.scss */
+#introduction .text-container {
+  padding: 10px 30px;
+}
+/* line 16, ../sass/modules/_aboutUs.scss */
+#introduction .text-container h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2832bd;
+}
+/* line 23, ../sass/modules/_aboutUs.scss */
+#introduction .text-container p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* line 30, ../sass/modules/_aboutUs.scss */
+.message-section {
+  background: gray;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* line 44, ../sass/modules/_aboutUs.scss */
+.message-section .message-container {
+  max-width: 60%;
+  background: rgba(153, 153, 153, 0.7);
+  padding: 30px 50px 30px 30px;
+  border-radius: 15px;
+}
+/* line 51, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+/* line 57, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .image img {
+  border-radius: 10px;
+}
+/* line 62, ../sass/modules/_aboutUs.scss */
+.message-section .message-container h3, .message-section .message-container h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: black;
+}
+/* line 70, ../sass/modules/_aboutUs.scss */
+.message-section .message-container h4 {
+  text-transform: capitalize;
+  color: #323232;
+}
+/* line 76, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .message {
+  padding: 20px 0;
+}
+/* line 79, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .message p {
+  font-size: 18px;
+  letter-spacing: .5px;
+  text-align: justify;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+/* line 87, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .message p::before {
+  content: '\f10d';
+  font-family: "FontAwesome";
+  font-size: 40px;
+  padding: 0 10px;
+}
+/* line 94, ../sass/modules/_aboutUs.scss */
+.message-section .message-container .message p::after {
+  content: '\f10e';
+  font-family: "FontAwesome";
+  font-size: 40px;
+  padding: 0 10px;
+  position: relative;
+  top: 10px;
+}
+
+/* line 107, ../sass/modules/_aboutUs.scss */
+#M-D {
+  background-image: url("D:/work/HotelSatyam/images/Queen-Room.jpg");
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 114, ../sass/modules/_aboutUs.scss */
+  #introduction .text-container {
+    padding: 10px 0;
+  }
+
+  /* line 120, ../sass/modules/_aboutUs.scss */
+  .message-section .message-container {
+    max-width: 100%;
+  }
+}
