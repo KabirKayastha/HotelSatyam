@@ -1,3 +1,41 @@
+#aboutUs_image{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: relative;
+    background-image: url('D:/work/HotelSatyam/images/conference1.jpg');
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    span{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        background: rgba($color: #222, $alpha: .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 0 20px 0;
+
+        h2{
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            color: rgb(40, 50, 189);;
+        }
+    }
+
+    
+}
+
 #introduction{
     margin: 50px 0;
     padding: 20px;
@@ -28,7 +66,7 @@
 }
 
 .message-section{
-    background: gray;
+    //background: #fff;
     padding: 50px 10px;
     display: flex;
     justify-content: center;
@@ -38,13 +76,22 @@
     background-position: center;
     background-size: cover;
 	background-repeat: no-repeat;
-    //z-index: -1;
     background-attachment: fixed;
 
-    .message-container{
+    background-image: url('D:/work/HotelSatyam/images/Queen-Room.jpg');
+
+    #M-D{
         max-width: 60%;
-        background: rgba($color: #999, $alpha: .7);
         padding: 30px 50px 30px 30px;
+    }
+
+    #other2{
+        margin-top: 25px;
+    }
+
+    .message-container{
+        background: rgba($color: #999, $alpha: .7);
+        padding: 25px 30px;
         border-radius: 15px;
 
 
@@ -104,9 +151,169 @@
     }
 }
 
-#M-D{
-    background-image: url('D:/work/HotelSatyam/images/Queen-Room.jpg');
+#specialities{
+
+    .speciality{
+        padding: 20px 0 40px 0;
+
+        h3{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(40, 50, 189);
+            letter-spacing: 2px;
+            padding: 0 0 30px 0;
+            text-align: center;
+        }
+
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .row{
+                margin: 0 auto;
+            }
+
+            .card{
+                width: 250px;
+                height: auto;
+                background: #ddd;
+                padding: 25px;
+                box-shadow: 0 0 10px 1px #aaa;
+                margin: 10px 20px 30px 20px;
+                
+
+                .sym-container{
+                    text-align: center;
+                    background: #a3a3a3;
+                    height: 80px;
+                    width: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    margin: auto;
+                    border-radius: 50%;
+
+                    i{
+                        font-size: 45px;
+                        color: #333;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $fontColor;
+                    
+                    h4{
+                        text-align: center;
+                        font-weight: bolder;
+                        letter-spacing: 2px;
+                    }
+                }
+
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
+
+#facilities{
+    padding: 30px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('D:/work/HotelSatyam/images/hotel.jpg');
+
+    h2{
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: rgb(40, 50, 189);
+        letter-spacing: 2px;
+        padding: 0px 0;
+        text-align: center;
+    }
+
+    .facility{
+        //max-width: 75%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+
+        .facility-card{
+            margin: 15px auto;
+            background: rgba($color: #555, $alpha: .7);
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 80px;
+            border-radius: 60px;
+            padding: 10px;
+
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+
+
+            .sym-container{
+                text-align: center;
+                background: rgba($color: #aaa, $alpha: .8);
+                height: 60px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                //margin: auto;
+                border-radius: 50%;
+
+                i{
+                    font-size: 30px;
+                    color: rgba($color: #333, $alpha: 1);
+                }
+            }
+
+            .facility-desc{
+                margin: 0 30px;
+
+                h3{
+                    margin: 0;
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #000;
+                }
+            }
+        }
+
+    }
+    
+}
+
+// #M-D{
+//     background-image: url('D:/work/HotelSatyam/images/Queen-Room.jpg');
+// }
+
+@media screen and (min-width: 1025px){
+    .facility{
+        max-width: 60%;
+
+        .sym-container{
+            margin: 0;
+        }
+    }
+
+}
+
 
 @media screen and (max-width: 1000px){
     #introduction{
@@ -117,8 +324,41 @@
     }
     .message-section{
 
-        .message-container{
+        #M-D{
             max-width: 100%;
+        }
+
+        #other1{
+            margin-top: 30px;
+        }
+    }
+
+    #facilities{
+        padding: 10px;
+
+        .facility{
+            max-width: 100%;
+
+            .facility-card{
+                width: 300px;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+                
+                .sym-container{
+                    margin: auto;
+                }
+
+                .facility-desc{
+
+                    
+                    h3{
+                        padding-top: 15px;
+                        font-size: 23px;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
         }
     }
 }
