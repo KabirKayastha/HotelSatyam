@@ -1,0 +1,183 @@
+#ourTeam_bgimage{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    position: relative;
+    background-image: url('D:/work/HotelSatyam/images/Queen-Room.jpg');
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    span{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        background: rgba($color: #aaa, $alpha: .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 0 20px 0;
+        border: 2px solid #888;
+        margin-bottom: 30px;
+
+        h1{
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 50px;
+            color: rgb(40, 50, 189);;
+        }
+    }
+}
+
+#ourTeam{
+    margin: 70px 0;
+
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgb(27, 209, 42);
+        font-weight: bolder;
+    }
+
+    #officials{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .team-card{
+            height: 350px;
+            width: 25%;
+            margin: 50px 30px 20px 30px;
+            background: green;
+            border-radius: 10px;
+            overflow: hidden;
+    
+            display: flex;
+            align-items: flex-end;
+    
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            .profile-desc-after{
+                height: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+    
+            .profile-desc-active{
+                height: 25%;
+                border-radius: 30px 30px 0 0;
+            }
+    
+            .profile-desc{
+                background: rgba($color: #555, $alpha: .8);
+    
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 5px;
+                color: #ddd;
+                
+                transition-property: height, border-radius;
+                transition-duration: .5s;
+                transition-delay: .2s;
+                transition-timing-function: ease-in-out;
+                
+                span{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    
+                    i{
+                        font-size: 22px;
+                        transform: rotate(0deg);
+                        cursor: pointer;
+    
+                        transition-property: transform;
+                        transition-duration: .5s;
+                        transition-delay: .2s;
+                        transition-timing-function: ease-in-out;
+                    }
+                    
+                    i.i-after{
+                        transform: rotate(180deg);
+                    }
+                }
+    
+                .profile-info{
+                    h3,h4{
+                        margin: 0 0 7px 0;
+                        text-align: center;
+                        font-weight: bolder;
+                        letter-spacing: .5px;
+                    }
+    
+                }
+                
+                p{
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+    
+                .social-container{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    a{
+                        margin: 5px;
+                        text-decoration: none;
+                        color: $fontColor;
+                        background: #ddd;
+                        height: 20px;
+                        width: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        border-radius: 50%;
+                        transition-property: background-color, color;
+                        transition-duration: .2s;
+                        transition-delay: 0s;
+                        //transition-timing-function: linear;
+    
+                        
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    a#fb:hover{
+                        background-color: #3b5998;  
+                    }
+    
+                    a#tw:hover{
+                        background-color: #38A1F3;  
+                    }
+    
+                    a#ig:hover{
+                        background-color: #333;
+                        color: #ddd;  
+                    }
+                }
+            }
+        }
+    }
+
+}

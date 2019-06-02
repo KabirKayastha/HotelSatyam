@@ -2248,3 +2248,175 @@ h1#contactUs_title {
     letter-spacing: 0px;
   }
 }
+/* line 1, ../sass/modules/_ourteam.scss */
+#ourTeam_bgimage {
+  height: 35vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  background-image: url("D:/work/HotelSatyam/images/Queen-Room.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* line 16, ../sass/modules/_ourteam.scss */
+#ourTeam_bgimage span {
+  height: auto;
+  padding: 10px;
+  width: auto;
+  background: rgba(170, 170, 170, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 20px 0;
+  border: 2px solid #888;
+  margin-bottom: 30px;
+}
+/* line 28, ../sass/modules/_ourteam.scss */
+#ourTeam_bgimage span h1 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: #2832bd;
+}
+
+/* line 40, ../sass/modules/_ourteam.scss */
+#ourTeam {
+  margin: 70px 0;
+}
+/* line 43, ../sass/modules/_ourteam.scss */
+#ourTeam h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1bd12a;
+  font-weight: bolder;
+}
+/* line 51, ../sass/modules/_ourteam.scss */
+#ourTeam #officials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* line 57, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card {
+  height: 350px;
+  width: 25%;
+  margin: 50px 30px 20px 30px;
+  background: green;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 72, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc-after {
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+/* line 77, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc-active {
+  height: 25%;
+  border-radius: 30px 30px 0 0;
+}
+/* line 82, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc {
+  background: rgba(85, 85, 85, 0.8);
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  color: #ddd;
+  transition-property: height, border-radius;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+/* line 99, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 104, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc span i {
+  font-size: 22px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+/* line 115, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc span i.i-after {
+  transform: rotate(180deg);
+}
+/* line 121, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .profile-info h3, #ourTeam #officials .team-card .profile-desc .profile-info h4 {
+  margin: 0 0 7px 0;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: .5px;
+}
+/* line 130, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc p {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* line 137, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 143, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container a {
+  margin: 5px;
+  text-decoration: none;
+  color: #222;
+  background: #ddd;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-delay: 0s;
+}
+/* line 161, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container a i {
+  font-size: 20px;
+}
+/* line 166, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container a#fb:hover {
+  background-color: #3b5998;
+}
+/* line 170, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container a#tw:hover {
+  background-color: #38A1F3;
+}
+/* line 174, ../sass/modules/_ourteam.scss */
+#ourTeam #officials .team-card .profile-desc .social-container a#ig:hover {
+  background-color: #333;
+  color: #ddd;
+}

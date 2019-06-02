@@ -14,9 +14,7 @@ $(document).ready(function(){
         function(){
             $(this).css('color','#333')
         }
-    ).click(function(){
-        $(this).css('color','orange');
-    });
+    );
 
     $('#star2').hover(
 
