@@ -2291,6 +2291,11 @@ h1#contactUs_title {
   margin: 70px 0;
 }
 /* line 43, ../sass/modules/_ourteam.scss */
+#ourTeam hr {
+  height: 0;
+  border-top: 2px solid #777;
+}
+/* line 48, ../sass/modules/_ourteam.scss */
 #ourTeam h2 {
   text-align: center;
   text-transform: uppercase;
@@ -2298,17 +2303,17 @@ h1#contactUs_title {
   color: #1bd12a;
   font-weight: bolder;
 }
-/* line 51, ../sass/modules/_ourteam.scss */
-#ourTeam #officials {
+/* line 56, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-/* line 57, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card {
+/* line 62, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card {
   height: 350px;
-  width: 25%;
+  width: 280px;
   margin: 50px 30px 20px 30px;
   background: green;
   border-radius: 10px;
@@ -2319,18 +2324,18 @@ h1#contactUs_title {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 72, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc-after {
+/* line 77, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc-after {
   height: 100%;
   border-radius: 10px 10px 0 0;
 }
-/* line 77, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc-active {
+/* line 82, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc-active {
   height: 25%;
   border-radius: 30px 30px 0 0;
 }
-/* line 82, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc {
+/* line 87, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc {
   background: rgba(85, 85, 85, 0.8);
   position: relative;
   width: 100%;
@@ -2345,14 +2350,13 @@ h1#contactUs_title {
   transition-delay: .2s;
   transition-timing-function: ease-in-out;
 }
-/* line 99, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc span {
-  width: 100%;
+/* line 104, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc span {
   display: flex;
   justify-content: center;
 }
-/* line 104, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc span i {
+/* line 109, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc span i {
   font-size: 22px;
   transform: rotate(0deg);
   cursor: pointer;
@@ -2361,33 +2365,34 @@ h1#contactUs_title {
   transition-delay: .2s;
   transition-timing-function: ease-in-out;
 }
-/* line 115, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc span i.i-after {
+/* line 120, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc span i.i-after {
   transform: rotate(180deg);
 }
-/* line 121, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .profile-info h3, #ourTeam #officials .team-card .profile-desc .profile-info h4 {
+/* line 126, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .profile-info h3, #ourTeam .flex-container .team-card .profile-desc .profile-info h4 {
   margin: 0 0 7px 0;
   text-align: center;
   font-weight: bolder;
   letter-spacing: .5px;
+  text-transform: capitalize;
 }
-/* line 130, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc p {
+/* line 136, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc p {
   padding: 15px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
 }
-/* line 137, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container {
+/* line 143, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 143, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container a {
+/* line 149, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container a {
   margin: 5px;
   text-decoration: none;
   color: #222;
@@ -2403,20 +2408,20 @@ h1#contactUs_title {
   transition-duration: .2s;
   transition-delay: 0s;
 }
-/* line 161, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container a i {
+/* line 167, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container a i {
   font-size: 20px;
 }
-/* line 166, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container a#fb:hover {
+/* line 172, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container a#fb:hover {
   background-color: #3b5998;
 }
-/* line 170, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container a#tw:hover {
+/* line 176, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container a#tw:hover {
   background-color: #38A1F3;
 }
-/* line 174, ../sass/modules/_ourteam.scss */
-#ourTeam #officials .team-card .profile-desc .social-container a#ig:hover {
+/* line 180, ../sass/modules/_ourteam.scss */
+#ourTeam .flex-container .team-card .profile-desc .social-container a#ig:hover {
   background-color: #333;
   color: #ddd;
 }

@@ -1,34 +1,50 @@
-$(document).ready(function(){
 
-    $('#ourTeam .team-card .profile-desc span i').click(function(){
-        $('#ourTeam .team-card .profile-desc').toggleClass('profile-desc-active');
-        $('#ourTeam .team-card .profile-desc').toggleClass('profile-desc-after');
-        $(this).toggleClass('i-after');
+// create unique id for each profile-desc class and i tag
 
-    });
+var container = document.getElementsByClassName('container');
 
-});
-
-//var upIcon = document.querySelectorAll('#officials .team-card .profile-desc span i');
-var iconContainer = document.querySelectorAll('#officials .team-card .profile-desc span');
-var button = document.querySelector('#test');
+var iconContainer = document.querySelectorAll('.flex-container .team-card .profile-desc span');
+var profileDesc = document.querySelectorAll('.flex-container .team-card .profile-desc');
 
 var counter = 0;
 function createIcon() {
-  var icon = document.createElement('i'); 
-  icon.setAttribute("class", 'fas fa-angle-up');
-  icon.setAttribute("id", 'upIcon' + counter);
-  return icon;
+    var icon = document.createElement('i'); 
+    icon.setAttribute("class", 'fas fa-angle-up');
+    icon.setAttribute("id", 'upIcon' + counter);
+    return icon;
 }
 
+function profileDescId() {
+    profileDesc[counter].id = 'profileDesc'+counter; 
+}
 
+function iconContainerId() {
+    iconContainer[counter].id = 'iconContainer'+counter; 
+}
 
-
-document.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('load', ()=>{
     for(i=0; i < iconContainer.length; i++) {
+        profileDescId();
+        iconContainerId();
         var create = $(createIcon());
         $(iconContainer[counter]).append(create);
         counter++
     }
 });
+
+
+//toggleing function
+
+
+    $('.team-card .profile-desc span').click(function(){
+        $('#'+this.parentNode.id).toggleClass('profile-desc-active');
+        $('#'+this.parentNode.id).toggleClass('profile-desc-after');
+        $('#'+this.firstChild.id).toggleClass('i-after');
+        
+    });
+
+
+
+
+
 
