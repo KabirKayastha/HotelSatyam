@@ -283,11 +283,11 @@
 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+                    <!-- <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+                    </ol> -->
                 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
@@ -303,6 +303,16 @@
                         <img src="images/slider3.jpg" alt="" style="width:100%;" class="img-responsive">
                         </div>
                     </div>
+
+                    <!-- button container -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                 </div>
 
         </div>
@@ -962,57 +972,134 @@
 
                                 <div class="media">
 
-                                    <blockquote class="blockquote">
-                                        <div class="content">
-                                            <div class="media-left media-top" id="review_userProfile1">
-                                                <img src="images/profileimage.png" class="media-object" style="width:100px;">
-                                                <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">John Doe</h4>
-                                                <h5 id="review_userAddress">Bhaktapur</h5>
+                                    <blockquote class="blockquote" id="reviewBlockquote">
+                                        <div id="review_slide">
+                                            <div class="content" id="review_slideContent-lastItemClone">
+                                                <div class="media-left media-top">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:100px;">
+                                                    <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">Roronoa Zoro</h4>
+                                                    <h5 id="review_userAddress">Bhaktapur</h5>
+                                                </div>
+    
+                                                <div class="media-body">
+                                                    <!-- rating stars -->
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+    
+                                                    <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="content" >
+                                                <div class="media-left media-top">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:100px;">
+                                                    <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">Monkey D. Luffy</h4>
+                                                    <h5 id="review_userAddress">Bhaktapur</h5>
+                                                </div>
+    
+                                                <div class="media-body">
+                                                    <!-- rating stars -->
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+    
+                                                    <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
                                             </div>
 
-                                            <div class="media-body">
-                                                <!-- rating stars -->
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
+                                            
+                                            <div class="content">
+                                                <div class="media-left media-top">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:100px;">
+                                                    <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">John Doe</h4>
+                                                    <h5 id="review_userAddress">Bhaktapur</h5>
+                                                </div>
+    
+                                                <div class="media-body">
+                                                    <!-- rating stars -->
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    
+                                                    <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
 
-                                                <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <div class="content">
+                                                <div class="media-left media-top">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:100px;">
+                                                    <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">Roronoa Zoro</h4>
+                                                    <h5 id="review_userAddress">Bhaktapur</h5>
+                                                </div>
+    
+                                                <div class="media-body">
+                                                    <!-- rating stars -->
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    
+                                                    <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="content" id="review_slideContent-firstItemClone">
+                                                <div class="media-left media-top">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:100px;">
+                                                    <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">Monkey D. Luffy</h4>
+                                                    <h5 id="review_userAddress">Bhaktapur</h5>
+                                                </div>
+                
+                                                <div class="media-body">
+                                                    <!-- rating stars -->
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                
+                                                    <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="content">
-                                            <div class="media-left media-top" id="review_userProfile1">
-                                                <img src="images/profileimage.png" class="media-object" style="width:100px;">
-                                                <h4 id="review_userName" style="font-weight: bolder; margin-top: 5px;">John Doe</h4>
-                                                <h5 id="review_userAddress">Bhaktapur</h5>
-                                            </div>
-
-                                            <div class="media-body">
-                                                <!-- rating stars -->
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-
-                                                <p> blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                        </div>
+                                        
                                     </blockquote>
+
+                                    <div class="sliderButtonContainer">
+                                        <button class="basic_button" id="review_slideContent-prevBtn">
+                                            <i class="fas fa-angle-up"></i>
+                                        </button>
+                                        <button class="basic_button" id="review_slideContent-nextBtn">
+                                            <i class="fas fa-angle-down"></i>
+                                        </button>
+                                    </div>
+
                                     <div class="buttonContainer">
                                         <a href="pages\review.html"> <button class="basic_button" style="text-transform:inherit;">More Reviews</button></a>
-                                        <a href="#"> <button class="basic_button" style="text-transform:inherit;"> Write a Review</button></a>
+                                        <button class="basic_button" style="text-transform:inherit;" data-toggle="modal" data-target="#writeReviewModal"> Write a Review</button>
                                     </div>  
                                 </div>
                             </div>
-
-                             <div class="resp_review_container">
+                            
+                            <div class="resp_review_container">
                                 <h3>Our Reviews</h3>
 
                                 <div class="resp_media-content">
@@ -1094,7 +1181,7 @@
                                         </div>
     
                                         <div class="col-xs-6">
-                                            <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;">Write a Review</button>
+                                            <button class="basic_button" style="text-transform:inherit; margin-top: 20px; font-weight:inherit;" data-toggle="modal" data-target="#writeReviewModal">Write a Review</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1106,6 +1193,53 @@
                 <!-- /review -->
         </div>
         <!-- /display-section -->
+
+        <!-- review Modal -->
+        <div id="reviewModal">
+            <div id="writeReviewModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title" style="text-align: center;">Please Review Us</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="starRating">
+                            <h4>
+                                Also Rate us:
+                            </h4>
+                            <div class="starContainer">
+                                <span class="fa fa-star" id="star1"></span>
+                                <span class="fa fa-star" id="star2"></span>
+                                <span class="fa fa-star" id="star3"></span>
+                                <span class="fa fa-star" id="star4"></span>
+                                <span class="fa fa-star" id="star5"></span>
+                            </div>
+                        </div>
+                        <div id="reviewModalForm">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Full Name">
+                                    <input type="email" placeholder="Your Email">
+                                    <input type="text" placeholder="Your Address">
+
+
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Review"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="basic_button" data-dismiss="modal">Submit</button>
+                    </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- /review Modal -->
 
         <!-- contact -->
         <div class="container" id="contact_us">
@@ -1415,6 +1549,7 @@
         <script src="js/_displaysection.js"></script>
         <script src="js/_starRating.js"></script>
         <script src="js/_selection.js"></script>
+        <script src="js/_review.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </body>

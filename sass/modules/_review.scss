@@ -70,6 +70,7 @@
             }
     
             .media{
+                width: 100%;
     
                 .checked{
                     color: orange;
@@ -90,17 +91,36 @@
             .blockquote{
                 border-left-color: red;
                 height: 16vw;
-                overflow-y: scroll;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                overflow-y: hidden;
 
                 .content{
-                    margin-bottom: 40px;
+                    padding-bottom: 40px;
                     display: block;
+                    width: 100%;
 
                     img{
                         border-radius: 10px;
                     }
                 }
                 
+            }
+
+            .sliderButtonContainer{
+                float: left;
+                display: flex;
+
+                button{
+                    height: 30px;
+                    width: 30px;
+                    margin: 0 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                }
             }
             
             .buttonContainer{
@@ -113,9 +133,55 @@
     
         }
     }
+}
 
-    
+#reviewModal{
 
+    .starRating{
+        width: 100%;
+        margin: 0 auto 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        h4{
+            margin: 0 10px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+        
+        span{
+            padding: 3px 5px;
+            cursor: pointer;
+        }
+    }
+
+    form{
+        width: 80%;
+        margin: auto;
+
+        input, textarea{
+            margin: 10px 0;
+            width: 100%;
+            font-family: 'consolas';
+            font-size: 16px;
+            border: none;
+            border-bottom: 2px solid #333;
+            padding: 5px 10px;
+        }
+
+        input{
+            height: 35px;
+        }
+
+        textarea{
+            height: 150px;
+            resize: none;
+            
+        }
+    }
 }
 
 
