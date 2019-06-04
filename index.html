@@ -5,13 +5,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-16">
-    <link rel="shortcut icon" href="D:/work/HotelSatyam/images/page_icon.png" />
+    <link rel="shortcut icon" href="images/page_icon.png" />
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="stylesheets/owlCarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css">
@@ -543,12 +545,12 @@
 
                         <div class="col-md-2 col-xs-12 col-sm-12" style="padding: 0;"> 
                             <ul class="culinary-navigator nav-pills">
-                                <a href="#display_DiningHall" data-toggle="tab" id="a-D"><li class="active" id="li-D"> Dining Hall </li></a> 
-                                <a href="#display_Bar" data-toggle="tab" id="a-B"><li id="li-B"> Bar </li></a> 
-                                <a href="#display_Cafeteria" data-toggle="tab" id="a-C"><li id="li-C"> Cafeteria </li></a> 
-                                <a href="#display_Rooftop" data-toggle="tab" id="a-R"><li id="li-R"> Rooftop Garden </li></a> 
-                                <a href="#display_Open" data-toggle="tab" id="a-O"><li id="li-O"> Open Kitchen </li></a> 
-                                <a href="#display_Lounge" data-toggle="tab" id="a-A"><li id="li-A"> Attractive Lounge </li></a> 
+                                <a href="#display_DiningHall" data-toggle="tab" id="a-D"><li class="culinaryMenu active" id="li-D"> Dining Hall </li></a> 
+                                <a href="#display_Bar" data-toggle="tab" id="a-B"><li class="culinaryMenu" id="li-B"> Bar </li></a> 
+                                <a href="#display_Cafeteria" data-toggle="tab" id="a-C"><li class="culinaryMenu" id="li-C"> Cafeteria </li></a> 
+                                <a href="#display_Rooftop" data-toggle="tab" id="a-R"><li class="culinaryMenu" id="li-R"> Rooftop Garden </li></a> 
+                                <a href="#display_Open" data-toggle="tab" id="a-O"><li class="culinaryMenu" id="li-O"> Open Kitchen </li></a> 
+                                <a href="#display_Lounge" data-toggle="tab" id="a-A"><li class="culinaryMenu" id="li-A"> Attractive Lounge </li></a> 
                             </ul>
 
                             <ul class="resp_culinary-navigator nav-tabs">
@@ -780,112 +782,51 @@
                 </div>
 
                 <div class="gallery">
-                    <div id="myGallery" class="carousel slide" data-ride="carousel">
-                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-
-                                <div class="gallery_slide container-fluid">
-                                    <ul>
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall4.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall2.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall3.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall5.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/open1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                              
+                    <div class="wrapper">
+      
+                        <div class="slide owl-carousel owl-theme ">
+                            <div class="box">
+                              <img src="images/slider1.jpg" alt="">
                             </div>
-                        
-                            <div class="item">
-                                <div class="gallery_slide container-fluid">
-                                    <ul>
-                                        <li>
-                                            <a href="#"> <img src="images/open1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"> <img src="images/open2.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"> <img src="images/open3.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"> <img src="images/open4.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"> <img src="images/open5.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"> <img src="images/bar1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  
+                            <div class="box">
+                              <img src="images/slider3.jpg" alt="">
                             </div>
-                        
-                            <div class="item">
-                              <div class="gallery_slide container-fluid">
-                                    <ul>
-                                        <li>
-                                           <a href="#"> <img src="images/Queen-Room.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/slider1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/slider3.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/Logo.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/dininghall5.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-
-                                        <li>
-                                           <a href="#"> <img src="images/open1.jpg" alt="" class="img-responsive"> </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  
+                            <div class="box">
+                              <img src="images/slider4.png" alt="">
                             </div>
-                          </div>
-                          
-                          <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myGallery" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" ></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myGallery" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                    </div>
+                  
+                            <div class="box">
+                              <img src="images/conference1.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/Queen-Room.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/dininghall1.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/room1.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/open1.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/room2.jpg" alt="">
+                            </div>
+                  
+                            <div class="box">
+                              <img src="images/bar1.jpg" alt="">
+                            </div>
+                  
+                        </div>
+                      </div>
                     <center>
                         <a href="D:/work/HotelSatyam/pages/gallery.html"> <button class="basic_button">View All</button> </a>
                     </center>
@@ -1107,7 +1048,7 @@
                                         <div class="profile">
                                             <div class="row">
                                                 <div class="col-xs-3">
-                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                    <img src="../HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
                                                 </div>
                                                 <div class="col-xs-9">
                                                     <h4>John Doe</h4>
@@ -1131,7 +1072,7 @@
                                         <div class="profile">
                                             <div class="row">
                                                 <div class="col-xs-3">
-                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:50px">
                                                 </div>
                                                 <div class="col-xs-9">
                                                     <h4>John Doe</h4>
@@ -1155,7 +1096,7 @@
                                         <div class="profile">
                                             <div class="row">
                                                 <div class="col-xs-3">
-                                                    <img src="D:/work/HotelSatyam/images/profileimage.png" class="media-object" style="width:50px">
+                                                    <img src="images/profileimage.png" class="media-object" style="width:50px">
                                                 </div>
                                                 <div class="col-xs-9">
                                                     <h4>John Doe</h4>
@@ -1543,8 +1484,10 @@
         
 
         
-
-        <script src="js/jQuery.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owlCarousel/owl.carousel.min.js"></script>
+        <script src="js/owlCarousel/o-carousel.js"></script>
+        <!-- <script src="js/jQuery.js"></script> -->
         <script src="js/_navbar.js"></script>
         <script src="js/_displaysection.js"></script>
         <script src="js/_starRating.js"></script>

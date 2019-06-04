@@ -905,81 +905,54 @@ body {
     background: #ddd;
   }
 }
-/* line 5, ../sass/modules/_displaySection_gallery.scss */
-.gallery .gallery_slide ul {
-  list-style: none;
-  width: 100%;
-  height: 25vh;
-  margin-bottom: 0;
-  background: transparent;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+/* line 2, ../sass/modules/_displaySection_gallery.scss */
+.gallery .wrapper {
+  padding: 0 20px;
 }
-/* line 16, ../sass/modules/_displaySection_gallery.scss */
-.gallery .gallery_slide ul li {
-  width: 15%;
-  background: gray;
-  margin-left: 10px;
+/* line 5, ../sass/modules/_displaySection_gallery.scss */
+.gallery .wrapper .box {
+  height: 220px;
+  display: flex;
+  background: #aaa;
   border-radius: 10px;
   overflow: hidden;
 }
-/* line 25, ../sass/modules/_displaySection_gallery.scss */
-.gallery .gallery_slide ul li img {
-  height: 100%;
-  width: 100%;
-}
-/* line 33, ../sass/modules/_displaySection_gallery.scss */
-.gallery .carousel-control {
-  background: transparent;
-  width: 70px;
-  opacity: 1;
-}
-/* line 38, ../sass/modules/_displaySection_gallery.scss */
-.gallery .carousel-control span {
-  color: #ff0000;
-}
-/* line 44, ../sass/modules/_displaySection_gallery.scss */
-.gallery button {
-  margin-top: 20px;
-}
 
-/* line 49, ../sass/modules/_displaySection_gallery.scss */
+/* line 15, ../sass/modules/_displaySection_gallery.scss */
 .resp_gallery {
   display: none;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 59, ../sass/modules/_displaySection_gallery.scss */
+  /* line 25, ../sass/modules/_displaySection_gallery.scss */
   .gallery .gallery_slide ul {
     height: auto;
   }
-  /* line 63, ../sass/modules/_displaySection_gallery.scss */
+  /* line 29, ../sass/modules/_displaySection_gallery.scss */
   .gallery .gallery_slide ul li {
     height: 15vw;
   }
 
-  /* line 70, ../sass/modules/_displaySection_gallery.scss */
+  /* line 36, ../sass/modules/_displaySection_gallery.scss */
   .resp_gallery {
     display: none;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 76, ../sass/modules/_displaySection_gallery.scss */
+  /* line 42, ../sass/modules/_displaySection_gallery.scss */
   .gallery {
     display: none;
   }
 
-  /* line 80, ../sass/modules/_displaySection_gallery.scss */
+  /* line 46, ../sass/modules/_displaySection_gallery.scss */
   .resp_gallery {
     display: block;
   }
-  /* line 83, ../sass/modules/_displaySection_gallery.scss */
+  /* line 49, ../sass/modules/_displaySection_gallery.scss */
   .resp_gallery .row {
     margin-bottom: 20px;
   }
-  /* line 87, ../sass/modules/_displaySection_gallery.scss */
+  /* line 53, ../sass/modules/_displaySection_gallery.scss */
   .resp_gallery img {
     box-shadow: 0 0 10px 2px #ccc;
   }
