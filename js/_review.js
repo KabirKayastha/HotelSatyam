@@ -11,7 +11,7 @@ const nextReviewSlideBtn = document.querySelector('#review_slideContent-nextBtn'
 
 //counter
 var counter = 1;
-const size = reviewSlideContent[0].offsetHeight; // all content in the list must be of same size as that of 1st content
+const size = reviewSlideContent[0].clientHeight; // all content in the list must be of same size as that of 1st content
 
 reviewSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';  // !important
 
@@ -40,7 +40,7 @@ function setTimer(){
 	}, 2000); //1000 (numeric value) = 1s; 2000 numeric value sets the slide animation interval
 }
 
-setTimer();
+///setTimer();
 
 function pauseSlide(){
 	clearInterval(timer);

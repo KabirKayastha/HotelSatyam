@@ -89,6 +89,7 @@
             }
     
             .blockquote{
+                padding: 0 15px;
                 border-left-color: red;
                 height: 16vw;
                 display: flex;
@@ -97,9 +98,10 @@
                 overflow-y: hidden;
 
                 .content{
-                    padding-bottom: 40px;
+                    padding: 20px 0;
                     display: block;
                     width: 100%;
+                    height: 100%;
 
                     img{
                         border-radius: 10px;
