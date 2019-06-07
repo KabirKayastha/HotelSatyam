@@ -1,6 +1,7 @@
 .displaySection{
 
     .displayCulinary{
+       
 
         ul.culinary-navigator{
             list-style: none;
@@ -11,99 +12,29 @@
             padding-bottom: 0;
             text-align: center;
 
-            a{
-                text-decoration: none;
-                color: $fontColor;
-                background: transparent;
-                //font-weight: bold;
-
-                li{
-                    //width: 100%;
-                    //height: 16.67%;
-                    //font-size: 20px;
-                    border: none;
-                    border-top: 2px solid #353cff;
-                    padding: 8px 0 ;
-                    background: #fff;
-    
-                    i{
-                        display: none;
-                        font-size: 50px;
-                        position: relative;
-                        float: right;
-                        right: -15px;
-                        top: -7px;
-                        color: $primaryColor;
-                    }
-    
-                    #right-D{
-                        display: block;
-                    }
-                }
-    
-                li.active{
-                    background: $primaryColor;
+            li{
+                width: 100%;
+                font-size: 20px;
+                border: none;
+                border-top: 1px solid #353cff;
+                border-bottom: 1px solid #353cff;
+                padding: 8px 0 ;
+                background: #fff;
+                margin: 0;
+                
+                a{
+                    text-decoration: none;
+                    color: $fontColor;
                     font-weight: bold;
-                    color: #eee;
-    
-                    &:after{
-                        content: '';
-                        height: 0px;
-                        width: 0px;
-                        border: solid transparent;
-                        border-left-color: $primaryColor;
-                        border-width: 20px;
-                        position: absolute;
-                        
+                    padding: 0;
+
+                    &:hover{
+                        background: rgba(0, 0, 0, 0);
                     }
                 }
 
-                #li-D.active{
-
-                    &::after{
-                        transform: translate(47px, -3px);
-                    }
-                }
-
-                #li-B.active{
-
-                    &::after{
-                        transform: translate(82px, -3px);
-                    }
-                }
-
-                #li-C.active{
-
-                    &::after{
-                        transform: translate(56px, -3px);
-                    }
-                }
-
-                #li-R.active{
-
-                    &::after{
-                        transform: translate(23px, -3px);
-                    }
-                }
-
-                #li-O.active{
-
-                    &::after{
-                        transform: translate(34px, -3px);
-                    }
-                }
-
-                #li-A.active{
-
-                    &::after{
-                        transform: translate(15px, -3px);
-                    }
-                }
-
-
-    
                 li:first-child{
-                    border: none;
+                    border-top: 2px solid #353cff;
                 }
     
                 li:last-child{
@@ -173,6 +104,41 @@
     .displayCulinary{
         padding: 0 50px;
 
+         
+        ul.nav-pills{
+            
+            
+            li.active{
+                background: red;
+                padding: 8px 0;
+                
+                a{
+                    background: transparent;
+                    color: #eee;
+
+                    
+                    
+                }
+
+                &:after{
+                    content: '';
+                    height: 0px;
+                    width: 0px;
+                    border: solid transparent;
+                    border-left-color: $primaryColor;
+                    border-width: 18px;
+                    position: absolute;
+                    top: 4px;
+                    right: -36px;
+                }
+            }
+            
+        }
+
+        .resp-culinary{
+            display: none;
+        }
+
         ul.resp_culinary-navigator{
             display: none;
         }
@@ -203,11 +169,36 @@
 
 @media screen and (max-width: 1000px){
 
+    // .non-resp-culinary{
+    //     display: none;
+    // }
+
     .displayCulinary{
         padding: 0 25px;
 
         .col-xs-12{
             padding: 0 5px;
+        }
+
+        ul.nav-pills{
+            padding: 0 10px;
+             
+            li.active{
+                background: red;
+                padding: 0px 0;
+                //margin: 10px 0;
+                border-radius: 10px;
+                
+                a{
+                    background: transparent;
+                    color: #eee;  
+                }
+
+                &:after{
+                    display: none;
+                }
+            }
+            
         }
 
         ul.resp_culinary-navigator{
@@ -219,23 +210,27 @@
             padding: 0 10px;
             border-left: 2px solid #353cff;
             border-right: 2px solid #353cff;
-
-            a{
-                color: $fontColor;
-                text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            
+            
+            li{
                 background: transparent;
-
-                li{
-                    padding: 20px 0; 
+                text-align: center;
+                font-weight: bold;
+                width: 32%;
+                display: flex;
+                justify-content: center;
+                align-items:center; 
+                
+                a{
+                    //background: red;
+                    color: $fontColor;
+                    text-decoration: none;
                     background: transparent;
-                    text-align: center;
-                    font-weight: bold;
-                }
 
-                li.active{
-                    background: red;
-                    color: #eee;
-                    border-radius: 5px;
                 }
             }
         }
@@ -277,10 +272,6 @@
             }
         }
 
-    }
-
-    #gallery_title{
-        //margin-top: 250px;
     }
 }
 

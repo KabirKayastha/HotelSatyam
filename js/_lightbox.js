@@ -20,6 +20,8 @@ function openModal() {
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
+
+  var modalBg = document.querySelectorAll('#sec_gallery_container #myModal.modal')
   
   function showSlides(n) {
     var i;
@@ -35,6 +37,8 @@ function openModal() {
       dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    //dots[slideIndex-1].className += " active";
+    //captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  //modalBg.addEventListener('click', closeModal);
