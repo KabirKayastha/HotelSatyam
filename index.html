@@ -321,9 +321,71 @@
         <!-- /imageslider -->
 
         <!-- booking -->
+        <div id="bookingSection">
+            <form action="abc.html">
+                
+                <div class="wrapper">
+                    <div class="slide" id="firstForm">
+                        <div class="column">
+                            <label for="">room type:</label>
+                            <select name="" id="" required>
+                                <option value="">Deluxe Room</option>
+                                <option value="">Normal Room</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="">check in:</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="column">
+                            <label for="">check out:</label>
+                        <input type="date" required>
+                        </div>
+                        <div class="column">
+                            <label for="">Adults:</label>
+                            <input type="number" min="1" required>
+                        </div>
+                        <div class="column">
+                            <label for="">Child:</label>
+                            <input type="number" min="0" required>
+                        </div>
+                    </div>
+                    
+                    <div class="slide" id="secondForm">
+                        <div class="column">
+                            <label for="">Name:</label>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="">Email:</label>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="">contact no.</label>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="">Address</label>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <!-- <div class="column">
+                            <label for="">Address</label>
+                            <input type="text" placeholder="email">
+                        </div> -->
+                    </div>
+                </div>
+    
+                <div class="button-container">
+                    <input type="button" class="basic_button" value="Back" id="backBtn" onclick="slideBack()">
+                    <input type="button" class="basic_button" value="Next" id="nextBtn" onclick="slideNext()">
+                    <input type="submit" class="basic_button" value="Book Now" id="submitBtn">
+                </div>
+                
+            </form>
+        </div>
         <div class="container">
-            <div id="bookingSection">
-
+            <div id="resp-bookingSection">
+    
                 <form action="#" method="post" id="booking_form">
                     <div class="form-group">
                         <div class="row">
@@ -331,19 +393,19 @@
                                 <div class="col-md-3">
                                     <label for="">Email</label>
                                 </div>
-
+    
                                 <div class="col-md-2">
                                     <label for="">Room Type:</label>
                                 </div>
-
+    
                                 <div class="col-md-2">
                                     <label for="">Check In</label>
                                 </div>
-
+    
                                 <div class="col-md-2">
                                     <label for="">Check Out</label>
                                 </div>
-
+    
                                 <div class="col-md-2">
                                     <label for="">Guests</label>
                                 </div>
@@ -351,10 +413,25 @@
                         </div>
                     <div class="row">
                         <div class="col-md-3 col-xs-12">
+                            <h4 class="labels">Full Name:</h4>
+                            <input type="text" id="booking_Name" placeholder="Full Name" required class="form-control">
+                        </div>
+
+                        <div class="col-md-3 col-xs-12">
                             <h4 class="labels">Email:</h4>
                             <input type="email" name="Booking Email" id="booking_Email" placeholder="eg: someone@example.com" required class="form-control">
                         </div>
 
+                        <div class="col-md-3 col-xs-12">
+                            <h4 class="labels">Address:</h4>
+                            <input type="text" id="booking_Address" placeholder="Current Address" required class="form-control">
+                        </div>
+
+                        <div class="col-md-3 col-xs-12">
+                            <h4 class="labels">Contact No.:</h4>
+                            <input type="number" id="booking_contact" placeholder="Contact No." required class="form-control">
+                        </div>
+    
                         <div class="col-md-2 col-xs-12">
                             <h4 class="labels">Room Type:</h4>
                             <div class="custom-select">
@@ -365,31 +442,36 @@
                                 </select>
                             </div>
                         </div>
-
+    
                         <div class="col-md-2 col-xs-12">
                             <h4 class="labels">Check In:</h4>
                             <input type="date" name="Booking CheckIn" id="booking_CheckIn" required class="form-control">
                         </div>
-
+    
                         <div class="col-md-2 col-xs-12">
                             <h4 class="labels">Check Out:</h4>
                             <input type="date" name="Booking CheckOut" id="booking_CheckOut" required class="form-control">
                         </div>
-
+    
                         <div class="col-md-1 col-xs-12">
-                            <h4 class="labels">Guests:</h4>
-                            <input type="number" name="Booking GuestNos" id="booking_GuestNos" class="form-control" min="1" required>
+                            <h4 class="labels">Adults:</h4>
+                            <input type="number" id="booking_AdultNos" class="form-control" min="1" required>
                         </div>
-
+                        
+                        <div class="col-md-1 col-xs-12">
+                            <h4 class="labels">Child:</h4>
+                            <input type="number" id="booking_ChildNos" class="form-control" min="0" required>
+                        </div>
+    
                         <div class="col-md-2 col-xs-12">
                             <input type="submit" name="Booking Submit Button" class="form-control basic_button" id="booking_SubmitBtn" value="Book Now">
                         </div>
-
+    
                         
                     </div>
                 </div>
                 </form>
-
+    
            </div>
         </div>
         <!-- /booking -->
@@ -529,9 +611,6 @@
                 <!-- /conference hall -->
 
                 <!-- culinary delight -->
-
-                
-                
                 <div class="title" style="margin-top: 0px;">
                     <hr> 
                     <div class="titleText"> Culinary Delights </div>
@@ -546,12 +625,12 @@
     
                             <div class="col-md-2 col-xs-12 col-sm-12" style="padding: 0;"> 
                                 <ul class="culinary-navigator nav nav-pills">
-                                    <li class="culinaryMenu active" id="li-D"><a href="#display_DiningHall" data-toggle="pill" id="a-D"> Dining Hall </a></li> 
-                                    <li class="culinaryMenu" id="li-B"><a href="#display_Bar" data-toggle="pill" id="a-B"> Bar </a> </li>
-                                    <li class="culinaryMenu" id="li-C"><a href="#display_Cafeteria" data-toggle="pill" id="a-C"> Cafeteria </a> </li>
-                                    <li class="culinaryMenu" id="li-R"><a href="#display_Rooftop" data-toggle="pill" id="a-R"> Rooftop Garden </a></li> 
-                                    <li class="culinaryMenu" id="li-O"><a href="#display_Open" data-toggle="pill" id="a-O"> Open Kitchen</a> </li> 
-                                    <li class="culinaryMenu" id="li-A"><a href="#display_Lounge" data-toggle="pill" id="a-A"> Attractive Lounge </a></li> 
+                                    <li class="culinaryMenu active"><a href="#display_DiningHall" data-toggle="pill" id="a-D"> Dining Hall </a></li> 
+                                    <li class="culinaryMenu"><a href="#display_Bar" data-toggle="pill" id="a-B"> Bar </a> </li>
+                                    <li class="culinaryMenu"><a href="#display_Cafeteria" data-toggle="pill" id="a-C"> Cafeteria </a> </li>
+                                    <li class="culinaryMenu"><a href="#display_Rooftop" data-toggle="pill" id="a-R"> Rooftop Garden </a></li> 
+                                    <li class="culinaryMenu"><a href="#display_Open" data-toggle="pill" id="a-O"> Open Kitchen</a> </li> 
+                                    <li class="culinaryMenu"><a href="#display_Lounge" data-toggle="pill" id="a-A"> Attractive Lounge </a></li> 
                                 </ul>
 
                                 <ul class="resp_culinary-navigator nav nav-pills">
@@ -1189,7 +1268,6 @@
                                                 </div>
                                             </div>
 
-                                            
                                             <div class="content">
                                                 <div class="media-left media-top">
                                                     <img src="images/profileimage.png" class="media-object" style="width:100px;">
@@ -1719,7 +1797,10 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/owlCarousel/owl.carousel.min.js"></script>
         <script src="js/owlCarousel/o-carousel.js"></script>
+        <script src="js/owlCarousel/review-o-carousel.js"></script>
         <!-- <script src="js/jQuery.js"></script> -->
+
+        <script src="js/_booking.js"></script>
         <script src="js/_navbar.js"></script>
         <script src="js/_displaysection.js"></script>
         <script src="js/_starRating.js"></script>

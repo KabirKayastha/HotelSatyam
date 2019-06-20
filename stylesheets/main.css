@@ -380,67 +380,97 @@ body {
 
 /* line 34, ../sass/modules/_imageslider.scss */
 #bookingSection {
-  height: 120px;
-  width: 100%;
+  height: 100px;
+  width: 80%;
   background: rgba(170, 170, 170, 0.8);
-  margin: -60px 0 0px 0;
+  margin: -50px auto 0px auto;
   padding: 10px 30px;
   border-radius: 6px;
   box-shadow: 0 0px 5px 1px #777;
   position: relative;
   z-index: 99;
+  display: flex;
 }
-/* line 45, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form {
+/* line 50, ../sass/modules/_imageslider.scss */
+#bookingSection form {
+  margin: auto 0;
+  display: flex;
+  overflow: hidden;
+}
+/* line 57, ../sass/modules/_imageslider.scss */
+#bookingSection form .button-container {
+  z-index: 99;
+  padding-top: 20px;
+  border-radius: 0 10px 10px 0;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 68, ../sass/modules/_imageslider.scss */
+#bookingSection form .button-container input {
+  margin: 8px;
+  height: 30px;
+}
+/* line 74, ../sass/modules/_imageslider.scss */
+#bookingSection form .button-container input[type=submit] {
+  letter-spacing: 0;
+  padding: 0 10px;
+}
+/* line 82, ../sass/modules/_imageslider.scss */
+#bookingSection form .wrapper {
+  width: 80%;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* line 89, ../sass/modules/_imageslider.scss */
+#bookingSection form #secondForm {
+  grid-template-columns: repeat(4, auto);
+}
+/* line 93, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  grid-column-gap: 11px;
   width: 100%;
+  padding: 10px 10px;
+  transition: transform 1s ease-in-out;
 }
-/* line 48, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form #booking_GuestNos {
-  width: 100%;
+/* line 107, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* line 51, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form #booking_GuestNos::-webkit- {
-  display: none;
-}
-/* line 56, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input[type=submit] {
-  font-family: 'calibri';
-}
-/* line 61, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form label {
+/* line 114, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column label {
+  text-transform: capitalize;
+  font-weight: bold;
   font-size: 18px;
-  padding: 10px 0;
+  padding: 0 10px;
 }
-/* line 66, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input {
-  height: 40px;
-  width: 100%;
-  border-radius: 6px;
-  border: none;
-  font-weight: bolder;
-  font-family: "consolas";
-}
-/* line 75, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form select {
-  height: 40px;
-  width: 100%;
-  border: none;
+/* line 121, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column input, #bookingSection form .slide .column select {
+  height: 30px;
   border-radius: 10px;
+  border: none;
 }
-/* line 84, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form .labels {
-  display: none;
+/* line 127, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column input {
+  padding: 0 10px;
 }
-/* line 88, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input[type=date] {
+/* line 131, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column input[type=date] {
   text-transform: uppercase;
 }
-/* line 91, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input[type=date]::-webkit-inner-spin-button {
+/* line 134, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column input[type=date]::-webkit-inner-spin-button {
   display: none;
 }
-/* line 95, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input[type=date]::-webkit-calendar-picker-indicator {
+/* line 138, ../sass/modules/_imageslider.scss */
+#bookingSection form .slide .column input[type=date]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
   display: block;
@@ -450,57 +480,132 @@ body {
   border-width: thin;
   cursor: pointer;
 }
-/* line 108, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form input[type=number] {
-  text-align: right;
-}
-/* line 117, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form span {
-  position: absolute;
-  right: 45px;
-  height: 35px;
-  width: 35px;
-  background: red;
-  font-size: 25px;
-  opacity: .8;
-}
-/* line 126, ../sass/modules/_imageslider.scss */
-#bookingSection form#booking_form span i {
-  padding: 7px;
-  background: red;
-  z-index: -1;
+
+/* line 159, ../sass/modules/_imageslider.scss */
+#resp-bookingSection {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 139, ../sass/modules/_imageslider.scss */
+  /* line 164, ../sass/modules/_imageslider.scss */
   #imageslider {
     height: 50vw;
     position: inherit;
   }
 
-  /* line 144, ../sass/modules/_imageslider.scss */
+  /* line 169, ../sass/modules/_imageslider.scss */
   #bookingSection {
+    display: none;
+  }
+
+  /* line 173, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection {
+    display: block;
     position: inherit;
     margin: 20px 0 0 0;
     height: auto;
+    background: rgba(170, 170, 170, 0.8);
+    padding: 10px 30px;
+    border-radius: 6px;
+    box-shadow: 0 0px 5px 1px #777;
   }
-  /* line 150, ../sass/modules/_imageslider.scss */
-  #bookingSection #booking_labels {
+  /* line 185, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form {
+    width: 100%;
+  }
+  /* line 188, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form #booking_GuestNos {
+    width: 100%;
+  }
+  /* line 191, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form #booking_GuestNos::-webkit- {
     display: none;
   }
-  /* line 156, ../sass/modules/_imageslider.scss */
-  #bookingSection form#booking_form .labels {
+  /* line 196, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=submit] {
+    font-family: 'calibri';
+  }
+  /* line 201, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form label {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  /* line 206, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-weight: bolder;
+    font-family: "consolas";
+  }
+  /* line 215, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form select {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  /* line 224, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form .labels {
+    display: none;
+  }
+  /* line 228, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=date] {
+    text-transform: uppercase;
+  }
+  /* line 231, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=date]::-webkit-inner-spin-button {
+    display: none;
+  }
+  /* line 235, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=date]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    display: block;
+    background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    border-width: thin;
+    cursor: pointer;
+  }
+  /* line 248, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=number] {
+    text-align: right;
+  }
+  /* line 257, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form span {
+    position: absolute;
+    right: 45px;
+    height: 35px;
+    width: 35px;
+    background: red;
+    font-size: 25px;
+    opacity: .8;
+  }
+  /* line 266, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form span i {
+    padding: 7px;
+    background: red;
+    z-index: -1;
+  }
+  /* line 276, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection #booking_labels {
+    display: none;
+  }
+  /* line 282, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form .labels {
     display: block;
     font-size: 18px;
     font-weight: bold;
     padding-top: 10px;
   }
-  /* line 163, ../sass/modules/_imageslider.scss */
-  #bookingSection form#booking_form input[type=submit] {
+  /* line 289, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=submit] {
     margin-top: 30px;
   }
-  /* line 167, ../sass/modules/_imageslider.scss */
-  #bookingSection form#booking_form input[type=number] {
+  /* line 293, ../sass/modules/_imageslider.scss */
+  #resp-bookingSection form#booking_form input[type=number] {
     text-align: left;
   }
 }
