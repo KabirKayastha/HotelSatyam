@@ -1,9 +1,11 @@
-    $('.owl-carousel').owlCarousel({
+    $('.gallery .owl-carousel').owlCarousel({
         loop:true,
         margin: 20,
         nav:false,
         autoplay:true,
-        autoplayTimeout:2000,
+        autoplayTimeout:4000,
+        smartSpeed: 1000,
+        dragEndSpeed: 250,
         autoplayHoverPause:true,
         responsive:{
             0:{

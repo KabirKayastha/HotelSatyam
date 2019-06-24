@@ -91,22 +91,23 @@
             .blockquote{
                 padding: 0 15px;
                 border-left-color: red;
-                height: 16vw;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                overflow-y: hidden;
-
-                .content{
-                    padding: 20px 0;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-
-                    img{
-                        border-radius: 10px;
+                
+                #review-o-carousel{
+                    height: 16vw;
+                    
+                   
+                    .content{
+                        padding: 20px 0;
+                        display: block;
+                        min-width: 100%;
+                        // width: 100%;
+                        height: 100%;
+                        img{
+                            border-radius: 10px;
+                        }
                     }
                 }
+
                 
             }
 

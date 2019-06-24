@@ -1149,29 +1149,28 @@ body {
 .review #review-container .review_container .blockquote {
   padding: 0 15px;
   border-left-color: red;
-  height: 16vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  overflow-y: hidden;
 }
-/* line 100, ../sass/modules/_review.scss */
-.review #review-container .review_container .blockquote .content {
+/* line 95, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote #review-o-carousel {
+  height: 16vw;
+}
+/* line 99, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote #review-o-carousel .content {
   padding: 20px 0;
   display: block;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
 }
-/* line 106, ../sass/modules/_review.scss */
-.review #review-container .review_container .blockquote .content img {
+/* line 105, ../sass/modules/_review.scss */
+.review #review-container .review_container .blockquote #review-o-carousel .content img {
   border-radius: 10px;
 }
-/* line 113, ../sass/modules/_review.scss */
+/* line 114, ../sass/modules/_review.scss */
 .review #review-container .review_container .sliderButtonContainer {
   float: left;
   display: flex;
 }
-/* line 117, ../sass/modules/_review.scss */
+/* line 118, ../sass/modules/_review.scss */
 .review #review-container .review_container .sliderButtonContainer button {
   height: 30px;
   width: 30px;
@@ -1181,16 +1180,16 @@ body {
   align-items: center;
   border-radius: 50%;
 }
-/* line 128, ../sass/modules/_review.scss */
+/* line 129, ../sass/modules/_review.scss */
 .review #review-container .review_container .buttonContainer {
   float: right;
 }
-/* line 131, ../sass/modules/_review.scss */
+/* line 132, ../sass/modules/_review.scss */
 .review #review-container .review_container .buttonContainer button {
   margin-left: 15px;
 }
 
-/* line 142, ../sass/modules/_review.scss */
+/* line 143, ../sass/modules/_review.scss */
 #reviewModal .starRating {
   width: 100%;
   margin: 0 auto 20px auto;
@@ -1199,24 +1198,24 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* line 150, ../sass/modules/_review.scss */
+/* line 151, ../sass/modules/_review.scss */
 #reviewModal .starRating h4 {
   margin: 0 10px;
   font-weight: bolder;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
-/* line 157, ../sass/modules/_review.scss */
+/* line 158, ../sass/modules/_review.scss */
 #reviewModal .starRating span {
   padding: 3px 5px;
   cursor: pointer;
 }
-/* line 163, ../sass/modules/_review.scss */
+/* line 164, ../sass/modules/_review.scss */
 #reviewModal form {
   width: 80%;
   margin: auto;
 }
-/* line 167, ../sass/modules/_review.scss */
+/* line 168, ../sass/modules/_review.scss */
 #reviewModal form input, #reviewModal form textarea {
   margin: 10px 0;
   width: 100%;
@@ -1226,38 +1225,38 @@ body {
   border-bottom: 2px solid #333;
   padding: 5px 10px;
 }
-/* line 177, ../sass/modules/_review.scss */
+/* line 178, ../sass/modules/_review.scss */
 #reviewModal form input {
   height: 35px;
 }
-/* line 181, ../sass/modules/_review.scss */
+/* line 182, ../sass/modules/_review.scss */
 #reviewModal form textarea {
   height: 150px;
   resize: none;
 }
 
 @media screen and (min-width: 1000px) {
-  /* line 194, ../sass/modules/_review.scss */
+  /* line 195, ../sass/modules/_review.scss */
   .resp_review_container, .resp_links {
     display: none;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 202, ../sass/modules/_review.scss */
+  /* line 203, ../sass/modules/_review.scss */
   .review_container {
     display: none;
   }
 
-  /* line 206, ../sass/modules/_review.scss */
+  /* line 207, ../sass/modules/_review.scss */
   .review {
     padding: 0 20px;
   }
 
-  /* line 210, ../sass/modules/_review.scss */
+  /* line 211, ../sass/modules/_review.scss */
   .resp_review_container {
     display: block;
   }
-  /* line 213, ../sass/modules/_review.scss */
+  /* line 214, ../sass/modules/_review.scss */
   .resp_review_container h3 {
     margin: 0;
     text-align: center;
@@ -1265,25 +1264,25 @@ body {
     letter-spacing: 1px;
     color: #ff0000;
   }
-  /* line 222, ../sass/modules/_review.scss */
+  /* line 223, ../sass/modules/_review.scss */
   .resp_review_container .media-resp {
     padding: 20px 0;
     border-bottom: 2px solid #bbb;
   }
-  /* line 226, ../sass/modules/_review.scss */
+  /* line 227, ../sass/modules/_review.scss */
   .resp_review_container .media-resp .checked {
     color: orange;
   }
-  /* line 230, ../sass/modules/_review.scss */
+  /* line 231, ../sass/modules/_review.scss */
   .resp_review_container .media-resp #review_userProfile {
     padding: 0 20px 0 0;
   }
-  /* line 235, ../sass/modules/_review.scss */
+  /* line 236, ../sass/modules/_review.scss */
   .resp_review_container .media-resp h4, .resp_review_container .media-resp h5 {
     text-align: center;
     margin: 0;
   }
-  /* line 241, ../sass/modules/_review.scss */
+  /* line 242, ../sass/modules/_review.scss */
   .resp_review_container .media-resp img {
     border-radius: 50%;
   }
